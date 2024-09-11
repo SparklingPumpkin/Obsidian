@@ -4,7 +4,7 @@ parent: 'Localization in 2D PBR With Multiple Transmitters of Opportunity: A Con
 collections:
     - 已读
     - 蛮好
-$version: 4547
+$version: 4553
 $libraryID: 1
 $itemKey: 2W7VXRBF
 
@@ -136,7 +136,7 @@ L. Pallotta was with the CNIT udr Università “Federico II,” I-80125 Napoli,
 
 ![\<img alt="" data-attachment-key="Y8BAJCII" width="752" height="329" src="attachments/Y8BAJCII.png" ztype="zimage">](attachments/Y8BAJCII.png)
 
-首先  根据  **经典的基于互相关cross-correlation的信号处理** 接收信号与预先知道的发射信号之间的互相关函数，互相关函数的峰值位置对应于两者之间的时间差
+首先  根据  **经典的基于互相关cross-correlation的信号处理** <span style="background-color: #f1983780">接收信号</span>与<span style="background-color: #f1983780">预先知道的发射信号</span>之间的互相关函数，互相关函数的峰值位置对应于两者之间的<span style="background-color: #f1983780">时间差</span>
 
 即 TOi 到 Reciver 的时间延迟（时间差 $\tilde{\tau}_i$），借此求解目标位置。
 
@@ -196,9 +196,9 @@ $\mathcal{P}=\begin{cases}\min_{\tilde{\boldsymbol{p}}}&\left\|\tilde{A}\tilde{p
 
 上述问题是一个非凸优化问题问题。
 
-输入：$\tau_i,L_i,(x_{t_i},y_{t_i}),i=1,\ldots,N;$
+<span style="background-color: #f1983780">输入</span>：$\tau_i,L_i,(x_{t_i},y_{t_i}),i=1,\ldots,N;$
 
-输出：Target location estimate $(\hat{x}_p,\hat{y}_p);$
+<span style="background-color: #f1983780">输出</span>：Target location estimate $(\hat{x}_p,\hat{y}_p);$
 
 根据上述公式，大部分参数可以直接根据输入计算得到。
 
