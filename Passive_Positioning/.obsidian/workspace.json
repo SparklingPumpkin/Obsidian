@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "56a1515c685e712c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4c5127ed3fc13921",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8725150379e46170",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1503a202c2647909",
+    "type": "split",
+    "children": [
+      {
+        "id": "d395300527487fa7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1240d3c11047765",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "88569e105d053c56",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7ac526957a72e2d4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "b6c82d27438980be",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 321.5
+  },
+  "right": {
+    "id": "1f96bbcda9396aa2",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d881c59ebcb4aee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0444be8efbfde3c1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Articles/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d54ebe427f10ecf9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Articles/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c9672a0deb57d077",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d9d803e7dd264337",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Articles/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md"
+              }
+            }
+          },
+          {
+            "id": "af61d4ad99258292",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "8725150379e46170",
+  "lastOpenFiles": [
+    "Articles/(2020)-Localization-in-2D-PBR-With-Multiple-Transmitters-of-Opportunity--A-Constrained-Least-Squares-Approach-2W7VXRBF.md",
+    "Articles/(2020)-Localization-in-2D-PBR-With-Multiple-Transmitters-of-Opportunity--A-Constrained-Least-Squares-Approach-2W7VXRBF.pdf",
+    "Articles/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
+    "Articles/attachments/ULKCM55J.png",
+    "Articles/attachments/VQXQ65XC.png",
+    "Articles/attachments/TWSCGEIW.png",
+    "Articles/attachments/ZZ4QKIJZ.png",
+    "Articles/attachments/X27ZTSBP.png",
+    "Articles/attachments/FIMB8JMJ.png",
+    "Articles/attachments/HA3PME78.png",
+    "Excalidraw/Drawing 2024-09-11 15.52.49.excalidraw.md",
+    "Excalidraw",
+    "Articles/attachments/T9UMXKBR.png",
+    "Articles/attachments/2V58YVWA.png",
+    "Articles/attachments/8AJ6J3FN.png",
+    "Articles/(2023-12)-ToA-and-TDoA-Estimation-Using-Artificial-Neural-Networks-for-High-Accuracy-Ranging-SM2RRN6P.md",
+    "Articles/预备知识-QSD8A5H8.md",
+    "Articles/attachments",
+    "Articles/(2023-12)-ToA-and-TDoA-Estimation-Using-Artificial-Neural-Networks-for-High-Accuracy-Ranging-MA9I2ECP.md",
+    "Articles/A-Review-of-Wireless-Positioning-Techniques-and-Technologies--From-Smart-Sensors-to-6G-D5Z9H2P7.md",
+    "Articles/ToA-and-TDoA-Estimation-Using-Artificial-Neural-Networks-for-High-Accuracy-Ranging-TZXLQQ5E.md",
+    "others/定位.md",
+    "others",
+    "Articles/测试-D5Z9H2P7.md",
+    "Articles/未命名.md",
+    "Articles/A Review of Wireless Positioning Techniques and Technologies From Smart Sensors to 6G.md",
+    "未命名 1/-D5Z9H2P7.md",
+    "未命名 1",
+    "Excalidraw/Drawing 2024-08-07 15.59.03.excalidraw.md",
+    "Articles"
+  ]
+}
