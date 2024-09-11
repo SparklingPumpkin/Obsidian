@@ -4,7 +4,7 @@ parent: 'Localization in 2D PBR With Multiple Transmitters of Opportunity: A Con
 collections:
     - 已读
     - 蛮好
-$version: 4458
+$version: 4524
 $libraryID: 1
 $itemKey: 2W7VXRBF
 
@@ -261,7 +261,9 @@ $(\hat{x}_p,\hat{y}_p)=(\bar{x}_1^\star,\bar{x}_2^\star).$
 
 3 目标笛卡尔上的 CRLB
 
-进行比较，证明了所提出的算法与公开文献中可用的其他算法相比的有效性（RMSE 值低），特别是对于低信噪比。验证了接收天线主瓣范围的额外限制所带来的好处。文章所获得的结果与理论 CRLB 的值非常接近。
+进行比较，证明了所提出的算法与公开文献中可用的其他算法相比的有效性（RMSE 值低），特别是对于低信噪比。验证了接收天线主瓣范围的额外限制所带来的好处。文章所获得的结果与**理论 CRLB 的值**非常接近。
+
+另外，该角度越接近主瓣边界，效果越好。（先验更有价值）
 
 ![\<img alt="" data-attachment-key="T9UMXKBR" width="657" height="529" src="attachments/T9UMXKBR.png" ztype="zimage">](attachments/T9UMXKBR.png)
 
