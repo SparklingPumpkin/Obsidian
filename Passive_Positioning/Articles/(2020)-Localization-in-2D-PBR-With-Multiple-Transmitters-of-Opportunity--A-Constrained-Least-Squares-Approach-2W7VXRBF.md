@@ -4,7 +4,7 @@ parent: 'Localization in 2D PBR With Multiple Transmitters of Opportunity: A Con
 collections:
     - 已读
     - 蛮好
-$version: 4524
+$version: 4547
 $libraryID: 1
 $itemKey: 2W7VXRBF
 
@@ -72,10 +72,6 @@ L. Pallotta was with the CNIT udr Università “Federico II,” I-80125 Napoli,
 
  
 
-### ⚙️ Q\&A
-
-略
-
 ### ⚙️ Structure
 
 *   第一章：Introduction
@@ -102,24 +98,13 @@ L. Pallotta was with the CNIT udr Università “Federico II,” I-80125 Napoli,
 
 设备：基于 PBR 的定位使用双基地目标距离测量来完成，需要收集了由一个/多个IOs传输的信号产生的目标回波。为此，PBR 接收器为每个发射器配备了两个接收通道：一个用于从所选发射器获取**直接路径信号**，另一个用于收集感应**回波**。
 
-文章结构：
-
-*   第一章：简介
-*   第二章：介绍模型
-*   第三章：求解方法
-*   第四章：介绍其他文献模型
-*   第五章：性能比较
-*   第六章：结论与展望
-
 ### 💡 Innovations
 
 *   **将定位问题（非凸优化）转化为一个受约束constrained的最小二乘（Least Squares，LS）估计问题。**
 *   约束：接收**天线主瓣范围的先验信息**，在定位过程中施加特定约束。
 *   通过**广义信赖域子问题（Generalized Trust Region Subproblems，GTRS）理论**，给出了一个**闭式解**，实现了高效的求解。
 
-### 🧩 Shortcomings
-
- 合成信号？
+###
 
 ## <span style="color: rgb(32, 178, 170)"><span style="background-color: rgb(175, 238, 238)">🔁 Research Content</span></span>
 
@@ -259,7 +244,7 @@ $(\hat{x}_p,\hat{y}_p)=(\bar{x}_1^\star,\bar{x}_2^\star).$
 
 2 通过迭代算法估计目标位置的两步估计 (TSE) 程序 ；
 
-3 目标笛卡尔上的 CRLB
+3 目标笛卡尔上的 CRLB （无偏估计的最佳接线）
 
 进行比较，证明了所提出的算法与公开文献中可用的其他算法相比的有效性（RMSE 值低），特别是对于低信噪比。验证了接收天线主瓣范围的额外限制所带来的好处。文章所获得的结果与**理论 CRLB 的值**非常接近。
 
@@ -267,22 +252,6 @@ $(\hat{x}_p,\hat{y}_p)=(\bar{x}_1^\star,\bar{x}_2^\star).$
 
 ![\<img alt="" data-attachment-key="T9UMXKBR" width="657" height="529" src="attachments/T9UMXKBR.png" ztype="zimage">](attachments/T9UMXKBR.png)
 
-## <span style="color: rgb(0, 77, 153)"><span style="background-color: rgb(135, 206, 250)">🤔 Personal Summary</span></span>
-
-***
-
-> Tips: What aspects did you question, how do you think it can be improved?
-
- 
-
-### 🙋‍♀️ Key Records
-
- 
-
-### 📌 To be resolved
-
- 
-
-### 💭 Thought Inspiration
+##
 
  
