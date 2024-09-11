@@ -4,7 +4,7 @@ parent: 'A Survey on Multimodal Large Language Models'
 collections:
     - 未读
     - 综述
-$version: 4433
+$version: 4660
 $libraryID: 1
 $itemKey: 548LAWF6
 
@@ -348,7 +348,27 @@ MLLM产生的幻觉与LLM类似，只是多了其他模态，如图像。
 
 ### 6.1 幻觉评估
 
-*   CHAIR：早期用于评估开放式字幕中的幻觉水平。
+目前有已下很多评估标准.
+
+*   CHAIR：一种标准, 早期用于评估开放式字幕中的幻觉水平。衡量了有幻觉的句子在所有对象中的<span style="background-color: #ffd40080">比例</span>。
+
+*   POPE
+
+*   MME
+
+*   HaELM
+
+### 6.2 减轻幻觉的方法
+
+三种思路:
+
+*   pre-correction 事前矫正
+
+    *   收集专门的数据(例如,负值数据)，并使用该数据进行微调，从而得到幻觉响应较少的模型。
+
+*   inprocess-correction 事中矫正
+
+*   post-correction 事后矫正
 
 ### 📜 Conclusion
 
