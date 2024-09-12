@@ -4,7 +4,7 @@ parent: 'A Survey on Multimodal Large Language Models'
 collections:
     - 未读
     - 综述
-$version: 4768
+$version: 4773
 $libraryID: 1
 $itemKey: 548LAWF6
 
@@ -416,10 +416,14 @@ ICL 在MLLMs 中如何实现: 可以在inference time 加入一个demonstration 
 
  CoT 即LLM输出一系列推理步骤以及答案
 
-如何在MLLM领域学习思维链：
+如何在MLLM领域学习思维链M-CoT：
 
 *   微调
+
+    *   需要给出特定（带有推理过程的）数据集
+
 *   免训练少样本学习
+
 *   免训练零样本学习
 
  
