@@ -4,7 +4,7 @@ parent: 'A Survey on Multimodal Large Language Models'
 collections:
     - 未读
     - 综述
-$version: 4773
+$version: 4779
 $libraryID: 1
 $itemKey: 548LAWF6
 
@@ -424,7 +424,11 @@ ICL 在MLLMs 中如何实现: 可以在inference time 加入一个demonstration 
 
 *   免训练少样本学习
 
+    *   需要手工制作一些上下文中的示例
+
 *   免训练零样本学习
+
+    *   给出类似“Let’s think frame by frame” or “What happened between these two keyframes”的提示
 
  
 
