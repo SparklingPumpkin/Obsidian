@@ -4,7 +4,7 @@ parent: 'A Survey on Multimodal Large Language Models'
 collections:
     - 未读
     - 综述
-$version: 4823
+$version: 4844
 $libraryID: 1
 $itemKey: 548LAWF6
 
@@ -470,10 +470,24 @@ ICL 在MLLMs 中如何实现: 可以在inference time 加入一个demonstration 
 *   LLM的主要功能
 
     *   Controller
+
+        *   任务分解、规划
+
     *   Decision Maker
+
+        *   多轮决策，信息组织，迭代推理
+
     *   Semantics Refiner
 
- 
+        *   优化文本表达、信息整合优化
+
+## 8 挑战&展望
+
+*   ## 长文本、视频理解
+*   ## 复杂指令执行能力
+*   ## M-ICL\&M-CoT能力提升
+*   ## MLLMs具身智能
+*   ## 安全问题 
 
 ### 📜 Conclusion
 
