@@ -11,9 +11,11 @@
             "id": "8725150379e46170",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Articles/(2020)-Localization-in-2D-PBR-With-Multiple-Transmitters-of-Opportunity--A-Constrained-Least-Squares-Approach-2W7VXRBF.pdf"
+                "file": "others/定位.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -91,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Articles/(2020)-Localization-in-2D-PBR-With-Multiple-Transmitters-of-Opportunity--A-Constrained-Least-Squares-Approach-2W7VXRBF.pdf",
+                "file": "others/定位.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Articles/(2020)-Localization-in-2D-PBR-With-Multiple-Transmitters-of-Opportunity--A-Constrained-Least-Squares-Approach-2W7VXRBF.pdf",
+                "file": "others/定位.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Articles/(2020)-Localization-in-2D-PBR-With-Multiple-Transmitters-of-Opportunity--A-Constrained-Least-Squares-Approach-2W7VXRBF.pdf"
+                "file": "others/定位.md"
               }
             }
           },
@@ -164,8 +166,8 @@
   },
   "active": "8725150379e46170",
   "lastOpenFiles": [
-    "Articles/(2020)-Localization-in-2D-PBR-With-Multiple-Transmitters-of-Opportunity--A-Constrained-Least-Squares-Approach-2W7VXRBF.md",
     "Articles/(2020)-Localization-in-2D-PBR-With-Multiple-Transmitters-of-Opportunity--A-Constrained-Least-Squares-Approach-2W7VXRBF.pdf",
+    "Articles/(2020)-Localization-in-2D-PBR-With-Multiple-Transmitters-of-Opportunity--A-Constrained-Least-Squares-Approach-2W7VXRBF.md",
     "Articles/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
     "Articles/attachments/ULKCM55J.png",
     "Articles/attachments/VQXQ65XC.png",
