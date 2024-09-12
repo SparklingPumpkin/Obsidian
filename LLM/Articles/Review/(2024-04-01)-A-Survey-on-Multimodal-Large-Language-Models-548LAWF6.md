@@ -4,7 +4,7 @@ parent: 'A Survey on Multimodal Large Language Models'
 collections:
     - 未读
     - 综述
-$version: 4796
+$version: 4810
 $libraryID: 1
 $itemKey: 548LAWF6
 
@@ -412,7 +412,7 @@ ICL 在MLLMs 中如何实现: 可以在inference time 加入一个demonstration 
     *   解决各种视觉推理任务
     *   教 MLLM 使用外部工具 （粒度更细）
 
-### 7.2 多模态CoT思维链
+### 7.2 多模态<span style="background-color: #ffd40080">CoT思维链</span>
 
  CoT 即LLM输出一系列推理步骤以及答案
 
@@ -456,6 +456,8 @@ ICL 在MLLMs 中如何实现: 可以在inference time 加入一个demonstration 
         *   在给定条件（例如指令和先前的推理历史）的情况下**扩展推理链**
 
 ### 7.3 LLM-Aided VIsual Reasoning
+
+相比传统Visual Reasoning Models，LLM辅助的模型有更强的泛化能力、推理能力、交互控制性
 
  
 
