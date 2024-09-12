@@ -4,7 +4,7 @@ parent: 'A Survey on Multimodal Large Language Models'
 collections:
     - 未读
     - 综述
-$version: 4779
+$version: 4796
 $libraryID: 1
 $itemKey: 548LAWF6
 
@@ -416,19 +416,46 @@ ICL 在MLLMs 中如何实现: 可以在inference time 加入一个demonstration 
 
  CoT 即LLM输出一系列推理步骤以及答案
 
-如何在MLLM领域学习思维链M-CoT：
+*   如何在MLLM领域学习思维链M-CoT：
 
-*   微调
+    *   微调
 
-    *   需要给出特定（带有推理过程的）数据集
+        *   需要给出特定（带有推理过程的）数据集
 
-*   免训练少样本学习
+    *   免训练少样本学习
 
-    *   需要手工制作一些上下文中的示例
+        *   需要手工制作一些上下文中的示例
 
-*   免训练零样本学习
+    *   免训练零样本学习
 
-    *   给出类似“Let’s think frame by frame” or “What happened between these two keyframes”的提示
+        *   给出类似“Let’s think frame by frame” or “What happened between these two keyframes”的提示
+
+*   CoT的配置
+
+    *   结构
+
+        *   单链
+
+        *   树形
+
+            *   DDCoT将一个问题分解为多个子问题，再由LLM或者专家模型生成**基本原理**，再用LLM汇总。
+
+    *   长度
+
+        *   自适应
+        *   预定义
+
+*   生成模式
+
+    *   基于填充
+
+        *   需要推断周围上下文之间的步骤（之前和之后的步骤）以**填补逻辑间隙**
+
+    *   基于预测
+
+        *   在给定条件（例如指令和先前的推理历史）的情况下**扩展推理链**
+
+### 7.3 LLM-Aided VIsual Reasoning
 
  
 
