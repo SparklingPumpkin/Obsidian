@@ -4,24 +4,24 @@ parent: 'A Survey on Multimodal Large Language Models'
 collections:
     - 未读
     - 综述
-$version: 4660
+$version: 4724
 $libraryID: 1
 $itemKey: 548LAWF6
 
 ---
-# <span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(238, 249, 253)">(2024-04-01) A Survey on Multimodal Large Language Models</span></span>
+# <span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(238, 249, 253);">(2024-04-01) A Survey on Multimodal Large Language Models</span></span>
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(219, 238, 221)">Author:</span></span>**<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(219, 238, 221)"> Shukang Yin; Chaoyou Fu; Sirui Zhao; Ke Li; Xing Sun; Tong Xu; Enhong Chen;</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| **<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(243, 250, 244)">Journal: IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE (Publication Date: 2024-04-01)</span></span>**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(219, 238, 221)">Journal Tags:</span></span>**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(243, 250, 244)">Local Link: </span></span>**<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(243, 250, 244)"><a href="zotero://open-pdf/0_VWGJ2ZVB" rel="noopener noreferrer nofollow">Yin 等 - 2024 - A Survey on Multimodal Large Language Models.pdf</a></span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(219, 238, 221)">DOI: </span></span>**<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(219, 238, 221)"><a href="https://doi.org/10.48550/arXiv.2306.13549" rel="noopener noreferrer nofollow">10.48550/arXiv.2306.13549</a></span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(243, 250, 244)">Abstract: </span></span>***<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(243, 250, 244)">Recently, Multimodal Large Language Model (MLLM) represented by GPT-4V has been a new rising research hotspot, which uses powerful Large Language Models (LLMs) as a brain to perform multimodal tasks. The surprising emergent capabilities of MLLM, such as writing stories based on images and OCR-free math reasoning, are rare in traditional multimodal methods, suggesting a potential path to artificial general intelligence. To this end, both academia and industry have endeavored to develop MLLMs that can compete with or even better than GPT-4V, pushing the limit of research at a surprising speed. In this paper, we aim to trace and summarize the recent progress of MLLMs. First of all, we present the basic formulation of MLLM and delineate its related concepts, including architecture, training strategy and data, as well as evaluation. Then, we introduce research topics about how MLLMs can be extended to support more granularity, modalities, languages, and scenarios. We continue with multimodal hallucination and extended techniques, including Multimodal ICL (M-ICL), Multimodal CoT (M-CoT), and LLM-Aided Visual Reasoning (LAVR). To conclude the paper, we discuss existing challenges and point out promising research directions. In light of the fact that the era of MLLM has only just begun, we will keep updating this survey and hope it can inspire more research. An associated GitHub link collecting the latest papers is available at https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models.</span></span>* |
-| **<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(219, 238, 221)">Note Date: </span></span>**<span style="color: rgb(25, 60, 71)"><span style="background-color: rgb(219, 238, 221)">2024/9/3 19:49:52</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(219, 238, 221);">Author:</span></span>**<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(219, 238, 221);"> Shukang Yin; Chaoyou Fu; Sirui Zhao; Ke Li; Xing Sun; Tong Xu; Enhong Chen;</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(243, 250, 244);">Journal: IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE (Publication Date: 2024-04-01)</span></span>**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(219, 238, 221);">Journal Tags:</span></span>**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(243, 250, 244);">Local Link: </span></span>**<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(243, 250, 244);"><a rel="noopener noreferrer nofollow" href="zotero://open-pdf/0_VWGJ2ZVB">Yin 等 - 2024 - A Survey on Multimodal Large Language Models.pdf</a></span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(219, 238, 221);">DOI: </span></span>**<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(219, 238, 221);"><a rel="noopener noreferrer nofollow" href="https://doi.org/10.48550/arXiv.2306.13549">10.48550/arXiv.2306.13549</a></span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(243, 250, 244);">Abstract: </span></span>***<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(243, 250, 244);">Recently, Multimodal Large Language Model (MLLM) represented by GPT-4V has been a new rising research hotspot, which uses powerful Large Language Models (LLMs) as a brain to perform multimodal tasks. The surprising emergent capabilities of MLLM, such as writing stories based on images and OCR-free math reasoning, are rare in traditional multimodal methods, suggesting a potential path to artificial general intelligence. To this end, both academia and industry have endeavored to develop MLLMs that can compete with or even better than GPT-4V, pushing the limit of research at a surprising speed. In this paper, we aim to trace and summarize the recent progress of MLLMs. First of all, we present the basic formulation of MLLM and delineate its related concepts, including architecture, training strategy and data, as well as evaluation. Then, we introduce research topics about how MLLMs can be extended to support more granularity, modalities, languages, and scenarios. We continue with multimodal hallucination and extended techniques, including Multimodal ICL (M-ICL), Multimodal CoT (M-CoT), and LLM-Aided Visual Reasoning (LAVR). To conclude the paper, we discuss existing challenges and point out promising research directions. In light of the fact that the era of MLLM has only just begun, we will keep updating this survey and hope it can inspire more research. An associated GitHub link collecting the latest papers is available at https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models.</span></span>* |
+| **<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(219, 238, 221);">Note Date: </span></span>**<span style="color: rgb(25, 60, 71);"><span style="background-color: rgb(219, 238, 221);">2024/9/3 19:49:52</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-## <span style="color: rgb(32, 178, 170)"><span style="background-color: rgb(175, 238, 238)">🔁 Research Content</span></span>
+## <span style="color: rgb(32, 178, 170);"><span style="background-color: rgb(175, 238, 238);">🔁 Research Content</span></span>
 
 ***
 
@@ -76,6 +76,7 @@ Shukang Yin和Sirui Zhu 中国科学技术大学数据科学系 [sirui@mail.ustc
 4.  Evaluation
 5.  Extensions
 6.  Hallucination
+7.  Extended Techniques
 
 ### ⚙️ Content
 
@@ -91,7 +92,7 @@ LLMs 随着模型规模 和 数据集规模 提升，能力也在提升。
 
 MLLMs 使用新的训练范式。
 
-![\<img alt="" data-attachment-key="HA3PME78" width="1511" height="864" src="attachments/HA3PME78.png" ztype="zimage">](attachments/HA3PME78.png)
+![\<img alt="" width="1511" height="864" data-attachment-key="HA3PME78" src="attachments/HA3PME78.png" ztype="zimage">](attachments/HA3PME78.png)
 
  
 
@@ -100,15 +101,18 @@ MLLMs 使用新的训练范式。
 典型三模块：
 
 *   预训练模态编码器 pre-trained modality encoder
+
 *   预训练LLM   pre-trained LLM
-*   模态接口 modality interface to connect them
+
+*   模态接口 modality interface to connect them 
+
 *   可能）生成器 generator 用于输出其他模态
 
 encoders类似于获取表征的人体器官，LLM类似于处理信息的大脑。
 
 ### 2.1 模态编码器
 
-![\<img alt="" data-attachment-key="FIMB8JMJ" width="724" height="600" src="attachments/FIMB8JMJ.png" ztype="zimage">](attachments/FIMB8JMJ.png)
+![\<img alt="" width="724" height="600" data-attachment-key="FIMB8JMJ" src="attachments/FIMB8JMJ.png" ztype="zimage">](attachments/FIMB8JMJ.png)
 
 起到compress raw information的作用。
 
@@ -169,9 +173,9 @@ Mixture of Experts，MoE 架构具备了**稀疏激活**的特点（与传统密
 
 一个完整的多模态LLM训练通常分为三个阶段：
 
-*   <span style="background-color: rgba(241, 152, 55, 0.5)">预训练 pre-training</span>
-*   <span style="background-color: rgba(241, 152, 55, 0.5)">指令调优 instruction-tuning</span>
-*   <span style="background-color: rgba(241, 152, 55, 0.5)">对齐调优 alignment-tuning</span>
+*   <span style="background-color: rgba(241, 152, 55, 0.5);">预训练 pre-training</span>
+*   <span style="background-color: rgba(241, 152, 55, 0.5);">指令调优 instruction-tuning</span>
+*   <span style="background-color: rgba(241, 152, 55, 0.5);">对齐调优 alignment-tuning</span>
 
 目的：
 
@@ -179,19 +183,19 @@ Mixture of Experts，MoE 架构具备了**稀疏激活**的特点（与传统密
 
 ### 3.1 pre-training
 
-![\<img alt="" data-attachment-key="X27ZTSBP" width="725" height="301" src="attachments/X27ZTSBP.png" ztype="zimage">](attachments/X27ZTSBP.png)
+![\<img alt="" width="725" height="301" data-attachment-key="X27ZTSBP" src="attachments/X27ZTSBP.png" ztype="zimage">](attachments/X27ZTSBP.png)
 
 At the first training stage：协调不同模态，通常需要大量文本匹配其他模态的数据。
 
 例如 给定图像，模型经过训练，预测图像的标题。（遵循标准交叉熵损失自回归）
 
-预训练的常见方法是<span style="background-color: rgba(255, 212, 0, 0.5)">保持预训练模块</span>（例如视觉编码器和 LLM）<span style="background-color: rgba(255, 212, 0, 0.5)">冻结</span>并训练可学习的 interface --- 不丢失预先训练的知识的情况下协调不同的模式。
+预训练的常见方法是<span style="background-color: rgba(255, 212, 0, 0.5);">保持预训练模块</span>（例如视觉编码器和 LLM）<span style="background-color: rgba(255, 212, 0, 0.5);">冻结</span>并训练可学习的 interface --- 不丢失预先训练的知识的情况下协调不同的模式。
 
-> <span style="background-color: rgb(255, 212, 0)">冻结</span>，即不对预先训练好的模型部分（如视觉编码器或大语言模型）进行进一步的权重更新。不丢失预先训练的知识。
+> <span style="background-color: rgb(255, 212, 0);">冻结</span>，即不对预先训练好的模型部分（如视觉编码器或大语言模型）进行进一步的权重更新。不丢失预先训练的知识。
 >
-> 可以根据需要<span style="background-color: rgba(255, 212, 0, 0.5)">解冻</span>部分模块（例如视觉编码器）以启用更多可训练参数进行对齐。
+> 可以根据需要<span style="background-color: rgba(255, 212, 0, 0.5);">解冻</span>部分模块（例如视觉编码器）以启用更多可训练参数进行对齐。
 
-训练方案与<span style="background-color: rgba(255, 212, 0, 0.5)">数据质量</span>密切相关。
+训练方案与<span style="background-color: rgba(255, 212, 0, 0.5);">数据质量</span>密切相关。
 
 *   对于较短且有噪声的字幕数据，可以采用较低的分辨率（例如 224）来加快训练过程，
 *   对于较长且更清晰的数据，最好使用较高的分辨率（例如 448 或更高）来减轻幻觉。
@@ -199,11 +203,11 @@ At the first training stage：协调不同模态，通常需要大量文本匹�
 
 ### 3.1.1 数据
 
-![\<img alt="" data-attachment-key="ZZ4QKIJZ" width="630" height="640" src="attachments/ZZ4QKIJZ.png" ztype="zimage">](attachments/ZZ4QKIJZ.png)
+![\<img alt="" width="630" height="640" data-attachment-key="ZZ4QKIJZ" src="attachments/ZZ4QKIJZ.png" ztype="zimage">](attachments/ZZ4QKIJZ.png)
 
-预训练语料按照粒度可以分为<span style="background-color: rgba(255, 212, 0, 0.5)">粗粒度</span>和<span style="background-color: rgba(255, 212, 0, 0.5)">细粒度</span>数据
+预训练语料按照粒度可以分为<span style="background-color: rgba(255, 212, 0, 0.5);">粗粒度</span>和<span style="background-color: rgba(255, 212, 0, 0.5);">细粒度</span>数据
 
-<span style="background-color: rgba(255, 212, 0, 0.5)">粗粒度</span>的字幕数据具有一些典型的共同特征：
+<span style="background-color: rgba(255, 212, 0, 0.5);">粗粒度</span>的字幕数据具有一些典型的共同特征：
 
 *   因为样本通常来自互联网。
 
@@ -211,7 +215,7 @@ At the first training stage：协调不同模态，通常需要大量文本匹�
 
     *   这些数据可以通过自动工具进行清理和过滤，例如使用CLIP\[13]模型过滤掉相似度低于预定义阈值的图像文本对。
 
-<span style="background-color: rgba(255, 212, 0, 0.5)">细粒度</span>
+<span style="background-color: rgba(255, 212, 0, 0.5);">细粒度</span>
 
 通常包含更长、更准确的图像描述，从而实现图像和文本模态之间更细粒度的对齐。但由于这种方式一般需要调用商用的MLLM，成本较高，数据量也相对较小。
 
@@ -219,13 +223,13 @@ At the first training stage：协调不同模态，通常需要大量文本匹�
 
 instruction-tuning 和 related typical learning 的区别如下：
 
-![\<img alt="" data-attachment-key="TWSCGEIW" width="736" height="311" src="attachments/TWSCGEIW.png" ztype="zimage">](attachments/TWSCGEIW.png)
+![\<img alt="" width="736" height="311" data-attachment-key="TWSCGEIW" src="attachments/TWSCGEIW.png" ztype="zimage">](attachments/TWSCGEIW.png)
 
 instruction是**任务**的描述。
 
 *   目的：教会模型更好地理解用户的指令并完成所需的任务。
 
-    *   借此，LLM 可以通过遵循新指令泛化到未见过的任务，从而提<span style="background-color: rgba(255, 212, 0, 0.5)">高零样本性能</span>。这个简单而有效的想法引发了后续 NLP 工作的成功
+    *   借此，LLM 可以通过遵循新指令泛化到未见过的任务，从而提<span style="background-color: rgba(255, 212, 0, 0.5);">高零样本性能</span>。这个简单而有效的想法引发了后续 NLP 工作的成功
 
 *   指令样本
 
@@ -233,9 +237,9 @@ instruction是**任务**的描述。
 
     *   MLLM 预测答案：$\mathcal{A}=f(\mathcal{I},\mathcal{M};\theta)$A表示预测答案，θ是模型的参数。
 
-    *   损失函数：$\mathcal{L}(\theta)=-\sum_{i=1}^N\log p(\mathcal{R}_i|\mathcal{I},\mathcal{R}_{<i};\theta)$
+    *   损失函数：$\mathcal{L}(\theta)=-\sum_{i=1}^N\log p(\mathcal{R}_i|\mathcal{I},\mathcal{R}_$
 
-*   基本格式：![\<img alt="" data-attachment-key="VQXQ65XC" width="254" height="79" src="attachments/VQXQ65XC.png" ztype="zimage">](attachments/VQXQ65XC.png)
+*   基本格式：![\<img alt="" width="254" height="79" data-attachment-key="VQXQ65XC" src="attachments/VQXQ65XC.png" ztype="zimage">](attachments/VQXQ65XC.png)
 
 ### 3.2.1 指令数据集
 
@@ -246,7 +250,7 @@ instruction是**任务**的描述。
     *   例：VQA，Visual Question Answering数据集转换。
 
         *   原始样本：输入输出对；输入包括图像和NLP问题，输出为针对图像的该问题答案。
-        *   指令都是一些简单的描述，类似：![\<img alt="" data-attachment-key="ULKCM55J" width="1049" height="102" src="attachments/ULKCM55J.png" ztype="zimage">](attachments/ULKCM55J.png)
+        *   指令都是一些简单的描述，类似：![\<img alt="" width="1049" height="102" data-attachment-key="ULKCM55J" src="attachments/ULKCM55J.png" ztype="zimage">](attachments/ULKCM55J.png)
         *   这些指令可以人工给出也可以由gpt辅助半自动生成
         *   VQA可能会产生回答过短的问题，目前也有一些解决方案。
 
@@ -275,7 +279,7 @@ instruction是**任务**的描述。
 
 ### 3.3 Alignment tuning 对齐调优
 
-Alignment tuning 更常用于**<span style="background-color: rgba(255, 212, 0, 0.5)">模型</span>**需要与特定**<span style="background-color: rgba(255, 212, 0, 0.5)">人类偏好</span>**保持**<span style="background-color: rgba(255, 212, 0, 0.5)">一致</span>**的场景，例如fewer hallucinations减少幻觉。两种方案：
+Alignment tuning 更常用于**<span style="background-color: rgba(255, 212, 0, 0.5);">模型</span>**需要与特定**<span style="background-color: rgba(255, 212, 0, 0.5);">人类偏好</span>**保持**<span style="background-color: rgba(255, 212, 0, 0.5);">一致</span>**的场景，例如fewer hallucinations减少幻觉。两种方案：
 
 *   Reinforcement Learning with Human Feedback（RLHF）
 
@@ -344,13 +348,12 @@ MLLM产生的幻觉与LLM类似，只是多了其他模态，如图像。
 *   Existence Hallucination 如错误地声称图像中某些物体存在
 *   Attribute Hallucination 属性幻觉，如红苹果说成蓝苹果
 *   Relationship Halluciantion 关系幻觉，比如a在b上方的描述错误
-*
 
 ### 6.1 幻觉评估
 
 目前有已下很多评估标准.
 
-*   CHAIR：一种标准, 早期用于评估开放式字幕中的幻觉水平。衡量了有幻觉的句子在所有对象中的<span style="background-color: #ffd40080">比例</span>。
+*   CHAIR：一种标准, 早期用于评估开放式字幕中的幻觉水平。衡量了有幻觉的句子在所有对象中的<span style="background-color: rgba(255, 212, 0, 0.5);">比例</span>。
 
 *   POPE
 
@@ -364,17 +367,57 @@ MLLM产生的幻觉与LLM类似，只是多了其他模态，如图像。
 
 *   pre-correction 事前矫正
 
-    *   收集专门的数据(例如,负值数据)，并使用该数据进行微调，从而得到幻觉响应较少的模型。
+    *   收集**专门的数据** (例如,** 负面示例或错误示例**)，并使用该数据进行微调，从而得到幻觉响应较少的模型。
+    *   相关研究包括 LRV-Instruction, LLaVA-RLHF
 
 *   inprocess-correction 事中矫正
 
+    *   在**架构设计**或**特征表达**上做出改进。这些作品试图探究产生幻觉的原因，并在产生过程中设计相应的补救措施来缓解幻觉。
+
+    *   HallE-Switch 假设**existence hallucinations**可能是基于**LLM中的已有知识推断出来的**
+
+    *   VCD认为幻觉来源于**statistical bias** in training corpus 训练语料**统计偏见**, 和**strong language prior** embedded in LLMs **强语言先验**
+
+        *   作者注意到，当向图像中注入噪声时，MLLMs倾向于偏向于语言先验而不是图像内容来生成响应，从而导致幻觉。
+
+    *   HACL 设计了一种对比学习方案，在拉近成对的跨模态representation的同时，推开幻觉化的文本。
+
 *   post-correction 事后矫正
+
+    *   事后补救
+    *   pecker 免训练框架结合专家模型来补充上下文信息, 纠正幻觉
+    *   LURE 训练了一个revisor去mask可能是幻觉的对象
+
+## 7 Extended Techniques
+
+### 7.1 Multimodal In-Context Learning 语境学习
+
+*   supervised learning: 从大量数据中学习隐藏模式
+
+*   ICL(In-Context Learning):
+
+    *   从类比中学习 -- 从几个例子中学习, 推广到新问题
+    *   通常免训练, 可以灵活集成
+    *   与instruction-tuning密切相关
+
+ICL 在MLLMs 中如何实现: 可以在inference time 加入一个demonstration set (ICL set).
+
+相关工作改进ICL性能
+
+*   MIMIC-IT 构建指令数据集,ICL结合instruction tuning.
+*   Emu 扩展了更多模态
+
+ 
+
+ 
+
+ 
 
 ### 📜 Conclusion
 
  
 
-## <span style="color: rgb(0, 77, 153)"><span style="background-color: rgb(135, 206, 250)">🤔 Personal Summary</span></span>
+## <span style="color: rgb(0, 77, 153);"><span style="background-color: rgb(135, 206, 250);">🤔 Personal Summary</span></span>
 
 ***
 
