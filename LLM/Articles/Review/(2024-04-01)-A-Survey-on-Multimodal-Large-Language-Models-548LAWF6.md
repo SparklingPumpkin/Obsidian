@@ -4,7 +4,7 @@ parent: 'A Survey on Multimodal Large Language Models'
 collections:
     - 未读
     - 综述
-$version: 4752
+$version: 4758
 $libraryID: 1
 $itemKey: 548LAWF6
 
@@ -410,12 +410,11 @@ ICL 在MLLMs 中如何实现: 可以在inference time 加入一个demonstration 
 *   ICL应用
 
     *   解决各种视觉推理任务
-    *   教 MLLM 使用外部工具
-    *
+    *   教 MLLM 使用外部工具 （粒度更细）
 
- 
+### 7.2 多模态CoT思维链
 
- 
+ CoT 即LLM输出一系列推理步骤以及答案
 
  
 
