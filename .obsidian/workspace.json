@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4e288ee870be5b85",
@@ -177,7 +178,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "628fbec1bbd25fd5",
+  "active": "89784befaf0567ea",
   "lastOpenFiles": [
     "Pasted image 20240924220729.png",
     "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
