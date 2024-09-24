@@ -1,3 +1,8 @@
+# QA
+- 为什么需要用到这种框架
+	- 仅依靠LLM没法进行大规模统筹化的思考，需要用框架去束缚和提示LLM
+	- 束缚和提示LLM：让LLM能够专注于解决一个个小问题，最终放到框架中就解决了一个大问题。
+
 # 1 Introduction
 
 LangChain (Language Chain) 是一个 LLM 编程框架，官方的定义如下
