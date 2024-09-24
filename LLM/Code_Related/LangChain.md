@@ -32,7 +32,7 @@ LangChain (Language Chain) 是一个 LLM 编程框架，官方的定义如下
 **Memory**
 - 是一种用于存储数据的工具，由于LLM 没有任何长期记忆，它有助于在多次调用之间保持状态。
 
-
+![[Pasted image 20240924222345.png]]
 # 3 原理
 
 ![[Pasted image 20240924220729.png]]
