@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "628fbec1bbd25fd5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLM/Code_Related/LangChain.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "4e288ee870be5b85",
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
+                "file": "LLM/Code_Related/LangChain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
+                "file": "LLM/Code_Related/LangChain.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md"
+                "file": "LLM/Code_Related/LangChain.md"
               }
             }
           },
@@ -164,9 +177,11 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "983e5f868a5dc529",
+  "active": "628fbec1bbd25fd5",
   "lastOpenFiles": [
     "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
+    "LLM/Code_Related/LangChain.md",
+    "LLM/Code_Related",
     "LLM/Articles/Review/attachments/ULKCM55J.png",
     "LLM/Articles/Review/attachments/VQXQ65XC.png",
     "LLM/Articles/Review/attachments/TWSCGEIW.png",
