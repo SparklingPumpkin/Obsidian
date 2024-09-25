@@ -1,3 +1,5 @@
+[大模型开发--文搞懂 LangChain(一):总体介绍-CSDN博客](https://blog.csdn.net/qingkahui24689/article/details/141186244)
+[从零开始入门 LangChain-CSDN博客](https://blog.csdn.net/2301_81940605/article/details/137627288)
 # QA
 - 为什么需要用到这种框架
 	- 仅依靠LLM没法进行大规模统筹化的思考，需要用框架去束缚和提示LLM
