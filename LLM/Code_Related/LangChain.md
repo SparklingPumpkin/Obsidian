@@ -1,10 +1,15 @@
 [大模型开发--文搞懂 LangChain(一):总体介绍-CSDN博客](https://blog.csdn.net/qingkahui24689/article/details/141186244)
 [从零开始入门 LangChain-CSDN博客](https://blog.csdn.net/2301_81940605/article/details/137627288)
+[为什么都放弃了LangChain？ (baidu.com)](https://baijiahao.baidu.com/s?id=1802740260520832066&wfr=spider&for=pc)
 # QA
 - 为什么需要用到这种框架
 	- 仅依靠LLM没法进行大规模统筹化的思考，需要用框架去束缚和提示LLM
 	- 束缚和提示LLM：让LLM能够专注于解决一个个小问题，最终放到框架中就解决了一个大问题。
 	- 类似于身体手脚- 框架；大脑- LLM
+- 存在的问题
+	- 在抽象的LLM上再使用抽象的LangChain，可能一个简单的问题会被复杂化
+	- 这个复杂化的现象可能也是过度ICL、过度Prompt、过度CoT会存在的现象，可能需要精简提炼
+	- 
 
 # 1 Introduction
 
