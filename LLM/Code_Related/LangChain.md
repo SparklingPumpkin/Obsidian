@@ -32,6 +32,7 @@ LangChain (Language Chain) 是一个 LLM 编程框架，官方的定义如下
 - LangChain会根据用户的问题自动  调用一些已有的Prompts框架，或基于此生成新的框架
 
 **Chains**
+- 这里的Chain不是CoT的Chain
 - 是一种将LLM和其他多个组件连接在一起的工具，以实现复杂的任务。
 - 一些类型
 	- LLMChain
