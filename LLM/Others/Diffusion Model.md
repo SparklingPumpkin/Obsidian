@@ -21,7 +21,7 @@
 ## 1.3 如何得到这样一个数据集
 
 - Forward Process (Diffusion Process)
-- ![[Pasted image 20240927172642.png]]
+- ![[Pasted image 20240927173148.png]]
 
 
 
