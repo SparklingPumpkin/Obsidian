@@ -25,8 +25,10 @@
 ## 1.4 Text-to-Image
 
 - 数据集LAION
-- 新的Denoise过程：
+- 新的Denoise过程：加入了文字标签
 	- ![[Pasted image 20240927174516.png]]
+- Noise Predictor
+	- ![[Pasted image 20240927174723.png]]
 - 
 
 
