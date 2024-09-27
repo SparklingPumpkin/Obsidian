@@ -38,7 +38,9 @@
 
 
 
+# 2 Stable Diffusion
 
+![[Pasted image 20240927181108.png]]
 
 
 
