@@ -31,8 +31,9 @@
 	- ![[Pasted image 20240927174723.png]]
 - Forward Process
 	- ![[Pasted image 20240927175609.png]]
+## 1.5 公式代码
 
-
+![[Pasted image 20240927175812.png]]
 
 
 
