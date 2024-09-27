@@ -520,4 +520,4 @@ ICL 在MLLMs 中如何实现: 可以在inference time 加入一个demonstration 
 ### 💭 Thought Inspiration
 
 *   人物行为模态(机器人?数字人?具身智能?)
-*
+*   多模态的
