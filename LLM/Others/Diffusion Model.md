@@ -22,6 +22,9 @@
 
 - Forward Process (Diffusion Process)
 - ![[Pasted image 20240927173148.png]]
+## 1.4 Text-to-Image
+
+- 数据集LAION
 
 
 
