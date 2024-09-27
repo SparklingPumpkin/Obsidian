@@ -25,6 +25,9 @@
 ## 1.4 Text-to-Image
 
 - 数据集LAION
+- 新的Denoise过程：
+	- ![[Pasted image 20240927174516.png]]
+- 
 
 
 
