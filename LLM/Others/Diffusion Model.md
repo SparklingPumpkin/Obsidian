@@ -29,7 +29,8 @@
 	- ![[Pasted image 20240927174516.png]]
 - Noise Predictor
 	- ![[Pasted image 20240927174723.png]]
-- 
+- Forward Process
+	- ![[Pasted image 20240927175609.png]]
 
 
 
