@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "LangChain",
-      "path": "LLM/Code_Related/LangChain.md"
+      "basename": "Diffusion Model",
+      "path": "LLM/Others/Diffusion Model.md"
     },
     {
       "basename": "(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6",
       "path": "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md"
+    },
+    {
+      "basename": "LangChain",
+      "path": "LLM/Code_Related/LangChain.md"
     }
   ],
   "omittedPaths": []
