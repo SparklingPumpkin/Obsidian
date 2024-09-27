@@ -520,4 +520,5 @@ ICL 在MLLMs 中如何实现: 可以在inference time 加入一个demonstration 
 ### 💭 Thought Inspiration
 
 *   人物行为模态(机器人?数字人?具身智能?)
-*   多模态的
+*   多模态的核心就是配对，不同模态指代的同一个东西配对起来
+*   Encoder 和 Decoder 其实也是配对
