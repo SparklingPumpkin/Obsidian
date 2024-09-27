@@ -3,11 +3,50 @@
 
 >The sculpture is already complete within the marble block, before I start my work. It is already there, I just have to chisel away the superfluous material  -- Michelangelo
 
+## 1.1 简单步骤
 
 1. 输入目标图片需求
 2. Simple一张与目标图片相同大小的纯噪声图片P_1000
-3. 降噪降一点
+3. 降噪 -- 输入P_1000 & 当前步骤序号：1000
 4. 得到新的图片P_999
 5. 重复3-4
 6. 得到最终图片P_1
 ![[Pasted image 20240927170403.png]]
+![[Pasted image 20240927171507.png]]
+
+## 1.2 内部架构
+
+![[Pasted image 20240927171659.png]]  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
