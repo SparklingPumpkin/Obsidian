@@ -5,6 +5,14 @@
       "path": "LLM/Distilling/知识蒸馏.md"
     },
     {
+      "basename": "v2-a0eff36a6b41c75c2f2de6551537c21b_1440w",
+      "path": "v2-a0eff36a6b41c75c2f2de6551537c21b_1440w.webp"
+    },
+    {
+      "basename": "v2-0fa574e769dc8c5963a205cfe9b66af5_1440w",
+      "path": "LLM/Distilling/images/v2-0fa574e769dc8c5963a205cfe9b66af5_1440w.webp"
+    },
+    {
       "basename": "LangChain",
       "path": "LLM/Code_Related/LangChain.md"
     },

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b06e779f7e9afad3",
+        "id": "ddf0ba3086c164c4",
         "type": "tabs",
         "children": [
           {
-            "id": "65904e6c632a931a",
+            "id": "a5406768979730e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -164,12 +164,13 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "65904e6c632a931a",
+  "active": "89784befaf0567ea",
   "lastOpenFiles": [
-    "v2-0fa574e769dc8c5963a205cfe9b66af5_1440w.webp",
+    "v2-a0eff36a6b41c75c2f2de6551537c21b_1440w.webp",
+    "LLM/Distilling/images/v2-0fa574e769dc8c5963a205cfe9b66af5_1440w.webp",
+    "LLM/Distilling/知识蒸馏.md",
     "LLM/Code_Related/LangChain.md",
     "images/Pasted image 20240927171507.png",
-    "LLM/Distilling/知识蒸馏.md",
     "LLM/Distilling/images/v2-d4441f0eb1dfba4ad38f5cd52c2847a1_1440w.webp",
     "LLM/Distilling/images/v2-acd06058251149eb0671b00d437fbfde_1440w.webp",
     "LLM/Distilling/images/v2-013cedf9c7c835a19cecc3ef6bb14c96_1440w.webp",
@@ -179,8 +180,6 @@
     "images/Pasted image 20240927173148.png",
     "images/Pasted image 20240927174516.png",
     "images/Pasted image 20240927181108.png",
-    "images/Pasted image 20240927175812.png",
-    "images/Pasted image 20240927175609.png",
     "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
     "images",
     "LLM/Others/Diffusion Model.md",
