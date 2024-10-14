@@ -11,9 +11,19 @@
             "id": "983e5f868a5dc529",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "images/Pasted image 20240927171507.png"
+              }
+            }
+          },
+          {
+            "id": "07dd4723e417d547",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM/Others/Diffusion Model.md",
+                "file": "LLM/Distilling/知识蒸馏.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLM/Others/Diffusion Model.md",
+                "file": "LLM/Distilling/知识蒸馏.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLM/Others/Diffusion Model.md",
+                "file": "LLM/Distilling/知识蒸馏.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLM/Others/Diffusion Model.md"
+                "file": "LLM/Distilling/知识蒸馏.md"
               }
             }
           },
@@ -176,22 +187,25 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "983e5f868a5dc529",
+  "active": "89784befaf0567ea",
   "lastOpenFiles": [
-    "Pasted image 20240927181108.png",
-    "Pasted image 20240927175812.png",
-    "Pasted image 20240927175609.png",
-    "Pasted image 20240927175552.png",
-    "Pasted image 20240927174723.png",
-    "Pasted image 20240927174516.png",
-    "Pasted image 20240927173148.png",
-    "Pasted image 20240927171659.png",
-    "Pasted image 20240927171507.png",
-    "Pasted image 20240927170403.png",
-    "LLM/Code_Related/LangChain.md",
-    "LLM/Others/Diffusion Model.md",
-    "Pasted image 20240927172642.png",
+    "LLM/Distilling/images",
+    "LLM/Distilling/images/v2-ce310174973a29c552c7d3de7c606815_1440w.webp",
+    "images/Pasted image 20240927171507.png",
+    "LLM/Distilling/知识蒸馏.md",
+    "LLM/Distilling",
+    "images/Pasted image 20240927173148.png",
+    "images/Pasted image 20240927174516.png",
+    "images/Pasted image 20240927181108.png",
+    "images/Pasted image 20240927175812.png",
+    "images/Pasted image 20240927175609.png",
+    "images/Pasted image 20240927175552.png",
+    "images/Pasted image 20240927174723.png",
     "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
+    "images/Pasted image 20240924220729.png",
+    "images",
+    "LLM/Others/Diffusion Model.md",
+    "LLM/Code_Related/LangChain.md",
     "LLM/Others",
     "LLM/Code_Related",
     "LLM/Articles/Review/attachments",

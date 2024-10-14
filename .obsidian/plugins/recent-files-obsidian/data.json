@@ -1,20 +1,60 @@
 {
   "recentFiles": [
     {
+      "basename": "知识蒸馏",
+      "path": "LLM/Distilling/知识蒸馏.md"
+    },
+    {
+      "basename": "Pasted image 20240927171507",
+      "path": "images/Pasted image 20240927171507.png"
+    },
+    {
+      "basename": "Pasted image 20240927173148",
+      "path": "images/Pasted image 20240927173148.png"
+    },
+    {
+      "basename": "Pasted image 20240927174516",
+      "path": "images/Pasted image 20240927174516.png"
+    },
+    {
+      "basename": "Pasted image 20240927181108",
+      "path": "images/Pasted image 20240927181108.png"
+    },
+    {
+      "basename": "Pasted image 20240927175812",
+      "path": "images/Pasted image 20240927175812.png"
+    },
+    {
+      "basename": "Pasted image 20240927175609",
+      "path": "images/Pasted image 20240927175609.png"
+    },
+    {
+      "basename": "Pasted image 20240927175552",
+      "path": "images/Pasted image 20240927175552.png"
+    },
+    {
+      "basename": "Pasted image 20240927174723",
+      "path": "images/Pasted image 20240927174723.png"
+    },
+    {
+      "basename": "(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6",
+      "path": "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md"
+    },
+    {
+      "basename": "Pasted image 20240924220729",
+      "path": "images/Pasted image 20240924220729.png"
+    },
+    {
       "basename": "Diffusion Model",
       "path": "LLM/Others/Diffusion Model.md"
     },
     {
       "basename": "Pasted image 20240927171659",
-      "path": "Pasted image 20240927171659.png"
-    },
-    {
-      "basename": "Pasted image 20240927171507",
-      "path": "Pasted image 20240927171507.png"
+      "path": "images/Pasted image 20240927171659.png"
     },
     {
       "basename": "Pasted image 20240927170403",
-      "path": "Pasted image 20240927170403.png"
+      "path": "images/Pasted image 20240927170403.png"
     },
     {
       "basename": "LangChain",
@@ -22,11 +62,7 @@
     },
     {
       "basename": "Pasted image 20240924222345",
-      "path": "Pasted image 20240924222345.png"
-    },
-    {
-      "basename": "(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6",
-      "path": "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md"
+      "path": "images/Pasted image 20240924222345.png"
     }
   ],
   "omittedPaths": []
