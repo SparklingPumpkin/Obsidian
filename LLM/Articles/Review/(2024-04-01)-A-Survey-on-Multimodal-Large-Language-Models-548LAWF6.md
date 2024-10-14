@@ -4,7 +4,7 @@ parent: 'A Survey on Multimodal Large Language Models'
 collections:
     - 未读
     - 综述
-$version: 7232
+$version: 7249
 $libraryID: 1
 $itemKey: 548LAWF6
 
