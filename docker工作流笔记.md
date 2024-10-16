@@ -27,5 +27,5 @@ autoProxy=true
 		- `-it`：以交互模式运行容器。
 		- `--rm`：容器退出后自动删除。
 		- `-v /path/to/your/code:/workspace`：将你的代码目录挂载到容器的 `/workspace` 目录中。
-		- `docker run --gpus all -it --rm \   -v F:\Projects_Mobile\LLM\Finetuning\llama3C7B:/workspace \   nvcr.io/nvidia/pytorch:23.09-py3`
+		- `docker run --gpus all -it --rm \ -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B:/workspace \ nvcr.io/nvidia/pytorch:23.09-py3`
 
