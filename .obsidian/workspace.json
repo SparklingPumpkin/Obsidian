@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7ff9800c3ebf9060",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工作流/整体工作框架.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
+                "file": "工作流/整体工作框架.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
+                "file": "工作流/整体工作框架.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md"
+                "file": "工作流/整体工作框架.md"
               }
             }
           },
@@ -164,11 +177,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "39302ec9026e7eea",
+  "active": "7ff9800c3ebf9060",
   "lastOpenFiles": [
-    "LLM/Compression/模型压缩.md",
     "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
-    "未命名",
+    "工作流/整体工作框架.md",
+    "工作流",
+    "LLM/Compression/模型压缩.md",
     "Lico",
     "LLM/Newest/KAN & KAT.md",
     "LLM/Newest",
