@@ -35,7 +35,7 @@ autoProxy=true
 `
 		- 表示不限制内存
 		- 用Test-container命名容器，容器停止后不删除
-		- 重启容器：`docker start -ai my-container`
+		- 重启容器：`docker start -ai Test-container`
 
 ### 4. 容器内调试和安装依赖
 
@@ -49,3 +49,8 @@ autoProxy=true
 
 `cd /workspace python train.py`
 
+### 6. 退出/ 重启容器
+
+bash: 
+- 退出容器: `exit`
+- 重启容器: `docker start -ai Test-container`
