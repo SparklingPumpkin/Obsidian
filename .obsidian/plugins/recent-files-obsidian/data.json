@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "模型压缩",
+      "path": "LLM/Compression/模型压缩.md"
+    },
+    {
+      "basename": "KAN & KAT",
+      "path": "LLM/Newest/KAN & KAT.md"
+    },
+    {
       "basename": "知识蒸馏",
       "path": "LLM/Distilling/知识蒸馏.md"
     },

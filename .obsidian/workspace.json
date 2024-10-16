@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "39302ec9026e7eea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLM/Compression/模型压缩.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLM/Distilling/知识蒸馏.md",
+                "file": "LLM/Compression/模型压缩.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLM/Distilling/知识蒸馏.md",
+                "file": "LLM/Compression/模型压缩.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLM/Distilling/知识蒸馏.md"
+                "file": "LLM/Compression/模型压缩.md"
               }
             }
           },
@@ -154,33 +167,37 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89784befaf0567ea",
+  "active": "39302ec9026e7eea",
   "lastOpenFiles": [
+    "LLM/Newest/KAN & KAT.md",
+    "LLM/Compression/模型压缩.md",
+    "LLM/Newest",
+    "LLM/Compression/images/Pasted image 20241015153946.png",
+    "LLM/Compression/images/Pasted image 20241015153716.png",
+    "LLM/Compression/images/Pasted image 20241015142809.png",
+    "LLM/Compression/images/Pasted image 20241015142746.png",
+    "LLM/Distilling/知识蒸馏.md",
+    "LLM/Compression/images",
+    "LLM/Compression",
     "LLM/Distilling/images/v2-06dbf85d6a1c593e7b7193e952469f66_1440w.webp",
     "LLM/Distilling/images/v2-a0eff36a6b41c75c2f2de6551537c21b_1440w.webp",
     "LLM/Distilling/images/v2-0fa574e769dc8c5963a205cfe9b66af5_1440w.webp",
-    "LLM/Distilling/知识蒸馏.md",
     "LLM/Code_Related/LangChain.md",
     "images/Pasted image 20240927171507.png",
     "LLM/Distilling/images/v2-d4441f0eb1dfba4ad38f5cd52c2847a1_1440w.webp",
     "LLM/Distilling/images/v2-acd06058251149eb0671b00d437fbfde_1440w.webp",
-    "LLM/Distilling/images/v2-013cedf9c7c835a19cecc3ef6bb14c96_1440w.webp",
     "LLM/Distilling/images",
-    "LLM/Distilling/images/v2-ce310174973a29c552c7d3de7c606815_1440w.webp",
     "LLM/Distilling",
-    "images/Pasted image 20240927173148.png",
-    "images/Pasted image 20240927174516.png",
-    "images/Pasted image 20240927181108.png",
     "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
     "images",
     "LLM/Others/Diffusion Model.md",
@@ -188,8 +205,6 @@
     "LLM/Code_Related",
     "LLM/Articles/Review/attachments",
     "Passive_Positioning/Articles/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
-    "LLM/Articles/Review",
-    "LLM/Articles",
-    "LLM"
+    "LLM/Articles/Review"
   ]
 }
