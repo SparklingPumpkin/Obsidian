@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lico/打包步骤GPT详解.md",
+                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lico/打包步骤GPT详解.md",
+                "file": "工作流/整体工作框架.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lico/打包步骤GPT详解.md",
+                "file": "工作流/整体工作框架.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lico/打包步骤GPT详解.md"
+                "file": "工作流/整体工作框架.md"
               }
             }
           },
@@ -176,7 +177,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "39302ec9026e7eea",
+  "active": "7ff9800c3ebf9060",
   "lastOpenFiles": [
     "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
     "Lico/打包步骤GPT详解.md",
