@@ -11,6 +11,7 @@ BIOS开虚拟化
 	如何查看cuda版本?
 
 - **启动容器并挂载代码**
+	- bash代码
 	- `docker run --gpus all -it --rm \   -v /path/to/your/code:/workspace \   nvcr.io/nvidia/pytorch:23.09-py3`
 		- `--gpus all`：启用所有可用的 GPU。
 		- `-it`：以交互模式运行容器。
