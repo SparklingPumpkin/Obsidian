@@ -2,7 +2,15 @@
 
 [【Docker】掌握 Docker魔法：Windows 11 平台上的完美容器部署终极指南_win11安装docker-CSDN博客](https://blog.csdn.net/joeyoj/article/details/136427362)
 
-BIOS开虚拟化
+- BIOS开虚拟化
+- 找到 **Resources** > **WSL Integration**，选中 **Enableinteration with my default WSL distro**和**Ubuntu**
+- 在Windows中的C:\Users\<your_username>目录下创建一个.wslconfig文件，然后在文件中写入如下内容，然后用`wsl --shutdown`关闭WSL，之后再重启。
+ [experimental]
+autoMemoryReclaim=gradual  
+networkingMode=mirrored
+dnsTunneling=true
+firewall=true
+autoProxy=true
 
 ## 2. 接下来
 
