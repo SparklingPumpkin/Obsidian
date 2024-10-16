@@ -22,13 +22,14 @@ autoProxy=true
 
 - **启动容器并挂载代码**
 	- bash代码
-	- ```docker run --gpus all -it --rm \   -v /path/to/your/code:/workspace \   nvcr.io/nvidia/pytorch:23.09-py3```
+	- ```docker run --gpus all -it --rm -v /path/to/your/code:/workspace nvcr.io/nvidia/pytorch:23.09-py3```
 		- `--gpus all`：启用所有可用的 GPU。
 		- `-it`：以交互模式运行容器。
 		- `--rm`：容器退出后自动删除。
 		- `-v /path/to/your/code:/workspace`：将你的代码目录挂载到容器的 `/workspace` 目录中。
-		- `docker run --gpus all -it --rm \ -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B:/workspace \ nvcr.io/nvidia/pytorch:23.09-py3`
-	- 或者使用`docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it \ -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B:/workspace \ --name Test-container nvcr.io/nvidia/pytorch:23.09-py3`
+		- `docker run --gpus all -it --rm -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B:/workspace nvcr.io/nvidia/pytorch:23.09-py3`
+	- 或者使用`docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B:/workspace --name Test-container nvcr.io/nvidia/pytorch:23.09-py3
+`
 		- 表示不限制内存
 		- 用Test-container命名容器，容器停止后不删除
 		- 重启容器：`docker start -ai my-container`
