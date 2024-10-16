@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c49dd7945dd5e8c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Lico/打包步骤GPT详解.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,11 +177,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89784befaf0567ea",
+  "active": "c49dd7945dd5e8c8",
   "lastOpenFiles": [
     "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
-    "工作流/整体工作框架.md",
     "Lico/打包步骤GPT详解.md",
+    "工作流/整体工作框架.md",
     "工作流",
     "LLM/Compression/模型压缩.md",
     "Lico",

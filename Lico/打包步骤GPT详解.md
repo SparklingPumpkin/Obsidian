@@ -233,3 +233,117 @@ Docker 是一种 **容器化** 技术，允许你将应用程序及其所有依�
     `docker run -it my-custom-image /bin/bash`
     
 5. **容器运行与管理**： 容器运行时完全隔离，可以有自己的网络、存储卷和文件系统。运行完成后，容器可以保存其状态，也可以删除。你还可以通过 `docker-compose` 来管理多个容器，配置复杂的服务，比如微服务架构或分布式系统。
+
+---
+### 推荐镜像：NVIDIA PyTorch 镜像
+
+**镜像名称**：`nvcr.io/nvidia/pytorch`
+
+这个镜像包含了：
+
+- **PyTorch**：广泛应用于深度学习和 LLM 微调的框架。
+- **CUDA** 和 **cuDNN**：用于加速 GPU 计算。
+
+### 流程概述（Windows 11）
+
+#### 1. 安装 WSL2 和 NVIDIA GPU 支持
+
+在 Windows 11 环境下，你可以使用 **WSL2（Windows Subsystem for Linux 2）** 来提供 Linux 内核支持，并确保 Docker 可以正常工作。另外，确保你的系统上已经安装了 **NVIDIA GPU 驱动**，并且启用了对 Docker 的 GPU 支持。
+
+- **启用 WSL2**：在 Windows 11 上，启用 WSL2 并安装 Ubuntu 等 Linux 发行版。
+    
+- **安装 NVIDIA Container Toolkit**：确保 WSL2 中安装了 `nvidia-container-toolkit` 以支持 GPU。
+    
+    - 启用 WSL2：
+        
+        powershell
+        
+        复制代码
+        
+        `wsl --install`
+        
+    - 安装 Ubuntu： 在 Windows 商店中下载并安装 Ubuntu。
+        
+    - 安装 Docker： 打开 Ubuntu，安装 Docker 和 NVIDIA Container Toolkit。
+        
+        bash
+        
+        复制代码
+        
+        `sudo apt-get update sudo apt-get install docker.io sudo apt-get install nvidia-container-toolkit sudo systemctl restart docker`
+        
+
+#### 2. 拉取 NVIDIA PyTorch 镜像
+
+打开 Docker 后，使用以下命令拉取 NVIDIA 提供的 PyTorch 镜像。
+
+- **拉取 PyTorch 镜像**：
+    
+    bash
+    
+    复制代码
+    
+    `docker pull nvcr.io/nvidia/pytorch:23.09-py3`
+    
+    该镜像基于 PyTorch 和 CUDA 的最新版本，能够高效使用 GPU 进行大语言模型的微调。
+    
+
+#### 3. 启动容器并挂载工作目录
+
+在拉取镜像后，你可以启动一个容器并将本地的代码和数据挂载到容器内，以便在容器中进行微调任务。
+
+- **启动容器并挂载代码**：
+    
+    bash
+    
+    复制代码
+    
+    `docker run --gpus all -it --rm \   -v /path/to/your/code:/workspace \   nvcr.io/nvidia/pytorch:23.09-py3`
+    
+    解释：
+    
+    - `--gpus all`：启用所有可用的 GPU。
+    - `-it`：以交互模式运行容器。
+    - `--rm`：容器退出后自动删除。
+    - `-v /path/to/your/code:/workspace`：将你的代码目录挂载到容器的 `/workspace` 目录中。
+
+#### 4. 运行微调代码
+
+进入容器后，你可以在挂载的 `/workspace` 目录中找到你的代码，并开始运行微调任务。假设你有一个 Python 脚本 `train.py`，你可以执行以下命令来进行模型训练：
+
+bash
+
+复制代码
+
+`cd /workspace python train.py`
+
+#### 5. 容器内调试和安装依赖
+
+如果需要安装额外的依赖，可以在容器中使用 `pip` 安装所需库。例如：
+
+bash
+
+复制代码
+
+`pip install transformers datasets`
+
+#### 6. 保存模型并退出容器
+
+训练完成后，保存模型到挂载的目录中，确保模型能够在本地系统中访问。退出容器后，模型将保存在你指定的挂载目录中。
+
+退出容器：
+
+bash
+
+复制代码
+
+`exit`
+
+### 总结
+
+1. **推荐镜像**：`nvcr.io/nvidia/pytorch`，包含 PyTorch、CUDA 和 cuDNN，适合大语言模型微调。
+2. **拉取镜像**：使用命令 `docker pull nvcr.io/nvidia/pytorch:23.09-py3` 拉取。
+3. **使用流程**：挂载本地代码目录，运行容器，在容器中微调大语言模型。
+4. **GPU 支持**：通过 `--gpus all` 确保容器能够使用 GPU 进行计算。
+
+确保你的 Windows 11 环境已经正确配置了 WSL2 和 GPU 支持，整个流程可以在 Docker 容器中高效完成大语言模型微调。
