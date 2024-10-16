@@ -9,6 +9,9 @@ BIOS开虚拟化
 推荐镜像：NVIDIA PyTorch 镜像
 `nvcr.io/nvidia/pytorch`
 
+| 如何查看cuda版本?
+
+
 
 
 
