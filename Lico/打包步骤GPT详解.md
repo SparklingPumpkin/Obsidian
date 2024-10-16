@@ -235,57 +235,57 @@ Docker 是一种 **容器化** 技术，允许你将应用程序及其所有依�
 5. **容器运行与管理**： 容器运行时完全隔离，可以有自己的网络、存储卷和文件系统。运行完成后，容器可以保存其状态，也可以删除。你还可以通过 `docker-compose` 来管理多个容器，配置复杂的服务，比如微服务架构或分布式系统。
 
 ---
-### 推荐镜像：NVIDIA PyTorch 镜像
+### ==推荐镜像：NVIDIA PyTorch 镜像==
 
-**镜像名称**：`nvcr.io/nvidia/pytorch`
+==**镜像名称**：`nvcr.io/nvidia/pytorch`==
 
-这个镜像包含了：
+==这个镜像包含了：==
 
-- **PyTorch**：广泛应用于深度学习和 LLM 微调的框架。
-- **CUDA** 和 **cuDNN**：用于加速 GPU 计算。
+- ==**PyTorch**：广泛应用于深度学习和 LLM 微调的框架。==
+- ==**CUDA** 和 **cuDNN**：用于加速 GPU 计算。==
 
-### 流程概述（Windows 11）
+### ==流程概述（Windows 11）==
 
-#### 1. 安装 WSL2 和 NVIDIA GPU 支持
+#### ==1. 安装 WSL2 和 NVIDIA GPU 支持==
 
-在 Windows 11 环境下，你可以使用 **WSL2（Windows Subsystem for Linux 2）** 来提供 Linux 内核支持，并确保 Docker 可以正常工作。另外，确保你的系统上已经安装了 **NVIDIA GPU 驱动**，并且启用了对 Docker 的 GPU 支持。
+==在 Windows 11 环境下，你可以使用 **WSL2（Windows Subsystem for Linux 2）** 来提供 Linux 内核支持，并确保 Docker 可以正常工作。另外，确保你的系统上已经安装了 **NVIDIA GPU 驱动**，并且启用了对 Docker 的 GPU 支持。==
 
-- **启用 WSL2**：在 Windows 11 上，启用 WSL2 并安装 Ubuntu 等 Linux 发行版。
+- ==**启用 WSL2**：在 Windows 11 上，启用 WSL2 并安装 Ubuntu 等 Linux 发行版。==
     
-- **安装 NVIDIA Container Toolkit**：确保 WSL2 中安装了 `nvidia-container-toolkit` 以支持 GPU。
+- ==**安装 NVIDIA Container Toolkit**：确保 WSL2 中安装了 `nvidia-container-toolkit` 以支持 GPU。==
     
-    - 启用 WSL2：
+    - ==启用 WSL2：==
         
-        powershell
+        ==powershell==
         
-        复制代码
+        ==复制代码==
         
-        `wsl --install`
+        ==`wsl --install`==
         
-    - 安装 Ubuntu： 在 Windows 商店中下载并安装 Ubuntu。
+    - ==安装 Ubuntu： 在 Windows 商店中下载并安装 Ubuntu。==
         
-    - 安装 Docker： 打开 Ubuntu，安装 Docker 和 NVIDIA Container Toolkit。
+    - ==安装 Docker： 打开 Ubuntu，安装 Docker 和 NVIDIA Container Toolkit。==
         
-        bash
+        ==bash==
         
-        复制代码
+        ==复制代码==
         
-        `sudo apt-get update sudo apt-get install docker.io sudo apt-get install nvidia-container-toolkit sudo systemctl restart docker`
+        ==`sudo apt-get update sudo apt-get install docker.io sudo apt-get install nvidia-container-toolkit sudo systemctl restart docker`==
         
 
-#### 2. 拉取 NVIDIA PyTorch 镜像
+#### ==2. 拉取 NVIDIA PyTorch 镜像==
 
-打开 Docker 后，使用以下命令拉取 NVIDIA 提供的 PyTorch 镜像。
+==打开 Docker 后，使用以下命令拉取 NVIDIA 提供的 PyTorch 镜像。==
 
-- **拉取 PyTorch 镜像**：
+- ==**拉取 PyTorch 镜像**：==
     
-    bash
+    ==bash==
     
-    复制代码
+    ==复制代码==
     
-    `docker pull nvcr.io/nvidia/pytorch:23.09-py3`
+    ==`docker pull nvcr.io/nvidia/pytorch:23.09-py3`==
     
-    该镜像基于 PyTorch 和 CUDA 的最新版本，能够高效使用 GPU 进行大语言模型的微调。
+    ==该镜像基于 PyTorch 和 CUDA 的最新版本，能够高效使用 GPU 进行大语言模型的微调。==
     
 
 #### 3. 启动容器并挂载工作目录
