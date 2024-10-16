@@ -14,11 +14,14 @@ firewall=true
 autoProxy=true
 ```
 
-## 2. 接下来
+## 2. 拉取镜像
 
 - 推荐镜像：NVIDIA PyTorch 镜像
-	`nvcr.io/nvidia/pytorch`
-	如何查看cuda版本?
+	- `nvcr.io/nvidia/pytorch`
+	- 如何查看cuda版本? 进入容器后`nvidia-smi`或者`nvcc --version`
+	- 拉取容器 `docker pull nvcr.io/nvidia/pytorch:23.09-py3`
+
+## 3. 挂载目录
 
 - **启动容器并挂载代码**
 	- bash代码
@@ -34,4 +37,15 @@ autoProxy=true
 		- 用Test-container命名容器，容器停止后不删除
 		- 重启容器：`docker start -ai my-container`
 
+### 4. 容器内调试和安装依赖
+
+如果需要安装额外的依赖，可以在容器中使用 `pip` 安装所需库。例如：
+
+`pip install transformers datasets`
+
+### 5. 运行微调代码
+
+进入容器后，你可以在挂载的 `/workspace` 目录中找到你的代码，并开始运行微调任务。假设你有一个 Python 脚本 `train.py`，你可以执行以下命令来进行模型训练：
+
+`cd /workspace python train.py`
 
