@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker工作流笔记.md",
+                "file": "Lico/打包步骤GPT详解.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker工作流笔记.md",
+                "file": "Lico/打包步骤GPT详解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docker工作流笔记.md"
+                "file": "Lico/打包步骤GPT详解.md"
               }
             }
           },
@@ -189,10 +189,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a111c934293b9c4d",
+  "active": "c49dd7945dd5e8c8",
   "lastOpenFiles": [
-    "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
     "docker工作流笔记.md",
+    "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
     "Lico/打包步骤GPT详解.md",
     "工作流/整体工作框架.md",
     "工作流",
