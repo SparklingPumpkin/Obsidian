@@ -41,8 +41,95 @@ autoProxy=true
 
 **创建 Dockerfile 进行自定义调整**： 基础镜像往往不完全满足所有需求，你通常需要进一步调整它，添加自定义的代码、安装额外的依赖等。这时就需要编写一个 `Dockerfile` 来描述如何基于基础镜像构建出你所需要的定制镜像。
 
-如果需要安装额外的依赖，可以在容器中使用 `pip` 安装所需库。例如：
-`pip install transformers datasets`
+项目结构：
+/llama3C7B 
+│ 
+├── Dockerfile 
+├── requirements.txt 
+├── train.py 
+└── data/
+
+- 编写Dockerfile
+```
+# 使用 NVIDIA 官方 PyTorch 镜像 cuda12.6
+
+FROM nvcr.io/nvidia/pytorch:23.09-py3
+
+  
+
+# 设置工作目录
+
+WORKDIR /workspace
+
+  
+
+# 将 requirements.txt 文件复制到容器中（用于安装 Python 库）
+
+COPY requirements.txt .
+
+  
+
+# 更新 apt 包列表并安装常用工具
+
+RUN apt-get update && apt-get install -y \
+
+    git \
+
+    curl \
+
+    && rm -rf /var/lib/apt/lists/*
+
+  
+
+# 安装 Python 依赖库
+
+RUN pip install --no-cache-dir --upgrade pip && \
+
+    pip install --no-cache-dir -r requirements.txt
+
+  
+
+# 将代码文件夹挂载到容器中
+
+COPY . .
+
+  
+
+# 设置环境变量以确保 CUDA 和 cuDNN 正常工作
+
+ENV CUDA_HOME=/usr/local/cuda
+
+ENV PATH=/usr/local/cuda/bin:$PATH
+
+ENV LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+
+  
+
+# 默认运行命令，可以根据需求调整
+
+CMD ["bash"]
+```
+
+- 编写requiements.txt
+```
+torch
+transformers
+datasets
+scipy
+numpy
+pandas
+scikit-learn
+tqdm
+accelerate
+
+```
+
+- 根据Dockerfile构建Docker镜像
+	- 在存放 `Dockerfile` 的目录下运行以下命令构建镜像：
+	- `docker build -t llama3-C-7B-f-env .`
+	- 这会从当前目录（`Dockerfile` 所在的目录）构建镜像，并命名为 `llama3-C-7B-f-env`。
+
+
 
 ### 5. 运行微调代码
 
