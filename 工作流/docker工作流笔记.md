@@ -52,11 +52,6 @@ autoProxy=true
 └── data/
 
 #### 4.1 调整环境
-##### 4.1.1 导出conda环境
-
-在你的 Conda 虚拟环境中，运行以下命令，将环境配置导出为 `environment.yml` 文件：
-`conda activate your-env-name`
-`conda env export > environment.yml`
 
 进入运行中的容器，手动安装缺失的 Python 包, 并记录.
 
@@ -149,9 +144,56 @@ peft
 `docker build -t Test-llama3C7B-env .`
 
 #### 4.5 调整环境
- 
+
 1. 用新镜像创建新容器
 2. 重复步骤4.1， 直到所有环境配置完成。
+#### 4.6 (可选) 导出conda虚拟环境
+##### 4.6.1 导出conda环境
+
+在你的 Conda 虚拟环境中，运行以下命令，将环境配置导出为 `environment.yml` 文件：
+`conda activate your-env-name`
+`conda env export > environment.yml`
+##### 4.6.2 创建 Dockerfile
+```
+# 使用 NVIDIA 的 PyTorch 镜像作为基础镜像
+FROM nvcr.io/nvidia/pytorch:23.09-py3
+
+# 设置工作目录
+WORKDIR /workspace
+
+# 安装 Conda（如果基础镜像没有内置）
+# 如果基础镜像中已包含 Conda，可跳过以下部分
+RUN apt-get update && apt-get install -y wget bzip2 && \
+    wget https://repo.anaconda.com/archive/Anaconda3-2023.07-Linux-x86_64.sh && \
+    bash Anaconda3-2023.07-Linux-x86_64.sh -b && \
+    rm Anaconda3-2023.07-Linux-x86_64.sh
+
+# 将 environment.yml 复制到容器中
+COPY environment.yml .
+
+# 使用 Conda 安装环境
+RUN conda env create -f environment.yml
+
+# 激活 Conda 环境
+SHELL ["conda", "run", "-n", "your-env-name", "/bin/bash", "-c"]
+
+# 确保每次容器启动时自动激活 Conda 环境
+RUN echo "conda activate your-env-name" >> ~/.bashrc
+
+# 设置默认命令
+CMD ["bash"]
+
+```
+
+##### 4.6.3 将 `environment.yml` 文件与 Dockerfile 一起放置
+```
+/my-llm-docker-project 
+├── Dockerfile 
+└── environment.yml
+```
+##### 4.6.4 回到 步骤4.4
+
+
 
 
 
