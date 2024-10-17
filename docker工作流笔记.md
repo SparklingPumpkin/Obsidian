@@ -121,6 +121,7 @@ pandas
 scikit-learn
 tqdm
 accelerate
+peft
 
 ```
 
