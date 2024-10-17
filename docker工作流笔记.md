@@ -17,9 +17,11 @@ autoProxy=true
 ## 2. 拉取镜像
 
 - 推荐镜像：NVIDIA PyTorch 镜像
-	- `nvcr.io/nvidia/pytorch`
+	- `nvcr.io/nvidia/pytorch` -- cuda12.6
+	- `1.11.1-cuda11.3-cudnn8-devel`  -- cuda11.3
 	- 如何查看cuda版本? 进入容器后`nvidia-smi`或者`nvcc --version`
 	- 拉取容器 `docker pull nvcr.io/nvidia/pytorch:23.09-py3`
+		- `docker pull 1.11.1-cuda11.3-cudnn8-devel:23.09-py3`
 
 ## 3. 挂载目录
 
