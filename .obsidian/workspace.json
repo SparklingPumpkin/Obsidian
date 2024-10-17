@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作流/docker工作流笔记.md",
+                "file": "工作流/微调项目本地部署.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "docker工作流笔记 的反向链接列表"
+              "title": "微调项目本地部署 的反向链接列表"
             }
           },
           {
@@ -151,12 +151,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作流/docker工作流笔记.md",
+                "file": "工作流/微调项目本地部署.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "docker工作流笔记 的出链列表"
+              "title": "微调项目本地部署 的出链列表"
             }
           },
           {
@@ -178,10 +178,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作流/docker工作流笔记.md"
+                "file": "工作流/微调项目本地部署.md"
               },
               "icon": "lucide-list",
-              "title": "docker工作流笔记 的大纲"
+              "title": "微调项目本地部署 的大纲"
             }
           },
           {
@@ -213,10 +213,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c49dd7945dd5e8c8",
+  "active": "f960be4aa0ccceb9",
   "lastOpenFiles": [
-    "工作流/微调项目本地部署.md",
     "工作流/docker工作流笔记.md",
+    "工作流/微调项目本地部署.md",
     "Lico/打包步骤GPT详解.md",
     "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
     "工作流/整体工作框架.md",
