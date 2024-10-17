@@ -52,6 +52,11 @@ autoProxy=true
 └── data/
 
 #### 4.1 调整环境
+##### 4.1.1 导出conda环境
+
+在你的 Conda 虚拟环境中，运行以下命令，将环境配置导出为 `environment.yml` 文件：
+`conda activate your-env-name`
+`conda env export > environment.yml`
 
 进入运行中的容器，手动安装缺失的 Python 包, 并记录.
 
@@ -147,6 +152,7 @@ peft
  
 1. 用新镜像创建新容器
 2. 重复步骤4.1， 直到所有环境配置完成。
+
 
 
 ### 5. 运行微调代码
