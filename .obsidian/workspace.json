@@ -48,21 +48,9 @@
               "icon": "lucide-file",
               "title": "docker工作流笔记"
             }
-          },
-          {
-            "id": "b013009881a1074e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.4"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -144,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
+                "file": "docker工作流笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +142,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "制作OpenPCDet--BEVfusion镜像操作 的反向链接列表"
+              "title": "docker工作流笔记 的反向链接列表"
             }
           },
           {
@@ -163,12 +151,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
+                "file": "docker工作流笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "制作OpenPCDet--BEVfusion镜像操作 的出链列表"
+              "title": "docker工作流笔记 的出链列表"
             }
           },
           {
@@ -190,10 +178,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md"
+                "file": "docker工作流笔记.md"
               },
               "icon": "lucide-list",
-              "title": "制作OpenPCDet--BEVfusion镜像操作 的大纲"
+              "title": "docker工作流笔记 的大纲"
             }
           },
           {
@@ -225,7 +213,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b013009881a1074e",
+  "active": "a111c934293b9c4d",
   "lastOpenFiles": [
     "Lico/打包步骤GPT详解.md",
     "docker工作流笔记.md",

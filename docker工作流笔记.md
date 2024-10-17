@@ -41,7 +41,8 @@ autoProxy=true
 
 **创建 Dockerfile 进行自定义调整**： 基础镜像往往不完全满足所有需求，你通常需要进一步调整它，添加自定义的代码、安装额外的依赖等。这时就需要编写一个 `Dockerfile` 来描述如何基于基础镜像构建出你所需要的定制镜像。
 
-项目结构：
+#### 4.1 项目结构：
+
 /llama3C7B 
 │ 
 ├── Dockerfile 
@@ -49,7 +50,8 @@ autoProxy=true
 ├── train.py 
 └── data/
 
-- 编写Dockerfile
+
+#### 4.2 编写Dockerfile
 ```
 # 使用 NVIDIA 官方 PyTorch 镜像 cuda12.6
 
@@ -110,7 +112,7 @@ ENV LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 CMD ["bash"]
 ```
 
-- 编写requiements.txt
+#### 4.3 编写requiements.txt
 ```
 torch
 transformers
@@ -129,6 +131,8 @@ peft
 	- 在存放 `Dockerfile` 的目录下运行以下命令构建镜像：
 	- `docker build -t llama3-C-7B-f-env .`
 	- 这会从当前目录（`Dockerfile` 所在的目录）构建镜像，并命名为 `llama3-C-7B-f-env`。
+
+
 
 
 
