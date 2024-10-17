@@ -16,7 +16,9 @@
                 "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "制作OpenPCDet--BEVfusion镜像操作"
             }
           },
           {
@@ -28,7 +30,9 @@
                 "file": "Lico/打包步骤GPT详解.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "打包步骤GPT详解"
             }
           },
           {
@@ -40,11 +44,25 @@
                 "file": "docker工作流笔记.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "docker工作流笔记"
+            }
+          },
+          {
+            "id": "b013009881a1074e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.4"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.4"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -64,7 +82,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -79,7 +99,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -87,7 +109,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           },
           {
@@ -95,7 +119,9 @@
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {}
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
@@ -118,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker工作流笔记.md",
+                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +152,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "制作OpenPCDet--BEVfusion镜像操作 的反向链接列表"
             }
           },
           {
@@ -135,10 +163,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker工作流笔记.md",
+                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "制作OpenPCDet--BEVfusion镜像操作 的出链列表"
             }
           },
           {
@@ -149,7 +179,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -158,8 +190,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docker工作流笔记.md"
-              }
+                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md"
+              },
+              "icon": "lucide-list",
+              "title": "制作OpenPCDet--BEVfusion镜像操作 的大纲"
             }
           },
           {
@@ -167,7 +201,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
@@ -189,7 +225,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a111c934293b9c4d",
+  "active": "b013009881a1074e",
   "lastOpenFiles": [
     "Lico/打包步骤GPT详解.md",
     "docker工作流笔记.md",
