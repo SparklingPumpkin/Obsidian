@@ -18,10 +18,9 @@ autoProxy=true
 
 - 推荐镜像：NVIDIA PyTorch 镜像
 	- `nvcr.io/nvidia/pytorch` -- cuda12.6
-	- `nvidia/cuda:11.3-cudnn8-devel-ubuntu20.04`  -- cuda11.3
+	- `nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04`  -- cuda11.3
 	- 如何查看cuda版本? 进入容器后`nvidia-smi`或者`nvcc --version`
 	- 拉取容器 `docker pull nvcr.io/nvidia/pytorch:23.09-py3`
-		- `docker pull nvidia/cuda:11.3-cudnn8-devel-ubuntu20.04`
 		- `docker pull nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04`
 
 ## 3. 挂载目录
