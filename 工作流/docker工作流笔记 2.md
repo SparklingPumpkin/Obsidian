@@ -20,7 +20,8 @@ docker run -it --gpus all \
 ```
 
 - 退出容器: `exit`
-- 重启容器: `docker start -ai Test-container`
+- 重启容器: `docker start Test-container`
+- 重启容器并交互: `docker start -ai Test-container`
 
 ```
 # 更新源
@@ -44,5 +45,18 @@ wget https://huggingface.co/Mozilla/Meta-Llama-3-8B-Instruct-llamafile/resolve/m
 chmod +x ./Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile
 ```
 
+退出重启容器&启动bash进程:
+```
+exit
 
+docker start Test-container
 
+docker exec -it Test-container bash
+```
+
+在进程里启动tmux后台任务 (这样的话退出bash (容器) 后台任务还可以继续进行)
+```
+tmux
+
+./Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile gpu nvidia -ngl 999 --port 8080
+```
