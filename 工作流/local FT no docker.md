@@ -5,7 +5,7 @@
 克隆Llama-Factory
 https://github.com/hiyouga/LLaMA-Factory 
 ```
-cd cd F:\Projects_Mobile\LLM\Finetuning\llama3C7B_local
+cd F:\Projects_Mobile\LLM\Finetuning\llama3C7B_local
 git clone https://github.com/hiyouga/LLaMA-Factory.git
 ```
 
