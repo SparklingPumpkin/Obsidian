@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -213,10 +213,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f960be4aa0ccceb9",
+  "active": "c49dd7945dd5e8c8",
   "lastOpenFiles": [
-    "工作流/微调项目本地部署.md",
     "工作流/微调项目本地部署 2.md",
+    "工作流/微调项目本地部署.md",
     "工作流/docker工作流笔记.md",
     "Lico/打包步骤GPT详解.md",
     "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
