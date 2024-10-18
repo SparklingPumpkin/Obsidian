@@ -216,3 +216,4 @@ CMD ["bash"]
 bash: 
 - 退出容器: `exit`
 - 重启容器: `docker start -ai Test-container`
+- `docker start -ai FTLlama_local`
