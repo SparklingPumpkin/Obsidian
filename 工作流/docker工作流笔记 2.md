@@ -20,3 +20,7 @@ docker run -it --gpus all \
 ```
 
 下载 llama3C7B
+
+- 退出容器: `exit`
+- 重启容器: `docker start -ai Test-container`
+
