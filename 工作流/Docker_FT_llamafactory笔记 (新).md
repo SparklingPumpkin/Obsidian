@@ -1,5 +1,7 @@
-(被取代)
+
 ## 0. 前期准备
+- 
+
 
 下载模型:
 huggingface-cli download --resume-download meta-llama/Meta-Llama-3.1-8B --local-dir {想要下载到的目录}
@@ -24,29 +26,42 @@ autoProxy=true
 ## 2. 拉取镜像
 
 - 推荐镜像：NVIDIA PyTorch 镜像
-	- `nvcr.io/nvidia/pytorch` -- cuda12.6
-	- `nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04`  -- cuda11.3
-	- 如何查看cuda版本? 进入容器后`nvidia-smi`或者`nvcc --version`
-	- 拉取容器 `docker pull nvcr.io/nvidia/pytorch:23.09-py3`
-		- `docker pull nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04`
+	- `docker pull nvcr.io/nvidia/pytorch:23.09-py3`
+		- cuda12.6; 自带pytorch
+	- `docker pull nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04`
+		- cuda11.3; 无pytorch
+- - 如何查看cuda版本? 进入容器后`nvidia-smi`或者`nvcc -V`
 
-## 3. 挂载目录
+## 3. 启动容器并挂载代码
 
-- **启动容器并挂载代码**
-	- 
-		- ```docker run --gpus all -it --rm -v /path/to/your/code:/workspace nvcr.io/nvidia/pytorch:23.09-py3```
-		- `--gpus all`：启用所有可用的 GPU。
-		- `-it`：以交互模式运行容器。
-		- `--rm`：容器退出后自动删除。
-		- `-v /path/to/your/code:/workspace`：将你的代码目录挂载到容器的 `/workspace` 目录中。
-		- `docker run --gpus all -it --rm -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B:/workspace nvcr.io/nvidia/pytorch:23.09-py3`
-	- 或者使用
-		- `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/FT_llama-factory:/workspace --name FTLlama_lico2 nvcr.io/nvidia/pytorch:23.09-py3`
-		- ulimit表示不限制内存
-		- 用FTLlama_lico1命名容器，容器停止后不删除
-		- 重启容器：`docker start -ai FTLlama_lico1`
-	- 换一个容器cuda:11.3.1
-		- `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B_local:/workspace --name FTLlama_local nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04`
+- `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/FT_llama-factory:/workspace --name FTLlama_lico2 nvcr.io/nvidia/pytorch:23.09-py3`
+	- `--gpus all`：启用所有可用的 GPU。
+	- `-it`：以交互模式运行容器。
+	- `--rm`：容器退出后自动删除。(不选)
+	- `-v /path/to/your/code:/workspace`：将你的代码目录挂载到容器的 `/workspace` 目录中。
+	- `docker run --gpus all -it --rm -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B:/workspace nvcr.io/nvidia/pytorch:23.09-py3`
+	- ulimit表示不限制内存
+	- 用FTLlama_lico2命名容器，容器停止后不删除
+	- 退出容器: `exit`
+	- 重启容器: `docker start -ai FTLlama_lico1`
+
+-  `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B_local:/workspace --name FTLlama_local nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04`
+	- cuda11.3.1
+
+
+### 4. 安装llama-factory
+
+```
+git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
+cd LLaMA-Factory
+pip install -e ".[torch,metrics]"
+```
+
+- 如果出现环境冲突，请尝试使用 `pip install --no-deps -e .` 解决
+- 完成安装后，可以通过使用 `llamafactory-cli version` 来快速校验安装是否成功
+
+
+
 
 ### 4. 更新镜像 & 容器内调试和安装依赖
 
