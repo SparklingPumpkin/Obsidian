@@ -28,6 +28,14 @@ docker run -it --gpus all \
 # 更新源
 apt update
 
- 
-
+# 安装一些包
+apt install wget tmux
 ```
+
+
+[Mozilla-Ocho/llamafile: Distribute and run LLMs with a single file. (github.com)](https://github.com/Mozilla-Ocho/llamafile)
+
+
+
+
+
