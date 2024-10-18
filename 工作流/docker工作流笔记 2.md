@@ -19,8 +19,6 @@ docker run -it --gpus all \
 	nvcr.io/nvidia/pytorch:23.09-py3
 ```
 
-下载 llama3C7B
-
 - 退出容器: `exit`
 - 重启容器: `docker start -ai Test-container`
 
@@ -32,10 +30,16 @@ apt update
 apt install wget tmux
 ```
 
+## 3. llamafile下载llama
 
-[Mozilla-Ocho/llamafile: Distribute and run LLMs with a single file. (github.com)](https://github.com/Mozilla-Ocho/llamafile)
+- 网址：
+	- [Mozilla-Ocho/llamafile: Distribute and run LLMs with a single file. (github.com)](https://github.com/Mozilla-Ocho/llamafile)
+- copy link：
+	- https://huggingface.co/Mozilla/Meta-Llama-3-8B-Instruct-llamafile/resolve/main/Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile?download=true  # 删去后缀
 
-
+```
+wget https://huggingface.co/Mozilla/Meta-Llama-3-8B-Instruct-llamafile/resolve/main/Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile
+```
 
 
 
