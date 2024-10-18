@@ -37,8 +37,11 @@ apt install wget tmux
 - copy link：
 	- https://huggingface.co/Mozilla/Meta-Llama-3-8B-Instruct-llamafile/resolve/main/Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile?download=true  # 删去后缀
 
+下载llamafile并给予可执行权限
 ```
 wget https://huggingface.co/Mozilla/Meta-Llama-3-8B-Instruct-llamafile/resolve/main/Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile
+
+chmod +x ./Meta-Llama-3-8B-Instruct.Q5_K_M.llamafile
 ```
 
 
