@@ -19,4 +19,4 @@ docker run -it --gpus all \
 	nvcr.io/nvidia/pytorch:23.09-py3
 ```
 
-
+下载 llama3C7B
