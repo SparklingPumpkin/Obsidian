@@ -202,9 +202,6 @@ CMD ["bash"]
 ##### 4.6.4 回到 步骤4.4
 
 
-
-
-
 ### 5. 运行微调代码
 
 进入容器后，你可以在挂载的 `/workspace` 目录中找到你的代码，并开始运行微调任务。假设你有一个 Python 脚本 `train.py`，你可以执行以下命令来进行模型训练：
@@ -218,4 +215,3 @@ bash:
 - 重启容器: 
 	- `docker start -ai FTLlama_lico1`
 	- `docker start -ai FTLlama_local`
-	- 将容器端口映射到主机端口 `docker run -p 7860:7860 FTLlama_lico1`
