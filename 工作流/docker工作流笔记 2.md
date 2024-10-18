@@ -24,3 +24,10 @@ docker run -it --gpus all \
 - 退出容器: `exit`
 - 重启容器: `docker start -ai Test-container`
 
+```
+# 更新源
+apt update
+
+ 
+
+```
