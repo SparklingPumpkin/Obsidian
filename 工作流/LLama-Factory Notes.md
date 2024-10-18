@@ -16,7 +16,8 @@ pip install -e ".[torch,metrics]"
 
 [dataset_info.json](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json/)中包含了所有经过预处理的 **本地数据集** 以及 **在线数据集**。如果您希望使用自定义数据集，请 **务必** 在 `dataset_info.json` 文件中添加对数据集及其内容的定义。
 
-现有CoT数据集 (Alpaca指令监督微调格式): 
+#### 2.1现有CoT数据集 (Alpaca指令监督微调格式): 
+
 ```
 {
         "instruction": "你是一个物理专家，你能够清晰准确地解决复杂的物理问题。下面将输入一个物理题目，请分步地给出详细的解题过程",
@@ -27,6 +28,8 @@ pip install -e ".[torch,metrics]"
 }
 ```
 
+
+## 3. SFT 训练
 
 
 
