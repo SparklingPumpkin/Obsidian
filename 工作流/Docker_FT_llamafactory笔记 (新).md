@@ -1,11 +1,13 @@
 
 ## 0. 前期准备
-- 
 
+- 环境
+	- win11
+	- gpu: RTX3080
 
-下载模型:
-huggingface-cli download --resume-download meta-llama/Meta-Llama-3.1-8B --local-dir {想要下载到的目录}
-huggingface-cli download --resume-download hfl/llama-3-chinese-8b-instruct-v2 --local-dir F:\Data\Models\Pre-trained_Models
+- 安装huggingface-cli 并下载模型
+	- huggingface-cli download --resume-download meta-llama/Meta-Llama-3.1-8B --local-dir {想要下载到的目录}
+	- huggingface-cli download --resume-download hfl/llama-3-chinese-8b-instruct-v2 --local-dir F:\Data\Models\Pre-trained_Models
 
 ## 1. 安装docker
 
@@ -49,7 +51,7 @@ autoProxy=true
 	- cuda11.3.1
 
 
-### 4. 安装llama-factory
+## 4. 安装llama-factory
 
 ```
 git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
@@ -63,7 +65,7 @@ pip install -e ".[torch,metrics]"
 
 
 
-### 4. 更新镜像 & 容器内调试和安装依赖
+## 4. 更新镜像 & 容器内调试和安装依赖
 
 **创建 Dockerfile 进行自定义调整**： 基础镜像往往不完全满足所有需求，你通常需要进一步调整它，添加自定义的代码、安装额外的依赖等。这时就需要编写一个 `Dockerfile` 来描述如何基于基础镜像构建出你所需要的定制镜像。
 #### 4.0 项目结构：
