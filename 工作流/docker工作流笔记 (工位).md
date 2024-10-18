@@ -1,6 +1,7 @@
 
-修改:
+### 1. 镜像ftllamaver1
 
+修改:
 cd LLaMA-Factory
 pip install -e.[metrics,modelscope,qwen]
 set USE_MODELSCOPE_HUB=1
