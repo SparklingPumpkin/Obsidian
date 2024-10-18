@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作流/微调项目本地部署.md",
+                "file": "工作流/微调项目本地部署 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "微调项目本地部署"
+              "title": "微调项目本地部署 2"
             }
           }
         ],
@@ -215,8 +215,9 @@
   },
   "active": "f960be4aa0ccceb9",
   "lastOpenFiles": [
-    "工作流/docker工作流笔记.md",
     "工作流/微调项目本地部署.md",
+    "工作流/微调项目本地部署 2.md",
+    "工作流/docker工作流笔记.md",
     "Lico/打包步骤GPT详解.md",
     "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
     "工作流/整体工作框架.md",
