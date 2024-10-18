@@ -1,3 +1,5 @@
+
+[数据处理 - LLaMA Factory](https://llamafactory.readthedocs.io/zh-cn/latest/getting_started/data_preparation.html)
 ## 1. 安装llama-factory
 
 ```
