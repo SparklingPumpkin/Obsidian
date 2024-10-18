@@ -4,10 +4,19 @@
 
 首先安装nvidia驱动和docker,.为了让容器可以使用显卡，需要安装NVIDIA Container Toolkit(NVIDIA Docker), 此处不做赘述。
 
-
 ## 2. 启动 nvidia cuda 容器
 
 
+```
+docker pull nvcr.io/nvidia/pytorch:23.09-py3
 
+docker run -it --gpus all \
+	--ipc=host \
+	--ulimit memlock=-1 \
+	--ulimit stack=67108864 \
+	-v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B:/workspace \
+	--name Test-container \
+	nvcr.io/nvidia/pytorch:23.09-py3
+```
 
 
