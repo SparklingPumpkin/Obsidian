@@ -218,4 +218,4 @@ bash:
 - 重启容器: 
 	- `docker start -ai FTLlama_lico1`
 	- `docker start -ai FTLlama_local`
-	- 将容器端口映射到主机端口 `docker run -p 7860:7860 FTLlama_lico1`
+	- 将容器端口映射到主机端口 `docker start -ai -p 7860:7860 FTLlama_lico1`
