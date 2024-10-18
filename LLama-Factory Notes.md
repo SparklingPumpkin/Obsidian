@@ -12,9 +12,7 @@ pip install -e ".[torch,metrics]"
 
 ## 2. 数据集准备
 
-[LLaMA-Factory/data/dataset_info.json at main · hiyouga/LLaMA-Factory (github.com)](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json/)
-
-以上网址中包含了所有经过预处理的 **本地数据集** 以及 **在线数据集**。如果您希望使用自定义数据集，请 **务必** 在 `dataset_info.json` 文件中添加对数据集及其内容的定义。
+[dataset_info.json](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json/)中包含了所有经过预处理的 **本地数据集** 以及 **在线数据集**。如果您希望使用自定义数据集，请 **务必** 在 `dataset_info.json` 文件中添加对数据集及其内容的定义。
 
 
 
