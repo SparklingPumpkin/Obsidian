@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作流/Docker_FT_llamafactory笔记 (新).md",
+                "file": "工作流/LLama-Factory Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker_FT_llamafactory笔记 (新)"
+              "title": "LLama-Factory Notes"
             }
           }
         ]
@@ -186,9 +186,9 @@
   },
   "active": "f960be4aa0ccceb9",
   "lastOpenFiles": [
+    "工作流/docker工作流笔记.md",
     "工作流/LLama-Factory Notes.md",
     "工作流/Docker_FT_llamafactory笔记 (新).md",
-    "工作流/docker工作流笔记.md",
     "工作流/llama工具盒.md",
     "Temp.md",
     "工作流/llamafile_docker本地无微调llama.md",
