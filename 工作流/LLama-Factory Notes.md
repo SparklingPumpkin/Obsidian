@@ -34,7 +34,7 @@ pip install -e ".[torch,metrics]"
 ```
 docker start -ai FTLlama_lico2
 
-llamafactory-cli train /mnt/f/Projects_Mobile/LLM/Finetuning/FT_llama-factory/LLaMA-Factory/Testfjn/yamls/llama3_lora_sft_fjn.yaml
+llamafactory-cli train LLaMA-Factory/Testfjn/yamls/llama3_lora_sft_fjn.yaml
 
 ```
 
