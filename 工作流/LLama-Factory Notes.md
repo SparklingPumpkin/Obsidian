@@ -39,7 +39,9 @@ cd LLaMA-Factory
 
 调整dataset_info.json
 ```
-
+"fjn_gpt4o_question&answer_no_fig": {
+    "file_name": "fjn_gpt4o_question&answer_no_fig.json"
+  },
 ```
 
 
