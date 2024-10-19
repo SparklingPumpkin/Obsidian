@@ -7,7 +7,7 @@
 
 - 安装huggingface-cli 并下载模型
 	- huggingface-cli download --resume-download meta-llama/Meta-Llama-3.1-8B --local-dir {想要下载到的目录}
-	- huggingface-cli download --resume-download hfl/llama-3-chinese-8b-instruct-v2 --local-dir F:\Data\Models\Pre-trained_Models
+	- huggingface-cli download --resume-download hfl/llama-3-chinese-8b-instruct-v2 --local-dir F:\Data\Models\llama-3-chinese-8b-instruct-v2
 
 ## 1. 安装docker
 
