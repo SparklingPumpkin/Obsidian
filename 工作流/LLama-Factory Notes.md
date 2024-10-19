@@ -31,11 +31,19 @@ pip install -e ".[torch,metrics]"
 
 ## 3. SFT 训练
 
+准备
 ```
 docker start -ai FTLlama_lico2
 cd LLaMA-Factory
 ```
 
+调整dataset_info.json
+```
+
+```
+
+
+运行微调代码
 ```
 llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 ```
