@@ -283,6 +283,8 @@ singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 
 #### 7.3.3 上传文件
 
+- `docker start -ai FTLlama_lico2`
+- `cd run_file`
 - `scp ftllama3c7b_fjn.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
 - `scp ftllama3c7b_fjn.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
 
