@@ -158,7 +158,7 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 
 - 解压上传后的本地项目文件 (不包含镜像文件, web端即可操作)
 - 转换 Docker 镜像为 Singularity 镜像
-	- `cd fjn/workfile/FT_llama-factory`
+	- `cd fjn/workfile/run_file`
 	- `singularity build ftllama3c7b_fjn.sif docker-archive://FTLlama_lico2.tar`
 
 
