@@ -169,6 +169,28 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 
 - `ftllama3c7b_fjn.sh`文件用于存放运行命令
 
+
+- 示例0 (fjn): 
+```
+#!/usr/bin/env bash
+
+# 重新初始化 conda
+source /opt/anaconda/bin/activate
+conda activate chat-scene
+
+# 切换到工作目录
+cd /dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/
+
+# 执行 run.sh 脚本
+bash scripts/run.sh
+
+echo "-------sleep-------"
+
+python train_lcm.py --size 30000 --gpus 4 --interval 0.01
+```
+
+
+
 - 示例1 (zqq): 
 ```
 #!/usr/bin/env bash
