@@ -182,10 +182,16 @@ cd /dssg/home/sjc/workfile/pcdet/tools/
 # 设置一个标签, 用于标识这次训练的配置或实验
 TAG32=nuscenes_baseline_0422_20ep
 
-# 指定用于训练的配置文件路径, 通常包含模型、数据集和训练参数等信息
+# 指定用于训练的配置文件路径, 通常包含模型&数据集&训练参数等信息
 CFG32=cfgs/nuscenes_models/qy_ch_baseline_n.yaml
+
+# 打印出训练标签, 用于标识当前正在进行的实验
 echo "-------"${TAG32}"-------"
+
+# 启动训练
 python3 -m torch.distributed.launch --master_port 21007 --nproc_per_node=${NGPUS} train.py --launcher pytorch 2 --cfg_file ${CFG32}  --extra_tag ${TAG32} --**pretrained_model /dssg/home/qinyu/workfile/bevfusion/cbgs_transfusion_lidar.pth** --batch_size 8
+
+# 输出睡眠信息
 echo "-------sleep-------"
 ```
 
