@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作流/Docker_FT_llamafactory笔记 (新).md",
+                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker_FT_llamafactory笔记 (新)"
+              "title": "制作OpenPCDet--BEVfusion镜像操作"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
+                "file": "工作流/Docker_FT_llamafactory笔记 (新).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "制作OpenPCDet--BEVfusion镜像操作"
+              "title": "Docker_FT_llamafactory笔记 (新)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,10 +198,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "76d930fc68988516",
+  "active": "f960be4aa0ccceb9",
   "lastOpenFiles": [
-    "Lico/GPT详解Docker.md",
     "工作流/Docker_FT_llamafactory笔记 (新).md",
+    "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
+    "Lico/GPT详解Docker.md",
     "工作流/LLama-Factory Notes.md",
     "工作流/AAAA整体工作框架.md",
     "工作流/本地无微调llamafile_docker.md",
@@ -211,7 +211,6 @@
     "Temp.md",
     "工作流/local FT no docker.md",
     "LLama-Factory.md",
-    "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
     "工作流/微调项目本地部署.md",
     "工作流/docker笔记(本地llama无微调).md",
     "工作流/整体工作框架.md",

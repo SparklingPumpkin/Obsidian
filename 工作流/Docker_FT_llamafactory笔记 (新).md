@@ -64,10 +64,16 @@ autoProxy=true
 
 ## 5. 更新镜像并打包容器
 
-- 在ubuntu中执行以下命令来保存为一个新镜像：
+- **在ubuntu中执行以下命令来保存为一个新镜像**：
 	- `docker commit <容器ID或容器名称> <新镜像名称>`
 	- `docker commit FTLlama_lico2 ftllama3c7b_fjn:v1`
+- **打包当前容器用于上传到超算平台**：
+	- docker save -o <输出文件名>.tar <镜像名称>
+	- 
 
+
+
+F:\Projects_Mobile\LLM\Finetuning\FT_llama-factory
 ## 6. 退出/ 重启容器
 
 bash: 
