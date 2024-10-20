@@ -165,6 +165,8 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 
 - 在run_file文件夹中创建`.sh` 以及 `.slurm` 文件  (建议与环境名保持一致)
 
+#### 7.3.1 .sh文件创建
+
 - `ftllama3c7b_fjn.sh`文件用于存放运行命令, 示例如下: 
 ```
 #!/usr/bin/env bash
@@ -206,5 +208,25 @@ echo "-------sleep-------"
 - **`--extra_tag ${TAG32}`**：传递自定义标签，便于标识训练。
 - **`--pretrained_model /dssg/home/qinyu/workfile/bevfusion/cbgs_transfusion_lidar.pth`**：指定一个预训练模型文件路径，用于初始化模型参数。
 - **`--batch_size 8`**：设置训练时的批处理大小。
+
+#### 7.3.2 .slurm文件创建
+
+- `ftllama3c7b_fjn.slurm` 用于提交任务
+```
+#!/bin/bash
+
+#SBATCH --job-name=ftllama3c7b_fjn
+#SBATCH --partition=GPU
+#SBATCH -N 1                  
+#SBATCH --ntasks-per-node=32 
+#SBATCH --output=**/dssg/home/qinyu/workfile/run_file/log**/%j.out
+#SBATCH --error=**/dssg/home/qinyu/workfile/run_file/log**/%j.err
+#SBATCH --gres=gpu:2
+
+module --ignore-cache load "singularity"
+singularity run --nv ftllama3c7b_fjn.sif bash ftllama3c7b_fjn.sh
+
+
+```
 
 
