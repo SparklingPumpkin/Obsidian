@@ -191,7 +191,13 @@ echo "-------"${TAG32}"-------"
 # 启动训练
 python3 -m torch.distributed.launch --master_port 21007 --nproc_per_node=${NGPUS} train.py --launcher pytorch 2 --cfg_file ${CFG32}  --extra_tag ${TAG32} --**pretrained_model /dssg/home/qinyu/workfile/bevfusion/cbgs_transfusion_lidar.pth** --batch_size 8
 
-%% - **`python3 -m torch.distributed.launch`**：使用 PyTorch 的分布式启动器来启动训练，这样可以在多个 GPU 上并行训练。
+
+# 输出睡眠信息
+echo "-------sleep-------"
+```
+
+'启动训练' 注释 : 
+- **`python3 -m torch.distributed.launch`**：使用 PyTorch 的分布式启动器来启动训练，这样可以在多个 GPU 上并行训练。
 - **`--master_port 21007`**：指定主节点的端口，用于进程间通信。
 - **`--nproc_per_node=${NGPUS}`**：指定每个节点使用的进程数，这里等于 2。
 - **`train.py`**：指定要运行的训练脚本。
@@ -199,12 +205,6 @@ python3 -m torch.distributed.launch --master_port 21007 --nproc_per_node=${NGPUS
 - **`--cfg_file ${CFG32}`**：传递训练配置文件路径。
 - **`--extra_tag ${TAG32}`**：传递自定义标签，便于标识训练。
 - **`--pretrained_model /dssg/home/qinyu/workfile/bevfusion/cbgs_transfusion_lidar.pth`**：指定一个预训练模型文件路径，用于初始化模型参数。
-- **`--batch_size 8`**：设置训练时的批处理大小。 %%
-
-# 输出睡眠信息
-echo "-------sleep-------"
-```
-
-
+- **`--batch_size 8`**：设置训练时的批处理大小。
 
 
