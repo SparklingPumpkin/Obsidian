@@ -289,4 +289,6 @@ singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 
 #### 7.3.4 终端提交作业
 
-参考 7.1 登录终端
+- 参考 7.1 登录终端
+- `cd fjn/workfile/FT_llama-factory/run_file`
+- 
