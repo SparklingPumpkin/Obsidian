@@ -66,6 +66,7 @@ autoProxy=true
 
 - 在运行中的容器中执行以下命令来保存为一个新镜像：
 	- `docker commit <容器ID或容器名称> <新镜像名称>`
+	- `docker commit FTLlama_lico2 ftllama3c7b_fjn:v1`
 
 ## 6. 退出/ 重启容器
 
