@@ -143,6 +143,7 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 
 ## 7. 如何在超算平台进微调
 
+登录操作
 - 从ubuntu终端登录超算平台
 	- `ssh pengyaxin@10.0.28.5`
 	- 输入yes
@@ -152,8 +153,12 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 	- `ssh c22` （这个是彭老师的分区，其他分区要换指令）
 - 查看GPU使用率
 	- `nvidia-smi`
-- 
 
+
+转换 Docker 镜像为 Singularity 镜像
+```
+singularity build bevfusion.sif(自定义集群环境名) docker-archive://ai_bevfusion.tar
+```
 
 
 
