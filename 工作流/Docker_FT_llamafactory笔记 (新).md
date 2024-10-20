@@ -144,9 +144,8 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 	- tar -cvf FT_llama-factory.tar .
 - 上传 .tar 文件到集群 (已经在workspace下)
 	- scp FT_llama-factory.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/
+	- 步骤同前
 
 
 
-
-F:\Projects_Mobile\LLM\Finetuning\FT_llama-factory
 
