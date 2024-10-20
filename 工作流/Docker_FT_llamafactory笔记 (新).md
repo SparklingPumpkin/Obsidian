@@ -62,17 +62,27 @@ autoProxy=true
 参考[LLama-Factory](LLama-Factory)
 
 
-## 5. 更新镜像并打包容器
+## 5. 更新&打包镜像 并上传到超算平台
 
 - **在ubuntu中执行以下命令来保存为一个新镜像**：
 	- `docker commit <容器ID或容器名称> <新镜像名称>`
 	- `docker commit FTLlama_lico2 ftllama3c7b_fjn:v1`
-- **打包镜像用于上传到超算平台**：
+- **打包镜像**：
 	- `docker save -o FTLlama_lico2.tar ftllama3c7b_fjn:v1`
 	- 文件位置在以下目录 (win11子系统ubuntu)
 		- `\\wsl$\Ubuntu\root`
+- **上传到超算平台** : (当前在root目录下)
+	- 最好在在workfile文件下单独创建一个run_file文件夹，用于存放环境
+	- sudo scp FTLlama_lico2.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/run_file/
 
-## 6. 打包本地文件上传到超算平台
+## 6. 打包本地项目文件 并上传到超算平台
+
+- 启动容器 (已经挂载了工作目录)
+	- docker start -ai FTLlama_lico2
+- 打包项目文件
+	- tar -cvf FT_llama-factory.tar .
+- 上传 .tar 文件到集群 (已经在workspace下)
+	- sudo scp FT_llama-factory.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/run_file/
 
 上传 .tar 文件到集群
 使用 scp 命令将 .tar 文件上传到集群。
