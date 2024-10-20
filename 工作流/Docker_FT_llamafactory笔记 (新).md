@@ -171,6 +171,7 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 
 export PYTHONPATH=/dssg/home/sjc/workfile/bindfile/test1//lib/python3.6/site-packages:/dssg/home/sjc/workfile/bindfile/test2//lib/python3.6/site-packages（需要单独创建相应空文件夹）
 
+# 指定使用的GPU编号 & 数量
 export CUDA_VISIBLE_DEVICES=0
 NGPUS=1
 
