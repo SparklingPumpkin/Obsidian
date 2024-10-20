@@ -145,5 +145,10 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 	- 步骤同前
 
 
+## 7. 如何在超算平台进微调
+
+
+
+
 
 
