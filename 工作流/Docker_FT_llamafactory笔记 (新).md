@@ -291,4 +291,4 @@ singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 
 - 参考 7.1 登录终端
 - `cd fjn/workfile/FT_llama-factory/run_file`
-- 
+- `sbatch ftllama3c7b_fjn.slurm`
