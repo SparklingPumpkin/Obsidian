@@ -294,3 +294,8 @@ singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 - 参考 7.1 登录终端
 - `cd fjn/workfile/FT_llama-factory/run_file`
 - `sbatch ftllama3c7b_fjn.slurm`
+
+#### 7.3.5 Debug
+
+- 错误: 找不到包
+	- `singularity shell ftllama3c7b_fjn.sif`
