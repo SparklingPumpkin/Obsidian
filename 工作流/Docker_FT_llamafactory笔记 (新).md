@@ -74,7 +74,10 @@ autoProxy=true
 
 ## 6. 打包本地文件上传到超算平台
 
-	
+上传 .tar 文件到集群
+使用 scp 命令将 .tar 文件上传到集群。
+sudo scp /media/usv012/zqq/docker/chat-scene.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/zqq/workfile/run_file/
+这会将文件上传到集群路径 /dssg/home/pengyaxin/zqq/workfile/run_file/。
 
 
 F:\Projects_Mobile\LLM\Finetuning\FT_llama-factory
