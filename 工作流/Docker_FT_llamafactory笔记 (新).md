@@ -69,6 +69,8 @@ autoProxy=true
 	- `docker commit FTLlama_lico2 ftllama3c7b_fjn:v1`
 - **打包镜像用于上传到超算平台**：
 	- `docker save -o FTLlama_lico2.tar ftllama3c7b_fjn:v1`
+	- 文件位置在以下目录 (win11子系统ubuntu)
+		- `\\wsl$\Ubuntu\root`
 
 ## 6. 打包本地文件上传到超算平台
 
