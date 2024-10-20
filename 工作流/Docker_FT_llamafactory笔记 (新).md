@@ -171,10 +171,10 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 
 export PYTHONPATH=/dssg/home/sjc/workfile/bindfile/test1//lib/python3.6/site-packages:/dssg/home/sjc/workfile/bindfile/test2//lib/python3.6/site-packages（需要单独创建相应空文件夹）
 
-export CUDA_VISIBLE_DEVICES=0,1
-NGPUS=2
+export CUDA_VISIBLE_DEVICES=0
+NGPUS=1
 
-**cd /dssg/home/sjc/workfile/pcdet/tools/**(用于找到运行文件train.py)
+cd /dssg/home/sjc/workfile/pcdet/tools/(用于找到运行文件train.py)
 
 TAG32=nuscenes_baseline_0422_20ep
 CFG32=cfgs/nuscenes_models/qy_ch_baseline_n.yaml
