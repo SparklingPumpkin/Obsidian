@@ -146,7 +146,6 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 ### 7.1 终端登录
 - 从ubuntu终端登录超算平台
 	- `ssh pengyaxin@10.0.28.5`
-	- 输入yes
 	- 系统会提示输入密码，输入后按回车（注意输入密码时不会有任何回显）
 	- 成功登录
 - 转换环境
@@ -286,3 +285,8 @@ singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 
 - `scp ftllama3c7b_fjn.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
 - `scp ftllama3c7b_fjn.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
+
+
+#### 7.3.4 终端提交作业
+
+参考 7.1 登录终端
