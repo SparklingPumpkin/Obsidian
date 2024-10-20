@@ -275,8 +275,8 @@ export TMPDIR=/dssg/home/pengyaxin/fjn/workfile/tmp/
 module load singularity
 
 # 定义 Singularity 镜像和外部脚本路径
-IMAGE_PATH=/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/chat-scene.sif
-SCRIPT_PATH=/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/chat-scene.sh
+IMAGE_PATH=/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/ftllama3c7b_fjn.sif
+SCRIPT_PATH=/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/ftllama3c7b_fjn.sh
 
 # 使用 --nv 参数启用 GPU 支持
 singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
