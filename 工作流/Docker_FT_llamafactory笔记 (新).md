@@ -169,15 +169,20 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 ```
 #!/usr/bin/env bash
 
+# 设置 Python 路径
 export PYTHONPATH=/dssg/home/sjc/workfile/bindfile/test1//lib/python3.6/site-packages:/dssg/home/sjc/workfile/bindfile/test2//lib/python3.6/site-packages（需要单独创建相应空文件夹）
 
 # 指定使用的GPU编号 & 数量
 export CUDA_VISIBLE_DEVICES=0
 NGPUS=1
 
-cd /dssg/home/sjc/workfile/pcdet/tools/(用于找到运行文件train.py)
+# 进入工作目录, 目录下应该有训练的主文件 `train.py`
+cd /dssg/home/sjc/workfile/pcdet/tools/
 
+# 设置一个标签, 用于标识这次训练的配置或实验
 TAG32=nuscenes_baseline_0422_20ep
+
+# 指定用于训练的配置文件路径, 通常包含模型、数据集和训练参数等信息
 CFG32=cfgs/nuscenes_models/qy_ch_baseline_n.yaml
 echo "-------"${TAG32}"-------"
 python3 -m torch.distributed.launch --master_port 21007 --nproc_per_node=${NGPUS} train.py --launcher pytorch 2 --cfg_file ${CFG32}  --extra_tag ${TAG32} --**pretrained_model /dssg/home/qinyu/workfile/bevfusion/cbgs_transfusion_lidar.pth** --batch_size 8
