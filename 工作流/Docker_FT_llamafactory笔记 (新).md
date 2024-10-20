@@ -157,11 +157,9 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 ### 7.2 超算平台环境搭建
 
 - 解压上传后的本地项目文件 (不包含镜像文件, web端即可操作)
-
 - 转换 Docker 镜像为 Singularity 镜像
-```
-singularity build bevfusion.sif(自定义集群环境名) docker-archive://ai_bevfusion.tar
-```
+	- `cd `
+	- `singularity build ftllama3c7b_fjn.sif docker-archive://FTLlama_lico2.tar`
 
 
 
