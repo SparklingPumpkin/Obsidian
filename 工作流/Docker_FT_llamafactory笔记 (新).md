@@ -52,6 +52,8 @@ autoProxy=true
 -  `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B_local:/workspace --name FTLlama_local nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04`
 	- cuda11.3.1
 
+-  `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/FT_llama-factory:/workspace --name FTLlama_lico3 ftllama3c7b_fjn:v1`
+
 - 退出 & 重启容器
 	- 退出容器: `exit`
 	- 重启容器: 
