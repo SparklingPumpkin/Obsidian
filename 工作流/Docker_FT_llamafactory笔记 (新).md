@@ -125,7 +125,7 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 - **上传到超算平台** : (当前在root目录下)
 	- 应该要在校园网？
 	- 最好在在workfile文件下单独创建一个run_file文件夹，用于存放环境
-		- `sudo scp FTLlama_lico2.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/run_file/`
+		- `sudo scp FTLlama_lico2.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
 		- 提示输入密码
 		- 成功上传
 
@@ -158,7 +158,7 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 
 - 解压上传后的本地项目文件 (不包含镜像文件, web端即可操作)
 - 转换 Docker 镜像为 Singularity 镜像
-	- `cd fjn/workfile/run_file`
+	- `cd fjn/workfile/FT_llama-factory/run_file`
 	- `singularity build ftllama3c7b_fjn.sif docker-archive://FTLlama_lico2.tar`
 
 ### 7.3 在平台运行项目
@@ -260,8 +260,8 @@ echo "-------sleep-------"
 #!/bin/bash
 
 #SBATCH --job-name=ftllama3c7b_fjn
-#SBATCH --output=/dssg/home/pengyaxin/fjn/workfile/run_file/log/%j.out
-#SBATCH --error=/dssg/home/pengyaxin/fjn/workfile/run_file/log/%j.err
+#SBATCH --output=/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/log/%j.out
+#SBATCH --error=/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/log/%j.err
 #SBATCH --time=24:00:00                   # Max runtime (hh:mm:ss)
 #SBATCH --partition=Debug2                # Partition (Debug2)
 #SBATCH --gres=gpu:2                      # 请求2个GPU
@@ -277,8 +277,8 @@ export TMPDIR=/dssg/home/pengyaxin/fjn/workfile/tmp/
 module load singularity
 
 # 定义 Singularity 镜像和外部脚本路径
-IMAGE_PATH=/dssg/home/pengyaxin/fjn/workfile/run_file/chat-scene.sif
-SCRIPT_PATH=/dssg/home/pengyaxin/fjn/workfile/run_file/chat-scene.sh
+IMAGE_PATH=/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/chat-scene.sif
+SCRIPT_PATH=/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/chat-scene.sh
 
 # 使用 --nv 参数启用 GPU 支持
 singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
