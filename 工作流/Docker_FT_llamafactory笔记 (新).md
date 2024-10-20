@@ -125,29 +125,34 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 - **上传到超算平台** : (当前在root目录下)
 	- 应该要在校园网？
 	- 最好在在workfile文件下单独创建一个run_file文件夹，用于存放环境
-		- sudo scp FTLlama_lico2.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/run_file/
+		- `sudo scp FTLlama_lico2.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/run_file/`
 		- 提示输入密码
 		- 成功上传
-- 如果要从ubuntu终端登录超算平台（暂时用不到）
-	- ssh pengyaxin@10.0.28.5
-	- 输入yes
-	- 系统会提示输入密码，输入后按回车（注意输入密码时不会有任何回显）
-	- 成功登录
+
 
 ## 6. 打包本地项目文件 并上传到超算平台
 
 - 启动容器 (已经挂载了工作目录)
-	- docker start -ai FTLlama_lico2
+	- `docker start -ai FTLlama_lico2`
 - 打包项目文件
-	- tar -cvf FT_llama-factory.tar .
+	- `tar -cvf FT_llama-factory.tar .`
 - 上传 .tar 文件到集群 (已经在workspace下)
-	- scp FT_llama-factory.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/
+	- `scp FT_llama-factory.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/`
 	- 步骤同前
 
 
 ## 7. 如何在超算平台进微调
 
-
+- 从ubuntu终端登录超算平台
+	- `ssh pengyaxin@10.0.28.5`
+	- 输入yes
+	- 系统会提示输入密码，输入后按回车（注意输入密码时不会有任何回显）
+	- 成功登录
+- 转换环境
+	- `ssh c22` （这个是彭老师的分区，其他分区要换指令）
+- 查看GPU使用率
+	- `nvidia-smi`
+- 
 
 
 
