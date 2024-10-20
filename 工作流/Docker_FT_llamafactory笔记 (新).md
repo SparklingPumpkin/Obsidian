@@ -160,8 +160,29 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 - 转换 Docker 镜像为 Singularity 镜像
 	- `cd fjn/workfile/run_file`
 	- `singularity build ftllama3c7b_fjn.sif docker-archive://FTLlama_lico2.tar`
+
+### 7.3 在平台运行项目
+
 - 在run_file文件夹中创建`.sh` 以及 `.slurm` 文件  (建议与环境名保持一致)
-	- `ftllama3c7b_fjn.sh`文件用于存放运行命令
+
+- `ftllama3c7b_fjn.sh`文件用于存放运行命令, 示例如下: 
+```
+#!/usr/bin/env bash
+
+export PYTHONPATH=/dssg/home/sjc/workfile/bindfile/test1//lib/python3.6/site-packages:/dssg/home/sjc/workfile/bindfile/test2//lib/python3.6/site-packages（需要单独创建相应空文件夹）
+
+export CUDA_VISIBLE_DEVICES=0,1
+NGPUS=2
+
+**cd /dssg/home/sjc/workfile/pcdet/tools/**(用于找到运行文件train.py)
+
+TAG32=nuscenes_baseline_0422_20ep
+CFG32=cfgs/nuscenes_models/qy_ch_baseline_n.yaml
+echo "-------"${TAG32}"-------"
+python3 -m torch.distributed.launch --master_port 21007 --nproc_per_node=${NGPUS} train.py --launcher pytorch 2 --cfg_file ${CFG32}  --extra_tag ${TAG32} --**pretrained_model /dssg/home/qinyu/workfile/bevfusion/cbgs_transfusion_lidar.pth** --batch_size 8
+echo "-------sleep-------"
+```
+
 
 
 
