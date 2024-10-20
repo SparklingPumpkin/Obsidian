@@ -179,7 +179,7 @@ source /opt/anaconda/bin/activate
 conda activate chat-scene
 
 # 切换到工作目录
-cd /dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/
+cd /dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/
 
 # 执行 run.sh 脚本
 bash scripts/run.sh
