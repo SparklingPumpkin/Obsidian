@@ -125,6 +125,10 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 	- 文件位置在以下目录 (win11子系统ubuntu)
 		- `\\wsl$\Ubuntu\root`
 - **上传到超算平台** : (当前在root目录下)
+	- 登录超算平台
+		- ssh pengyaxin@10.0.28.5
+		- 系统会提示输入密码，输入后按回车（注意输入密码时不会有任何回显）
+		- 输入 `yes` 并按回车，系统会将服务器的密钥保存到你的已知主机列表中。
 	- 最好在在workfile文件下单独创建一个run_file文件夹，用于存放环境
 	- sudo scp FTLlama_lico2.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/run_file/
 
