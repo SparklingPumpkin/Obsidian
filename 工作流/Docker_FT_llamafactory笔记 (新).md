@@ -160,6 +160,8 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 - 转换 Docker 镜像为 Singularity 镜像
 	- `cd fjn/workfile/run_file`
 	- `singularity build ftllama3c7b_fjn.sif docker-archive://FTLlama_lico2.tar`
+- 在run_file文件夹中创建`.sh` 以及 `.slurm` 文件  (建议与环境名保持一致)
+	- `ftllama3c7b_fjn.sh`文件用于存放运行命令
 
 
 
