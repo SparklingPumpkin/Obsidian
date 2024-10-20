@@ -49,8 +49,7 @@
               "title": "Docker_FT_llamafactory笔记 (新)"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,10 +212,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fb9d415a2e2e48eb",
+  "active": "f960be4aa0ccceb9",
   "lastOpenFiles": [
-    "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
     "工作流/Docker_FT_llamafactory笔记 (新).md",
+    "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
     "工作流/llama工具盒.md",
     "工作流/LLama-Factory Notes.md",
     "Lico/GPT详解Docker.md",
