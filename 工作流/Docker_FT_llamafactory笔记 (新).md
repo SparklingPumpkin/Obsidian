@@ -167,7 +167,29 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 
 #### 7.3.1 .sh文件创建
 
-- `ftllama3c7b_fjn.sh`文件用于存放运行命令, 示例如下: 
+- `ftllama3c7b_fjn.sh`文件用于存放运行命令
+
+- 示例1 (zqq): 
+```
+#!/usr/bin/env bash
+
+# 重新初始化 conda
+source /opt/anaconda/bin/activate
+conda activate chat-scene
+
+# 切换到工作目录
+cd /dssg/home/pengyaxin/zqq/workfile/Chat-Scene/
+
+# 执行 run.sh 脚本
+bash scripts/run.sh
+
+echo "-------sleep-------"
+
+python train_lcm.py --size 30000 --gpus 4 --interval 0.01
+```
+
+
+- 示例2 (qinyu): 
 ```
 #!/usr/bin/env bash
 
@@ -216,17 +238,28 @@ echo "-------sleep-------"
 #!/bin/bash
 
 #SBATCH --job-name=ftllama3c7b_fjn
-#SBATCH --partition=GPU
-#SBATCH -N 1                  
-#SBATCH --ntasks-per-node=32 
-#SBATCH --output=**/dssg/home/qinyu/workfile/run_file/log**/%j.out
-#SBATCH --error=**/dssg/home/qinyu/workfile/run_file/log**/%j.err
-#SBATCH --gres=gpu:2
+#SBATCH --output=/dssg/home/pengyaxin/fjn/workfile/run_file/log/%j.out
+#SBATCH --error=/dssg/home/pengyaxin/fjn/workfile/run_file/log/%j.err
+#SBATCH --time=24:00:00                   # Max runtime (hh:mm:ss)
+#SBATCH --partition=Debug2                # Partition (Debug2)
+#SBATCH --gres=gpu:2                      # 请求2个GPU
+#SBATCH --ntasks-per-node=4               # 每个节点运行的任务数量
+#SBATCH --cpus-per-task=4                 # 每个任务使用的CPU核数
+#SBATCH --mem=32G                         # 每个节点分配的内存
+#SBATCH --nodelist=c22                    # 指定节点c22
 
-module --ignore-cache load "singularity"
-singularity run --nv ftllama3c7b_fjn.sif bash ftllama3c7b_fjn.sh
+# 设置临时文件目录为系统临时目录
+export TMPDIR=/dssg/home/pengyaxin/fjn/workfile/tmp/
 
+# 加载必要的模块
+module load singularity
 
+# 定义 Singularity 镜像和外部脚本路径
+IMAGE_PATH=/dssg/home/pengyaxin/fjn/workfile/run_file/chat-scene.sif
+SCRIPT_PATH=/dssg/home/pengyaxin/fjn/workfile/run_file/chat-scene.sh
+
+# 使用 --nv 参数启用 GPU 支持
+singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 ```
 
 
