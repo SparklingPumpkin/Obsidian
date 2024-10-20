@@ -82,12 +82,9 @@ autoProxy=true
 - 打包项目文件
 	- tar -cvf FT_llama-factory.tar .
 - 上传 .tar 文件到集群 (已经在workspace下)
-	- sudo scp FT_llama-factory.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/run_file/
+	- sudo scp FT_llama-factory.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/
 
-上传 .tar 文件到集群
-使用 scp 命令将 .tar 文件上传到集群。
-sudo scp /media/usv012/zqq/docker/chat-scene.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/zqq/workfile/run_file/
-这会将文件上传到集群路径 /dssg/home/pengyaxin/zqq/workfile/run_file/。
+
 
 
 F:\Projects_Mobile\LLM\Finetuning\FT_llama-factory
