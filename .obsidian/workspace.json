@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lico/打包步骤GPT详解.md",
+                "file": "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "打包步骤GPT详解"
+              "title": "制作OpenPCDet--BEVfusion镜像操作"
             }
           }
         ],
@@ -201,6 +201,7 @@
   },
   "active": "76d930fc68988516",
   "lastOpenFiles": [
+    "Lico/GPT详解Docker.md",
     "工作流/Docker_FT_llamafactory笔记 (新).md",
     "工作流/LLama-Factory Notes.md",
     "工作流/AAAA整体工作框架.md",
@@ -214,7 +215,6 @@
     "工作流/微调项目本地部署.md",
     "工作流/docker笔记(本地llama无微调).md",
     "工作流/整体工作框架.md",
-    "Lico/打包步骤GPT详解.md",
     "工作流",
     "LLM/Compression/模型压缩.md",
     "Lico",
