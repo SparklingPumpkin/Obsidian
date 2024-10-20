@@ -2,17 +2,15 @@
 ## 0. 前期准备
 
 - 环境
-	- win11
-	- gpu: RTX3080
+	- Win11
+	- GPU: RTX3080
+	- Docker + Ubuntu
 
 - 安装huggingface-cli 并下载模型
+	- 如何安装huggingface-cli自行百度
 	- huggingface-cli download --resume-download meta-llama/Meta-Llama-3.1-8B --local-dir {想要下载到的目录}
 	- huggingface-cli download --resume-download hfl/llama-3-chinese-8b-instruct-v2 --local-dir F:\Data\Models\llama-3-chinese-8b-instruct-v2
 
-- bash: 
-	- 退出容器: `exit`
-	- 重启容器: 
-		- `docker start -ai FTLlama_lico2`
 ## 1. 安装docker
 
 [【Docker】掌握 Docker魔法：Windows 11 平台上的完美容器部署终极指南_win11安装docker-CSDN博客](https://blog.csdn.net/joeyoj/article/details/136427362)
