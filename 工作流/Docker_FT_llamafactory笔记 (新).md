@@ -299,7 +299,9 @@ singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 
 ### 7.4 Debug
 
-`singularity shell ftllama3c7b_fjn.sif`
+```
+singularity shell ftllama3c7b_fjn.sif
+```
 
 #### 7.4.1 找不到包
 
@@ -331,4 +333,4 @@ Editable project location: /workspace/LLaMA-Factory
 Requires: accelerate, av, datasets, einops, fastapi, fire, gradio, matplotlib, numpy, packaging, pandas, peft, protobuf, pydantic, pyyaml, scipy, sentencepiece, sse-starlette, tiktoken, transformers, trl, uvicorn
 Required-by:
 ```
-
+	
