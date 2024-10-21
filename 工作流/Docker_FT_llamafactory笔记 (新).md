@@ -272,15 +272,23 @@ echo "-------sleep-------"
 # 设置临时文件目录为系统临时目录
 export TMPDIR=/dssg/home/pengyaxin/fjn/workfile/tmp/
 
+# 因为报错，添加一个环境变量
+if [[ ":$PYTHONPATH:" != *":/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/src:"* ]]; then
+    export PYTHONPATH="$PYTHONPATH:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/src"
+fi
+
 # 加载必要的模块
 module load singularity
 
 # 定义 Singularity 镜像和外部脚本路径
+
 IMAGE_PATH=/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/ftllama3c7b_fjn.sif
 SCRIPT_PATH=/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/ftllama3c7b_fjn.sh
 
 # 使用 --nv 参数启用 GPU 支持
-singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
+
+# singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
+singularity run --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 ```
 
 #### 7.3.3 上传文件
@@ -334,8 +342,7 @@ Requires: accelerate, av, datasets, einops, fastapi, fire, gradio, matplotlib, n
 Required-by:
 ```
 
-询问Chatgpt
-prompt
+- 询问Chatgpt, prompt: 
 ```
 instruction={
 '请帮我寻找下面的条件中的报错原因, 包括所有错误编号'
@@ -355,7 +362,15 @@ answer={
 }
 ```
 
-添加一个环境变量:
+- 尝试添加一个环境变量: 可以检测到llamafactory
 ```
 export PYTHONPATH=$PYTHONPATH:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/src
+```
+
+- 在`ftllama3c7b_fjn.slurm`添加以下代码, 解决报错
+```
+# 因为报错，添加一个环境变量
+if [[ ":$PYTHONPATH:" != *":/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/src:"* ]]; then
+    export PYTHONPATH="$PYTHONPATH:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/src"
+fi
 ```
