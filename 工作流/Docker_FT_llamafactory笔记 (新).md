@@ -301,6 +301,7 @@ singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 
 #### 7.4.1 找不到包
 
+- 错误: 找不到包
 ```
 13:4: not a valid test operator: (
 13:4: not a valid test operator: 470.82.01
@@ -311,8 +312,7 @@ ModuleNotFoundError: No module named 'llamafactory'
 
 ```
 
-- 错误: 找不到包
-- `singularity shell ftllama3c7b_fjn.sif`
+- 使用 `singularity exec` 进入超算平台上的 Singularity 镜像，检查 `llamafactory` 是否在 Python 路径中
 ```
 [pengyaxin@c22 run_file]$ singularity exec --nv ftllama3c7b_fjn.sif python -m pip show llamafactory
 13:4: not a valid test operator: (
