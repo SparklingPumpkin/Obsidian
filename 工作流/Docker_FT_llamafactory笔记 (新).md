@@ -301,3 +301,4 @@ singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 
 - 错误: 找不到包
 	- `singularity shell ftllama3c7b_fjn.sif`
+	- singularity run --nv ftllama3c7b_fjn.sif
