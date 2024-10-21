@@ -331,4 +331,4 @@ Editable project location: /workspace/LLaMA-Factory
 Requires: accelerate, av, datasets, einops, fastapi, fire, gradio, matplotlib, numpy, packaging, pandas, peft, protobuf, pydantic, pyyaml, scipy, sentencepiece, sse-starlette, tiktoken, transformers, trl, uvicorn
 Required-by:
 ```
-	singularity exec --nv --debug ftllama3c7b_fjn.sif python -m llamafactory-cli version
+
