@@ -354,3 +354,8 @@ answer={
 
 }
 ```
+
+添加一个环境变量:
+```
+export PYTHONPATH=$PYTHONPATH:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/src
+```
