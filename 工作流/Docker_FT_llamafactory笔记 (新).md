@@ -333,4 +333,24 @@ Editable project location: /workspace/LLaMA-Factory
 Requires: accelerate, av, datasets, einops, fastapi, fire, gradio, matplotlib, numpy, packaging, pandas, peft, protobuf, pydantic, pyyaml, scipy, sentencepiece, sse-starlette, tiktoken, transformers, trl, uvicorn
 Required-by:
 ```
-	
+
+询问Chatgpt
+prompt
+```
+instruction={
+'请帮我寻找下面的条件中的报错原因, 包括所有错误编号'
+},
+question={
+我在win11的docker+ubuntu下创建了一个镜像, 用于运行微调llama3-7B模型的程序. 
+程序成功运行, 于是我把镜像和项目文件打包, 上传到超算平台. 
+上传之后将docker镜像转变为singularity镜像, 并进入singularity镜像, 显示以下报错(错误编号1):
+'13:4: not a valid test operator: (
+13:4: not a valid test operator: 470.82.01'. 但是我在报错之后仍然能够进入该镜像. 进入镜像之后, 进行调试.命令为'llamafactory-cli version', 却显示如下报错(错误编号2): 'Traceback (most recent call last):
+  File "/usr/local/bin/llamafactory-cli", line 5, in <module>
+    from llamafactory.cli import main
+ModuleNotFoundError: No module named 'llamafactory''. 于是我在singularity镜像下执行'pip list', 输出结果包含'llamafactory              0.9.1.dev0           /workspace/LLaMA-Factory'
+},
+answer={
+
+}
+```
