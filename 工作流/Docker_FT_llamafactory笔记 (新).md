@@ -299,6 +299,8 @@ singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 
 ### 7.4 Debug
 
+`singularity shell ftllama3c7b_fjn.sif`
+
 #### 7.4.1 找不到包
 
 - 错误: 找不到包
