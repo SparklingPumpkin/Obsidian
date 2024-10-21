@@ -297,8 +297,36 @@ singularity exec --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 - `cd fjn/workfile/FT_llama-factory/run_file`
 - `sbatch ftllama3c7b_fjn.slurm`
 
-#### 7.3.5 Debug
+### 7.4 Debug
+
+#### 7.4.1 找不到包
+
+```
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 470.82.01
+Traceback (most recent call last):
+  File "/usr/local/bin/llamafactory-cli", line 5, in <module>
+    from llamafactory.cli import main
+ModuleNotFoundError: No module named 'llamafactory'
+
+```
 
 - 错误: 找不到包
-	- `singularity shell ftllama3c7b_fjn.sif`
-	- singularity run --nv ftllama3c7b_fjn.sif
+- `singularity shell ftllama3c7b_fjn.sif`
+```
+[pengyaxin@c22 run_file]$ singularity exec --nv ftllama3c7b_fjn.sif python -m pip show llamafactory
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 470.82.01
+Name: llamafactory
+Version: 0.9.1.dev0
+Summary: Easy-to-use LLM fine-tuning framework
+Home-page: https://github.com/hiyouga/LLaMA-Factory
+Author: hiyouga
+Author-email: hiyouga@buaa.edu.cn
+License: Apache 2.0 License
+Location: /usr/local/lib/python3.10/dist-packages
+Editable project location: /workspace/LLaMA-Factory
+Requires: accelerate, av, datasets, einops, fastapi, fire, gradio, matplotlib, numpy, packaging, pandas, peft, protobuf, pydantic, pyyaml, scipy, sentencepiece, sse-starlette, tiktoken, transformers, trl, uvicorn
+Required-by:
+```
+	
