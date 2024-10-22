@@ -293,7 +293,7 @@ singularity run --nv ${IMAGE_PATH} bash ${SCRIPT_PATH}
 
 #### 7.3.3 上传文件
 
-- `docker start -ai FTLlama_lico2`
+- `docker start -ai FTLlama_lico3`
 - `cd run_file`
 - `scp ftllama3c7b_fjn.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
 - `scp ftllama3c7b_fjn.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
@@ -378,8 +378,10 @@ fi
 ## 8. Lora合并 & 量化
 
 - 经过上面的操作，已经得到了一个LLM微调LoRA文件，接下来要合并LoRA模型与原始模型
-- `llamafactory-cli export LoRA_Comb.yaml`
-- `llamafactory-cli export llama3_quantization_fjn.yaml`
+- `docker start -ai FTLlama_lico3`
+- `cd LLama-Factory`
+- `llamafactory-cli export Testfjn/yamls/LoRA_Comb.yaml`
+- `llamafactory-cli export Testfjn/yamls/llama3_quantization_fjn.yaml`
 
 
 
