@@ -4,67 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "35b1b402f303057a",
+        "id": "3732865cf97bbfb8",
         "type": "tabs",
         "children": [
           {
-            "id": "74e46deffd3657c0",
+            "id": "0be5fdc26e7e0c1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Temp/适合类比推理的数据集.md",
+                "file": "工作流/Docker_FT_llamafactory笔记 (新).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "适合类比推理的数据集"
-            }
-          },
-          {
-            "id": "8a0f20c8cab4beee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Temp/Temp.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Temp"
-            }
-          },
-          {
-            "id": "c22cd6881817bfab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Temp/Temp.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Temp"
-            }
-          },
-          {
-            "id": "d33f056f4f4a1297",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AIBot.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AIBot"
+              "title": "Docker_FT_llamafactory笔记 (新)"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,10 +184,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d33f056f4f4a1297",
+  "active": "0be5fdc26e7e0c1b",
   "lastOpenFiles": [
+    "工作流/AAAA整体工作框架.md",
     "Temp/Temp.md",
-    "AIBot.md",
+    "AIBot/AIBot.md",
     "AIBot",
     "Temp/人类思维.md",
     "Temp/适合类比推理的数据集.md",
@@ -243,7 +201,6 @@
     "工作流/z(废弃)docker工作流笔记.md",
     "工作流/不常用/(qinyu)制作OpenPCDet--BEVfusion镜像操作.md",
     "工作流/LLama-Factory Notes.md",
-    "工作流/AAAA整体工作框架.md",
     "工作流/local FT no docker.md",
     "LLama-Factory.md",
     "工作流/微调项目本地部署.md",
