@@ -383,5 +383,9 @@ fi
 - `llamafactory-cli export Testfjn/yamls/LoRA_Comb.yaml`
 - `llamafactory-cli export Testfjn/yamls/llama3_quantization_fjn.yaml`
 
+- 显存不够. 这一步还是要上传到超算平台
+
+- `scp Testfjn/yamls/LoRA_Comb.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/`
+
 
 
