@@ -1,0 +1,4 @@
+- git clone https://github.com/zhayujie/chatgpt-on-wechat
+- cd chatgpt-on-wechat
+- pip3 install -r requirements.txt
+- pip3 install -r requirements-optional.txt
