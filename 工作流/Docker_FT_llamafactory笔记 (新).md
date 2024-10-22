@@ -394,3 +394,8 @@ scp ftllama3c7b_fjn.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_
 -  `scp ftllama3c7b_fjn_Comb.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
 - `scp ftllama3c7b_fjn_Quan.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
 - `scp ftllama3c7b_fjn_Quan.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
+
+- 参考 7.1 登录终端
+- `cd fjn/workfile/FT_llama-factory/run_file`
+- `sbatch ftllama3c7b_fjn_Comb.slurm`
+- `sbatch ftllama3c7b_fjn_Quan.slurm`
