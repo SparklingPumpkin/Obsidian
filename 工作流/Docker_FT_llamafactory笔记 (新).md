@@ -380,8 +380,8 @@ fi
 - 经过上面的操作，已经得到了一个LLM微调LoRA文件，接下来要合并LoRA模型与原始模型
 - `docker start -ai FTLlama_lico3`
 - `cd LLama-Factory`
-- `llamafactory-cli export Testfjn/yamls/LoRA_Comb.yaml`
-- `llamafactory-cli export Testfjn/yamls/llama3_quantization_fjn.yaml`
+- `llamafactory-cli export Testfjn/yamls/LoRA_Comb.yaml`
+- `llamafactory-cli export Testfjn/yamls/llama3_quantization_fjn.yaml`
 
 
 
