@@ -385,7 +385,7 @@ fi
 
 - 显存不够. 这一步还是要上传到超算平台
 
-- `scp Testfjn/yamls/LoRA_Comb.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/Testfjn/yamls/`
-- `scp Testfjn/yamls/llama3_quantization_fjn.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/Testfjn/yamls/`
+- `scp Testfjn/yamls/LoRA_Comb.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLama-Factory/Testfjn/yamls/`
+- `scp Testfjn/yamls/llama3_quantization_fjn.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLama-Factory/Testfjn/yamls/`
 
 
