@@ -374,3 +374,8 @@ if [[ ":$PYTHONPATH:" != *":/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/L
     export PYTHONPATH="$PYTHONPATH:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/src"
 fi
 ```
+
+## 8. Lora合并 & 量化
+
+- 经过上面的操作，已经得到了一个LLM微调LoRA文件，接下来要合并LoRA模型与原始模型
+- 
