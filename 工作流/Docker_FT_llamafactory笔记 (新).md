@@ -389,4 +389,6 @@ scp ftllama3c7b_fjn.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_
 - `scp Testfjn/yamls/LoRA_Comb.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/yamls/`
 - `scp Testfjn/yamls/llama3_quantization_fjn.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/yamls/`
 
+- 
+
 
