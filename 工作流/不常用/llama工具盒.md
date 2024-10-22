@@ -17,7 +17,7 @@
 - **社区支持**：可能有较强的社区支持和文档，方便用户获取帮助和资源。
 
 #### 4. **Llamafile**
-
+[LLaMA3+WebUI Docker部署&外网访问，你的大语言模型助手！](https://www.bilibili.com/video/BV1db421Y7sp?vd_source=14fa069dd1a8b00449a35e1427fe06a5)
 
 
 **Ollama** 更加侧重于模型的部署和使用，**PEFT** 专注于高效的微调，而 **Llama-Factory** 则提供了一整套用于大规模模型训练和管理的工具。根据不同的需求，用户可以选择最适合的工具。
