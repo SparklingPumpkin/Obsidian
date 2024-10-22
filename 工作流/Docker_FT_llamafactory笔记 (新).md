@@ -389,6 +389,8 @@ scp ftllama3c7b_fjn.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_
 - `scp Testfjn/yamls/LoRA_Comb.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/yamls/`
 - `scp Testfjn/yamls/llama3_quantization_fjn.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/yamls/`
 
-- 
-
-
+- 切换目录
+-  `scp ftllama3c7b_fjn_Comb.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
+-  `scp ftllama3c7b_fjn_Comb.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
+- `scp ftllama3c7b_fjn_Quan.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
+- `scp ftllama3c7b_fjn_Quan.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
