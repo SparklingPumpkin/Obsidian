@@ -404,8 +404,10 @@ fi
 		- pip download auto_gptq
 	- 上传
 		- `scp extra_pkg.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/`
-	- 仍然缺少包，重新构建镜像
-		- 
+	- 仍然缺少包，重新构建镜像（本地）
+		- pip install optimum
+		- pip install auto_gptq
+
 
 
 ## 9. 推理
