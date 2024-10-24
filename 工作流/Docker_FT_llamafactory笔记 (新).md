@@ -398,7 +398,10 @@ fi
 	- `sbatch ftllama3c7b_fjn_Comb.slurm`
 	- `sbatch ftllama3c7b_fjn_Quan.slurm`
 - 发现缺少包
-	- 本地文件夹pip download optimum
+	- 本地文件夹
+		- pip download optimum
+		- pip download auto_gptq
+	- 
 	- 上传
 		- `scp extra_pkg.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/`
 
