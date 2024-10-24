@@ -407,6 +407,7 @@ fi
 		
 	- 上传
 		- `scp extra_pkg.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/`
+		- `scp auto_gptq-0.7.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/extra_pkg_nodeps`
 	- 仍然缺少包，重新构建镜像（本地）
 		- pip install optimum
 		- pip install auto_gptq
