@@ -401,7 +401,7 @@ fi
 
 ## 9. 推理
 
-- 编辑``
+- 编辑`inference_config.yaml`
 
 - `llamafactory-cli chat inference_config.yaml`
 - `llamafactory-cli webchat inference_config.yaml`
