@@ -57,7 +57,7 @@ autoProxy=true
 - 退出 & 重启容器
 	- 退出容器: `exit`
 	- 重启容器: 
-		- `docker start -ai FTLlama_lico2`
+		- `docker start -ai FTLlama_lico3`
 
 
 ## 4. LLama-Factory微调
