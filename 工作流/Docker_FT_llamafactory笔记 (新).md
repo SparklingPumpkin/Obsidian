@@ -399,3 +399,10 @@ scp ftllama3c7b_fjn.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_
 - `cd fjn/workfile/FT_llama-factory/run_file`
 - `sbatch ftllama3c7b_fjn_Comb.slurm`
 - `sbatch ftllama3c7b_fjn_Quan.slurm`
+
+
+## 9. 推理
+
+- `llamafactory-cli chat inference_config.yaml`
+- `llamafactory-cli webchat inference_config.yaml`
+- 
