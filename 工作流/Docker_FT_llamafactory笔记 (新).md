@@ -47,7 +47,7 @@ autoProxy=true
 	- ulimit表示不限制内存
 	- 用FTLlama_lico2命名容器，容器停止后不删除
 	- 退出容器: `exit`
-	- 重启容器: `docker start -ai FTLlama_lico1`
+	- 重启容器: `docker start -ai FTLlama_lico3`
 
 -  `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/llama3C7B_local:/workspace --name FTLlama_local nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04`
 	- cuda11.3.1
@@ -399,8 +399,8 @@ fi
 	- `sbatch ftllama3c7b_fjn_Quan.slurm`
 
 - 发现缺少包
-	- - docker start -ai FTLlama_lico3
-	- cd LLaMA-Factory/Testfjn/extra_pkg
+	- docker start -ai FTLlama_lico3
+	- cd LLaMA-Factory/Testfjn/extra_pkg_nodeps
 		- pip download optimum
 		- pip download auto_gptq
 		- pip download auto_gptq --no-deps
