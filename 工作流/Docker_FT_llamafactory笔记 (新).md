@@ -400,7 +400,7 @@ fi
 - 发现缺少包
 	- 本地文件夹pip download optimum
 	- 上传
-		- `scp extra_pkg.rar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/`
+		- `scp extra_pkg.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/`
 
 
 ## 9. 推理
