@@ -399,9 +399,12 @@ fi
 	- `sbatch ftllama3c7b_fjn_Quan.slurm`
 
 - 发现缺少包
+	- - docker start -ai FTLlama_lico3
 	- cd LLaMA-Factory/Testfjn/extra_pkg
 		- pip download optimum
 		- pip download auto_gptq
+		- pip download auto_gptq --no-deps
+		
 	- 上传
 		- `scp extra_pkg.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/`
 	- 仍然缺少包，重新构建镜像（本地）
