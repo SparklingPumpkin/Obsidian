@@ -405,6 +405,7 @@ fi
 		- pip download auto_gptq
 		- pip download auto_gptq --no-deps
 		- pip download rouge --no-deps
+		- pip download gekko --no-deps
 		
 	- 上传
 		- `scp extra_pkg.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/`
