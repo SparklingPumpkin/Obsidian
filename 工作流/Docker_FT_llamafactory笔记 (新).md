@@ -408,7 +408,7 @@ fi
 		- pip install optimum
 		- pip install auto_gptq
 
-
+- `scp src/llamafactory/model/model_utils/quantization.py pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/src/llamafactory/model/model_utils/`
 
 ## 9. 推理
 
@@ -417,4 +417,3 @@ fi
 - `llamafactory-cli chat Testfjn/yamls/inference_config.yaml`
 - `llamafactory-cli webchat Testfjn/yamls/inference_fted_config.yaml`
 
-- `scp `
