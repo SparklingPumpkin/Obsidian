@@ -378,30 +378,30 @@ fi
 ## 8. Lora合并 & 量化
 
 - 经过上面的操作，已经得到了一个LLM微调LoRA文件，接下来要合并LoRA模型与原始模型
-- `docker start -ai FTLlama_lico3`
-- `cd LLaMA-Factory`
-- `llamafactory-cli export Testfjn/yamls/LoRA_Comb.yaml`
-- `llamafactory-cli export Testfjn/yamls/llama3_quantization_fjn.yaml`
+	- `docker start -ai FTLlama_lico3`
+	- `cd LLaMA-Factory`
+	- `llamafactory-cli export Testfjn/yamls/LoRA_Comb.yaml`
+	- `llamafactory-cli export Testfjn/yamls/llama3_quantization_fjn.yaml`
 
 - 显存不够. 这一步还是要上传到超算平台
-scp ftllama3c7b_fjn.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/
-
-- `scp Testfjn/yamls/LoRA_Comb.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/yamls/`
-- `scp Testfjn/yamls/llama3_quantization_fjn.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/yamls/`
+	- `scp Testfjn/yamls/LoRA_Comb.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/yamls/`
+	- `scp Testfjn/yamls/llama3_quantization_fjn.yaml pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/yamls/`
 
 - 切换目录
--  `scp ftllama3c7b_fjn_Comb.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
--  `scp ftllama3c7b_fjn_Comb.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
-- `scp ftllama3c7b_fjn_Quan.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
-- `scp ftllama3c7b_fjn_Quan.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
+	-  `scp ftllama3c7b_fjn_Comb.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
+	-  `scp ftllama3c7b_fjn_Comb.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
+	- `scp ftllama3c7b_fjn_Quan.sh pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
+	- `scp ftllama3c7b_fjn_Quan.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
 
 - 参考 7.1 登录终端
-- `cd fjn/workfile/FT_llama-factory/run_file`
-- `sbatch ftllama3c7b_fjn_Comb.slurm`
-- `sbatch ftllama3c7b_fjn_Quan.slurm`
+	- `cd fjn/workfile/FT_llama-factory/run_file`
+	- `sbatch ftllama3c7b_fjn_Comb.slurm`
+	- `sbatch ftllama3c7b_fjn_Quan.slurm`
 
 
 ## 9. 推理
+
+- 编辑``
 
 - `llamafactory-cli chat inference_config.yaml`
 - `llamafactory-cli webchat inference_config.yaml`
