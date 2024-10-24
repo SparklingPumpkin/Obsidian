@@ -398,7 +398,7 @@ fi
 	- `sbatch ftllama3c7b_fjn_Comb.slurm`
 	- `sbatch ftllama3c7b_fjn_Quan.slurm`
 - 发现缺少包
-	- 本地文件夹
+	- cd LLaMA-Factory/Testfjn/extra_pkg
 		- pip download optimum
 		- pip download auto_gptq
 	- 
