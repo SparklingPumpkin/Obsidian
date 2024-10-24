@@ -404,10 +404,21 @@ fi
 		- pip download optimum
 		- pip download auto_gptq
 		- pip download auto_gptq --no-deps
+		- pip download rouge --no-deps
 		
 	- 上传
 		- `scp extra_pkg.tar pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/`
 		- `scp auto_gptq-0.7.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/extra_pkg_nodeps`
+	- 安装
+		- 参考7.1登录
+		- cd fjn/workfile/FT_llama-factory/run_file
+		- singularity shell ftllama3c7b_fjn.sif
+		- cd ~
+		- cd fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/extra_pkg_nodeps
+		- 
+			
+		- pip install /path/to/your/package.whl
+		- pip install auto_gptq-0.7.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
 	- 仍然缺少包，重新构建镜像（本地）
 		- pip install optimum
 		- pip install auto_gptq
