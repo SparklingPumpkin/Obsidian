@@ -397,6 +397,10 @@ fi
 	- `cd fjn/workfile/FT_llama-factory/run_file`
 	- `sbatch ftllama3c7b_fjn_Comb.slurm`
 	- `sbatch ftllama3c7b_fjn_Quan.slurm`
+- 发现缺少包
+	- 本地文件夹pip download optimum
+	- 上传
+		- `scp ftllama3c7b_fjn_Quan.slurm pengyaxin@10.0.28.5:/dssg/home/pengyaxin/fjn/workfile/FT_llama-factory/run_file/`
 
 
 ## 9. 推理
