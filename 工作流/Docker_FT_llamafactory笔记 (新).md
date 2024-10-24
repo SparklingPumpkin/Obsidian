@@ -402,7 +402,6 @@ fi
 	- docker start -ai FTLlama_lico3
 	- cd LLaMA-Factory/Testfjn/extra_pkg_nodeps
 		- pip download optimum
-		- pip download auto_gptq
 		- pip download auto_gptq --no-deps
 		- pip download rouge --no-deps
 		- pip download gekko --no-deps
@@ -416,11 +415,9 @@ fi
 		- singularity shell ftllama3c7b_fjn.sif
 		- cd ~
 		- cd fjn/workfile/FT_llama-factory/LLaMA-Factory/Testfjn/extra_pkg_nodeps
-		- 
-			
-		- pip install /path/to/your/package.whl
 		- pip install auto_gptq-0.7.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-	- 仍然缺少包，重新构建镜像（本地）
+		
+	- (此步可选) 或者重新构建镜像（本地）
 		- pip install optimum
 		- pip install auto_gptq
 
