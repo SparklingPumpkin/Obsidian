@@ -430,5 +430,5 @@ fi
 - `cd LLaMA-Factory`
 - `llamafactory-cli chat Testfjn/yamls/inference_config.yaml`
 - `llamafactory-cli webchat Testfjn/yamls/inference_fted_config.yaml`
-- `llamafactory-cli webchat Testfjn/yamls/inference_quan_config.yaml`
+- `llamafactory-cli chat Testfjn/yamls/inference_quan_config.yaml`
 
