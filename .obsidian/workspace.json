@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3732865cf97bbfb8",
+        "id": "d4db8de40ae16898",
         "type": "tabs",
         "children": [
           {
-            "id": "0be5fdc26e7e0c1b",
+            "id": "bf7462101b5ff24a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作流/Docker_FT_llamafactory笔记 (新).md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Docker_FT_llamafactory笔记 (新)"
+              "title": "New tab"
             }
           }
         ]
@@ -43,7 +39,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
           },
           {
@@ -79,8 +75,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
@@ -161,8 +157,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
@@ -174,42 +170,46 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0be5fdc26e7e0c1b",
+  "active": "89784befaf0567ea",
   "lastOpenFiles": [
-    "工作流/AAAA整体工作框架.md",
+    "LLM/Newest/ARN.md",
+    "LLM/Newest/Untitled.md",
+    "LLM/Newest/KAN & KAT.md",
     "Temp/Temp.md",
+    "Temp/人类思维.md",
+    "conflict-files-obsidian-git.md",
+    "LLM/Others/Diffusion Model.md",
+    "Temp/适合类比推理的数据集.md",
+    "Untitled.md",
+    "工作流/Docker_FT_llamafactory笔记 (新).md",
+    "工作流/不常用/本地无微调llamafile_docker.md",
+    "工作流/不常用/llama工具盒.md",
+    "工作流/不常用/(qinyu)制作OpenPCDet--BEVfusion镜像操作.md",
+    "工作流/不常用",
+    "Temp",
     "AIBot/AIBot.md",
     "AIBot",
-    "Temp/人类思维.md",
-    "Temp/适合类比推理的数据集.md",
-    "Temp",
-    "工作流/Lico/GPT详解Docker.md",
-    "工作流/不常用/llama工具盒.md",
-    "工作流/不常用/本地无微调llamafile_docker.md",
-    "工作流/不常用",
-    "工作流/Docker_FT_llamafactory笔记 (新).md",
-    "工作流/z(废弃)docker工作流笔记.md",
-    "工作流/不常用/(qinyu)制作OpenPCDet--BEVfusion镜像操作.md",
-    "工作流/LLama-Factory Notes.md",
+    "工作流/docker本地无微调llama.md",
+    "工作流/docker工作流笔记.md",
     "工作流/local FT no docker.md",
-    "LLama-Factory.md",
-    "工作流/微调项目本地部署.md",
-    "工作流/docker笔记(本地llama无微调).md",
-    "工作流/整体工作框架.md",
+    "工作流/docker工作流笔记 (工位).md",
+    "工作流/llama工具盒.md",
+    "工作流/AAAA整体工作框架.md",
+    "Lico/制作OpenPCDet--BEVfusion镜像操作.md",
+    "Lico/打包步骤GPT详解.md",
     "工作流",
     "LLM/Compression/模型压缩.md",
-    "工作流/Lico",
-    "LLM/Newest/KAN & KAT.md",
+    "Lico",
     "LLM/Newest",
     "LLM/Compression/images/Pasted image 20241015153946.png",
     "LLM/Compression/images/Pasted image 20241015153716.png",
@@ -227,8 +227,6 @@
     "LLM/Distilling/images/v2-acd06058251149eb0671b00d437fbfde_1440w.webp",
     "LLM/Distilling/images",
     "LLM/Distilling",
-    "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md",
-    "LLM/Others/Diffusion Model.md",
-    "Passive_Positioning/Articles/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md"
+    "LLM/Articles/Review/(2024-04-01)-A-Survey-on-Multimodal-Large-Language-Models-548LAWF6.md"
   ]
 }
