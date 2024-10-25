@@ -426,6 +426,7 @@ fi
 ## 9. 推理
 
 - 编辑`inference_config.yaml`
+- `docker start -ai FTLlama_lico3`
 - `cd LLaMA-Factory`
 - `llamafactory-cli chat Testfjn/yamls/inference_config.yaml`
 - `llamafactory-cli webchat Testfjn/yamls/inference_fted_config.yaml`
