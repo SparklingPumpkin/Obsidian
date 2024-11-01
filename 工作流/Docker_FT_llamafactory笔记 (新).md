@@ -53,7 +53,7 @@ autoProxy=true
 	- cuda11.3.1
 
 -  `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/FT_llama-factory:/workspace --name FTLlama_lico3 ftllama3c7b_fjn:v1`
-- `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/e/Docker_Containers/MinerU:/workspace --name MinerU1 fjn1`
+- `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/e/docker_containers/mineru:/workspace --name MinerU1 fjn1`
 `
 - 退出 & 重启容器
 	- 退出容器: `exit`
