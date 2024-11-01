@@ -1,0 +1,236 @@
+# KAN: Kolmogorov–Arnold Networks  
+
+Ziming Liu 1 , ∗ Yixuan Wang 2 Sachin Vaidya 1 Fabian Ruehle 3 , James Halverson 3 , Marin Soljaˇci´c 1 , Thomas Y. Hou 2 Max Tegmark 1 ,  
+
+1  Massachusetts Institute of Technology 2  California Institute of Technology 3  Northeastern University  
+
+4  The NSF Institute for Artificial Intelligence and Fundamental Interactions  
+
+# Abstract  
+
+Inspired by the Kolmogorov-Arnold representation theorem, we propose KolmogorovArnold Networks (KANs) as promising alternatives to Multi-Layer Perceptrons (MLPs). While MLPs have  fixed  activation functions on  nodes  (“neurons”), KANs have  learnable activation functions on  edges  (“weights”). KANs have no linear weights at all – every weight parameter is replaced by a univariate function parametrized as a spline. We show that this seemingly simple change makes KANs outperform MLPs in terms of accuracy and interpretability, on small-scale AI  $^+$   Science tasks. For accuracy, smaller KANs can achieve comparable or better accuracy than larger MLPs in function fitting tasks. Theoretically and empirically, KANs possess faster neural scaling laws than MLPs. For interpretability, KANs can be intuitively visualized and can easily interact with human users. Through two examples in mathematics and physics, KANs are shown to be useful “collaborators” helping scientists (re)discover mathematical and physical laws. In summary, KANs are promising alternatives for MLPs, opening opportunities for further improving today’s deep learning models which rely heavily on MLPs.  
+
+![](images/93de9e59ddd257adb36728b32d665fa998bb267bfda86d2081a93b3d747f744c.jpg)  
+
+Figure 0.1: Multi-Layer Perceptrons (MLPs) vs. Kolmogorov-Arnold Networks (KANs)  
+
+# 1 Introduction  
+
+Multi-layer perceptrons (MLPs) [1, 2, 3], also known as fully-connected feedforward neural networks, are foundational building blocks of today’s deep learning models. The importance of MLPs can never be overstated, since they are the default models in machine learning for approximating nonlinear functions, due to their expressive power guaranteed by the universal approximation theorem [3]. However, are MLPs the best nonlinear regressors we can build? Despite the prevalent use of MLPs, they have significant drawbacks. In transformers [4] for example, MLPs consume almost all non-embedding parameters and are typically less interpretable (relative to attention layers) without post-analysis tools [5].  
+
+We propose a promising alternative to MLPs, called Kolmogorov-Arnold Networks (KANs). Whereas MLPs are inspired by the universal approximation theorem, KANs are inspired by the Kolmogorov-Arnold representation theorem [6, 7, 8]. Like MLPs, KANs have fully-connected structures. However, while MLPs place fixed activation functions on  nodes  (“neurons”), KANs place learnable activation functions on  edges  (“weights”), as illustrated in Figure 0.1. As a result, KANs have no linear weight matrices at all: instead, each weight parameter is replaced by a learnable 1D function parametrized as a spline. KANs’ nodes simply sum incoming signals without applying any non-linearities. One might worry that KANs are hopelessly expensive, since each MLP’s weight parameter becomes KAN’s spline function. Fortunately, KANs usually allow much smaller computation graphs than MLPs.  
+
+Unsurprisingly, the possibility of using Kolmogorov-Arnold representation theorem to build neural networks has been studied [9, 10, 11, 12, 13, 14, 15, 16]. However, most work has stuck with the original depth-2 width $(2n+1)$   representation, and many did not have the chance to leverage more modern techniques (e.g., back propagation) to train the networks. In [12], a depth-2 width $(2n+1)$   representation was investigated, with breaking of the curse of dimensionality observed both empirically and with an approximation theory given compositional structures of the function. Our contribution lies in generalizing the original Kolmogorov-Arnold representation to arbitrary widths and depths, revitalizing and contextualizing it in today’s deep learning world, as well as using extensive empirical experiments to highlight its potential for   ${\mathrm{AI}}+$  Science due to its accuracy and interpretability.  
+
+Despite their elegant mathematical interpretation, KANs are nothing more than combinations of splines and MLPs, leveraging their respective strengths and avoiding their respective weaknesses. Splines are accurate for low-dimensional functions, easy to adjust locally, and able to switch between different resolutions. However, splines have a serious curse of dimensionality (COD) problem, because of their inability to exploit compositional structures. MLPs, on the other hand, suffer less from COD thanks to their feature learning, but are less accurate than splines in low dimensions, because of their inability to optimize univariate functions. The link between MLPs using ReLU $\cdot\mathbf{k}$  as activation functions and splines have been established in [17, 18]. To learn a function accurately, a model should not only learn the compositional structure ( external  degrees of freedom), but should also approximate well the univariate functions ( internal  degrees of freedom). KANs are such models since they have MLPs on the outside and splines on the inside. As a result, KANs can not only learn features (thanks to their external similarity to MLPs), but can also optimize these learned features to great accuracy (thanks to their internal similarity to splines). For example, given a high dimensional function  
+
+$$
+f(x_{1},\cdot\cdot\cdot,x_{N})=\exp\left(\frac{1}{N}\sum_{i=1}^{N}\sin^{2}(x_{i})\right),
+$$  
+
+![](images/5cc8ac9584366a5702b0aef4ab22bd4406643f33583f065c2769bf8426c4117e.jpg)  
+Figure 2.1: Our proposed Kolmogorov-Arnold networks are in honor of two great late mathematicians, Andrey Kolmogorov and Vladimir Arnold. KANs are mathematically sound, accurate and interpretable.  
+
+splines would fail for large    $N$   due to COD; MLPs can potentially learn the the generalized additive structure, but they are very inefficient for approximating the exponential and sine functions with say, ReLU activations. In contrast, KANs can learn both the compositional structure and the univariate functions quite well, hence outperforming MLPs by a large margin (see Figure 3.1).  
+
+Throughout this paper, we will use extensive numerical experiments to show that KANs can lead to accuracy and interpretability improvement over MLPs, at least on small-scale   ${\mathrm{AI~}}+{}$   Science tasks. The organization of the paper is illustrated in Figure 2.1. In Section 2, we introduce the KAN architecture and its mathematical foundation, introduce network simplification techniques to make KANs interpretable, and introduce a grid extension technique to make KANs more accurate. In Section 3, we show that KANs are more accurate than MLPs for data fitting: KANs can beat the curse of dimensionality when there is a compositional structure in data, achieving better scaling laws than MLPs. We also demonstrate the potential of KANs in PDE solving via a simple example of the Poisson equation. In Section 4, we show that KANs are interpretable and can be used for scientific discoveries. We use two examples from mathematics (knot theory) and physics (Anderson localization) to demonstrate that KANs can be helpful “collaborators” for scientists to (re)discover math and physical laws. Section 5 summarizes related works. In Section 6, we conclude by discussing broad impacts and future directions. Codes are available at  https://github.com/KindXiaoming/pykan and can also be installed via  pip install pykan .  
+
+# 2 Kolmogorov–Arnold Networks (KAN)  
+
+Multi-Layer Perceptrons (MLPs) are inspired by the universal approximation theorem. We instead focus on the Kolmogorov-Arnold representation theorem, which can be realized by a new type of neural network called Kolmogorov-Arnold networks (KAN). We review the Kolmogorov-Arnold theorem in Section 2.1, to inspire the design of Kolmogorov-Arnold Networks in Section 2.2. In Section 2.3, we provide theoretical guarantees for the expressive power of KANs and their neural scaling laws, relating them to existing approximation and generalization theories in the literature. In Section 2.4, we propose a grid extension technique to make KANs increasingly more accurate. In Section 2.5, we propose simplification techniques to make KANs interpretable.  
+
+# 2.1 Kolmogorov-Arnold Representation theorem  
+
+Vladimir Arnold and Andrey Kolmogorov established that if    $f$   is a multivariate continuous function on a bounded domain, then  $f$   can be written as a finite composition of continuous functions of a  
+
+![](images/694099f0663abbab037ff09d9713d1bc11fbd1fa63406ed3d02ba0c85626777a.jpg)  
+Figure 2.2: Left: Notations of activations that flow through the network. Right: an activation function is parameterized as a B-spline, which allows switching between coarse-grained and fine-grained grids.  
+
+single variable and the binary operation of addition. More specifically, for a smooth  $f:[0,1]^{n}\to\mathbb{R}.$  ,  
+
+$$
+f({\bf x})=f(x_{1},\cdot\cdot\cdot,x_{n})=\sum_{q=1}^{2n+1}\Phi_{q}\left(\sum_{p=1}^{n}\phi_{q,p}(x_{p})\right),
+$$  
+
+where    $\phi_{q,p}:[0,1]\rightarrow\mathbb{R}$   and    $\Phi_{q}:\mathbb{R}\rightarrow\mathbb{R}$  . In a sense, they showed that the only true multivariate function is addition, since every other function can be written using univariate functions and sum. One might naively consider this great news for machine learning: learning a high-dimensional function boils down to learning a polynomial number of 1D functions. However, these 1D functions can be non-smooth and even fractal, so they may not be learnable in practice [19, 20]. Because of this pathological behavior, the Kolmogorov-Arnold representation theorem was basically sentenced to death in machine learning, regarded as theoretically sound but practically useless [19, 20].  
+
+However, we are more optimistic about the usefulness of the Kolmogorov-Arnold theorem for machine learning. First of all, we need not stick to the original Eq. (2.1) which has only two-layer nonlinearities and a small number of terms  $(2n+1)$   in the hidden layer: we will generalize the network to arbitrary widths and depths. Secondly, most functions in science and daily life are often smooth and have sparse compositional structures, potentially facilitating smooth Kolmogorov-Arnold representations. The philosophy here is close to the mindset of physicists, who often care more about typical cases rather than worst cases. After all, our physical world and machine learning tasks must have structures to make physics and machine learning useful or generalizable at all [21].  
+
+# 2.2 KAN architecture  
+
+Suppose we have a supervised learning task consisting of input-output pairs    $\{\mathbf{x}_{i},y_{i}\}$  , where we want to find  $f$   such that    $y_{i}\approx f(\mathbf{x}_{i})$   for all data points. Eq. (2.1) implies that we are done if we can find appropriate univariate functions    $\phi_{q,p}$   and    $\Phi_{q}$  . This inspires us to design a neural network which explicitly parametrizes Eq. (2.1). Since all functions to be learned are univariate functions, we can parametrize each 1D function as a B-spline curve, with learnable coefficients of local B-spline basis functions (see Figure 2.2 right). Now we have a prototype of KAN, whose computation graph is exactly specified by Eq. (2.1) and illustrated in Figure 0.1 (b) (with the input dimension    $n\,=\,2$  ), appearing as a two-layer neural network with activation functions placed on edges instead of nodes (simple summation is performed on nodes), and with width  $2n+1$   in the middle layer.  
+
+As mentioned, such a network is known to be too simple to approximate any function arbitrarily well in practice with smooth splines! We therefore generalize our KAN to be wider and deeper. It is not immediately clear how to make KANs deeper, since Kolmogorov-Arnold representations correspond to two-layer KANs. To the best of our knowledge, there is not yet a “generalized” version of the theorem that corresponds to deeper KANs.  
+
+The breakthrough occurs when we notice the analogy between MLPs and KANs. In MLPs, once we define a layer (which is composed of a linear transformation and nonlinearties), we can stack more layers to make the network deeper. To build deep KANs, we should first answer: “what is a KAN layer?” It turns out that a KAN layer with  $n_{\mathrm{in}}$  -dimensional inputs and  $n_{\mathrm{out}}$  -dimensional outputs can be defined as a matrix of 1D functions  
+
+$$
+\Phi=\{\phi_{q,p}\},\qquad p=1,2,\cdot\cdot\cdot\cdot,n_{\mathrm{in}},\qquad q=1,2\cdot\cdot\cdot,n_{\mathrm{out}},
+$$  
+
+where the functions  $\phi_{q,p}$   have trainable parameters, as detaild below. In the Kolmogov-Arnold theorem, the inner functions form a KAN layer with  $n_{\mathrm{in}}=n$   and  $n_{\mathrm{out}}=2n+1$  , and the outer functions form a KAN layer with    $n_{\mathrm{in}}=2n+1$   and  $n_{\mathrm{out}}=1$  . So the Kolmogorov-Arnold representations in Eq. (2.1) are simply compositions of two KAN layers. Now it becomes clear what it means to have deeper Kolmogorov-Arnold representations: simply stack more KAN layers!  
+
+Let us introduce some notation. This paragraph will be a bit technical, but readers can refer to Figure 2.2 (left) for a concrete example and intuitive understanding. The shape of a KAN is represented by an integer array  
+
+$$
+[n_{0},n_{1},\cdot\cdot\cdot\,,n_{L}],
+$$  
+
+where  $n_{i}$   is the number of nodes in the    $i^{\mathrm{th}}$    layer of the computational graph. We denote the    $i^{\mathrm{th}}$  neuron in the    $l^{\mathrm{th}}$    layer by  $(l,i)$  , and the activation value of the    $(l,i)$  -neuron by  $x_{l,i}$  . Between layer  $l$  and layer    $l+1$  , there are    $n_{l}n_{l+1}$   activation functions: the activation function that connects    $(l,i)$   and  $(l+1,j)$   is denoted by  
+
+$$
+\phi_{l,j,i},\quad l=0,\cdot\cdot\cdot,L-1,\quad i=1,\cdot\cdot\cdot,n_{l},\quad j=1,\cdot\cdot\cdot,n_{l+1}.
+$$  
+
+The pre-activation of    $\phi_{l,j,i}$   is simply    $x_{l,i}$  ; the post-activation of    $\phi_{l,j,i}$   is denoted by    $\tilde{x}_{l,j,i}~\equiv$   $\phi_{l,j,i}(\boldsymbol{x}_{l,i})$  . The activation value of the    $(l+1,j)$   neuron is simply the sum of all incoming postactivations:  
+
+$$
+x_{l+1,j}=\sum_{i=1}^{n_{l}}\tilde{x}_{l,j,i}=\sum_{i=1}^{n_{l}}\phi_{l,j,i}(x_{l,i}),\qquad j=1,\cdots\,,n_{l+1}.
+$$  
+
+In matrix form, this reads  
+
+$$
+\begin{array}{r}{\mathbf{x}_{l+1}=\underbrace{\left(\begin{array}{c c c c}{\phi_{l,1,1}(\cdot)}&{\phi_{l,1,2}(\cdot)}&{\dots\cdot}&{\phi_{l,1,n_{l}}(\cdot)}\\ {\phi_{l,2,1}(\cdot)}&{\phi_{l,2,2}(\cdot)}&{\dots\cdot}&{\phi_{l,2,n_{l}}(\cdot)}\\ {\vdots}&{\vdots}&&{\vdots}\\ {\phi_{l,n_{l+1},1}(\cdot)}&{\phi_{l,n_{l+1},2}(\cdot)}&{\dots}&{\phi_{l,n_{l+1},n_{l}}(\cdot)}\end{array}\right)}_{\Phi_{l}}\mathbf{x}_{l},}\end{array}
+$$  
+
+where    $\Phi_{l}$   is the function matrix corresponding to the  $l^{\mathrm{th}}$    KAN layer. A general KAN network is a composition of  $L$   layers: given an input vector  $\mathbf{x}_{0}\in\mathbb{R}^{n_{0}}$  , the output of KAN is  
+
+$$
+\operatorname{KAN}(\mathbf{x})=(\Phi_{L-1}\circ\Phi_{L-2}\circ\cdot\cdot\cdot\circ\Phi_{1}\circ\Phi_{0})\mathbf{x}.
+$$  
+
+We can also rewrite the above equation to make it more analogous to Eq. (2.1), assuming output dimension    $n_{L}=1$  , and define    $f(\mathbf{x})\equiv\mathrm{KAN}(\mathbf{x})$  :  
+
+$$
+^{\mathrm{r}}(\mathbf{x})=\sum_{i_{L-1}=1}^{n_{L-1}}\phi_{L-1,i_{L},i_{L-1}}\left(\sum_{i_{L-2}=1}^{n_{L-2}}\cdot\cdot\left(\sum_{i_{2}=1}^{n_{2}}\phi_{2,i_{3},i_{2}}\left(\sum_{i_{1}=1}^{n_{1}}\phi_{1,i_{2},i_{1}}\left(\sum_{i_{0}=1}^{n_{0}}\phi_{0,i_{1},i_{0}}(x_{i_{0}})\right)\right)\right)\cdot\cdot\cdot\right),
+$$  
+
+which is quite cumbersome. In contrast, our abstraction of KAN layers and their visualizations are cleaner and intuitive. The original Kolmogorov-Arnold representation Eq. (2.1) corresponds to a 2-Layer KAN with shape    $[n,2n+1,1]$  . Notice that all the operations are differentiable, so we can train KANs with back propagation. For comparison, an MLP can be written as interleaving of affine transformations  W  and non-linearities  $\sigma$  :  
+
+$$
+\begin{array}{r}{\mathrm{MLP}(\mathbf{x})=(\mathbf{W}_{L-1}\circ\sigma\circ\mathbf{W}_{L-2}\circ\sigma\circ\cdots\circ\mathbf{W}_{1}\circ\sigma\circ\mathbf{W}_{0})\mathbf{x}.}\end{array}
+$$  
+
+It is clear that MLPs treat linear transformations and nonlinearities separately as    $\mathbf{W}$   and    $\sigma$  , while KANs treat them all together in  $\Phi$  . In Figure 0.1 (c) and (d), we visualize a three-layer MLP and a three-layer KAN, to clarify their differences.  
+
+Implementation details.  Although a KAN layer Eq. (2.5) looks extremely simple, it is non-trivial to make it well optimizable. The key tricks are:  
+
+(1) Residual activation functions. We include a basis function    $b(x)$   (similar to residual connections) such that the activation function    $\phi(x)$   is the sum of the basis function  $b(x)$   and the spline function:  
+
+$$
+\phi(x)=w_{b}b(x)+w_{s}{\mathrm{spline}}(x).
+$$  
+
+We set  
+
+$$
+b(x)=\mathrm{silu}(x)=x/(1+e^{-x})
+$$  
+
+in most cases.    $\operatorname{spline}(x)$   is parametrized as a linear combination of B-splines such that  
+
+$$
+\operatorname{spline}(x)=\sum_{i}c_{i}B_{i}(x)
+$$  
+
+where  $c_{i}\mathbf{s}$   are trainable (see Figure 2.2 for an illustration). In principle  $w_{b}$   and  $w_{s}$   are redundant since it can be absorbed into    $b(x)$   and  $\operatorname{spline}(x)$  . However, we still include these factors (which are by default trainable) to better control the overall magnitude of the activation function.  
+
+(2) Initialization scales. Each activation function is initialized to have  $w_{s}=1$   and    ${\mathrm{spline}}(x)\approx0\,^{2}$  .  $w_{b}$   is initialized according to the Xavier initialization, which has been used to initialize linear layers in MLPs.  
+
+(3) Update of spline grids. We update each grid on the fly according to its input activations, to address the issue that splines are defined on bounded regions but activation values can evolve out of the fixed region during training   3 .  
+
+Parameter count.  For simplicity, let us assume a network  
+
+(1) of depth    $L$  ,  
+
+(2) with layers of equal width    $n_{0}=n_{1}=\cdot\cdot\cdot=n_{L}=N$  , (3) with each spline of order    $k$   (usually  $k=3$  ) on  $G$   intervals (for    $G+1$   grid points).  
+
+Then there are in total    $O(N^{2}L(G+k))\sim O(N^{2}L G)$   parameters. In contrast, an MLP with depth  $L$   and width    $N$   only needs  $O(N^{2}L)$   parameters, which appears to be more efficient than KAN. Fortunately, KANs usually require much smaller    $N$   than MLPs, which not only saves parameters, but also achieves better generalization (see e.g., Figure 3.1 and 3.3) and facilitates interpretability. We remark that for 1D problems, we can take  $N=L=1$   and the KAN network in our implementation is nothing but a spline approximation. For higher dimensions, we characterize the generalization behavior of KANs with a theorem below.  
+
+# 2.3 KAN’s Approximation Abilities and Scaling Laws  
+
+Recall that in Eq. (2.1), the 2-Layer width $(2n+1)$   representation may be non-smooth. However, deeper representations may bring the advantages of smoother activations. For example, the 4-variable function  
+
+$$
+f(x_{1},x_{2},x_{3},x_{4})=\exp\left(\sin(x_{1}^{2}+x_{2}^{2})+\sin(x_{3}^{2}+x_{4}^{2})\right)
+$$  
+
+can be smoothly represented by a    $[4,2,1,1]$   KAN which is 3-Layer, but may not admit a 2-Layer KAN with smooth activations. To facilitate an approximation analysis, we still assume smoothness of activations, but allow the representations to be arbitrarily wide and deep, as in Eq. (2.7). To emphasize the dependence of our KAN on the finite set of grid points, we use    $\Phi_{l}^{G}$    and    $\Phi_{l,i,j}^{G}$    below to replace the notation  $\Phi_{l}$   and    $\Phi_{l,i,j}$   used in Eq. (2.5) and (2.6).  
+
+Theorem 2.1  (Approximation theory, KAT) .  Let    ${\bf x}\,=\,(x_{1},x_{2},\cdot\cdot\cdot\,,x_{n})$  . Suppose that a function  $f(\mathbf{x})$   admits a representation  
+
+$$
+f=(\Phi_{L-1}\circ\Phi_{L-2}\circ\cdots\circ\Phi_{1}\circ\Phi_{0})\mathbf{x}\,,
+$$  
+
+as in Eq.  (2.7) , where each one of the    $\Phi_{l,i,j}$   are    $(k+1)$  -times continuously differentiable. Then there exists a constant    $C$   depending on    $f$   and its representation, such that we have the following approximation bound in terms of the grid size  $G$  : there exist  $k$  -th order  $B$  -spline functions    $\Phi_{l,i,j}^{G}$  such that for any    $0\leq m\leq k$  , we have the bound  
+
+$$
+\begin{array}{r}{\|f-(\Phi_{L-1}^{G}\circ\Phi_{L-2}^{G}\circ\cdot\cdot\cdot\circ\Phi_{1}^{G}\circ\Phi_{0}^{G})\mathbf{x}\|_{C^{m}}\leq C G^{-k-1+m}\,.}\end{array}
+$$  
+
+Here we adopt the notation of  $C^{m}$  -norm measuring the magnitude of derivatives up to order    $m$  :  
+
+$$
+\|g\|_{C^{m}}=\operatorname*{max}_{|\beta|\leq m}\operatorname*{sup}_{x\in[0,1]^{n}}\left|D^{\beta}g(x)\right|.
+$$  
+
+Proof.  By the classical 1D B-spline theory [23] and the fact that  $\Phi_{l,i,j}$   as continuous functions can be uniformly bounded on a bounded domain, we know that there exist finite-grid B-spline functions  $\Phi_{l,i,j}^{G}$    such that for any    $0\leq m\leq k$  ,  
+
+$$
+\big(\Phi_{l,i,j}\circ\Phi_{l-1}\circ\Phi_{l-2}\circ\cdots\circ\Phi_{1}\circ\Phi_{0}\big)\mathbf{x}-\big(\Phi_{l,i,j}^{G}\circ\Phi_{l-1}\circ\Phi_{l-2}\circ\cdots\circ\Phi_{1}\circ\Phi_{0}\big)\mathbf{x}\big\|_{C^{m}}\leq C G^{-k-1+m}\,,
+$$  
+
+with a constant  $C$   independent of    $G$  . We fix those B-spline approximations. Therefore we have that the residue    $R_{l}$   defined via  
+
+$$
+{\mathfrak{I}}_{l}:=\left(\Phi_{L-1}^{G}\circ\cdot\,\cdot\circ\,\Phi_{l+1}^{G}\circ\Phi_{l}\circ\Phi_{l-1}\circ\cdot\,\cdot\circ\,\Phi_{0}\right){\mathbf{x}}-\left(\Phi_{L-1}^{G}\circ\cdot\,\cdot\circ\,\Phi_{l+1}^{G}\circ\Phi_{l}^{G}\circ\Phi_{l-1}\circ\cdot\,\cdot\circ\,\Phi_{0}\right){\mathbf{x}}
+$$  
+
+satisfies  
+
+$$
+\|R_{l}\|_{C^{m}}\leq C G^{-k-1+m}\,,
+$$  
+
+with a constant independent of    $G$  . Finally notice that  
+
+$$
+f-\big(\Phi_{L-1}^{G}\circ\Phi_{L-2}^{G}\circ\cdot\cdot\cdot\circ\Phi_{1}^{G}\circ\Phi_{0}^{G}\big)\mathbf{x}=R_{L-1}+R_{L-2}+\cdot\cdot\cdot+R_{1}+R_{0}\,,
+$$  
+
+we know that (2.15) holds.  
+
+We know that asymptotically, provided that the assumption in Theorem 2.1 holds, KANs with finite grid size can approximate the function well with a residue rate  independent of the dimension, hence beating curse of dimensionality!  This comes naturally since we only use splines to approximate 1D functions. In particular, for  $m=0$  , we recover the accuracy in  $L^{\infty}$  norm, which in turn provides a bound of RMSE on the finite domain, which gives a scaling exponent    $k+1$  . Of course, the constant    $C$   is dependent on the representation; hence it will depend on the dimension. We will leave the discussion of the dependence of the constant on the dimension as a future work.  
+
+We remark that although the Kolmogorov-Arnold theorem Eq. (2.1) corresponds to a KAN representation with shape  $[d,2d+1,1]$  , its functions are not necessarily smooth. On the other hand, if we are able to identify a smooth representation (maybe at the cost of extra layers or making the KAN wider than the theory prescribes), then Theorem 2.1 indicates that we can beat the curse of dimensionality (COD). This should not come as a surprise since we can inherently learn the structure of the function and make our finite-sample KAN approximation interpretable.  
+
+Neural scaling laws: comparison to other theories.  Neural scaling laws are the phenomenon where test loss decreases with more model parameters, i.e.,  $\ell\propto N^{-\alpha}$    where  $\ell$  is test RMSE,    $N$   is the number of parameters, and    $\alpha$   is the scaling exponent. A larger    $\alpha$   promises more improvement by simply scaling up the model. Different theories have been proposed to predict    $\alpha$  . Sharma & Kaplan [24] suggest that  $\alpha$   comes from data fitting on an input manifold of intrinsic dimensionality  $d$  . If the model function class is piecewise polynomials of order    $k$     $\mathit{\Delta}k\,=\,1\$   for ReLU), then the standard approximation theory implies  $\alpha=(k+1)/d$   from the approximation theory. This bound suffers from the curse of dimensionality, so people have sought other bounds independent of  $d$   by leveraging compositional structures. In particular, Michaud et al. [25] considered computational graphs that only involve unary (e.g., squared, sine, exp) and binary (  $^{+}$   and    $\times^{\prime}$  ) operations, finding  $\alpha=(k+1)/d^{\ast}=(k+1)/2$  , where  $d^{*}=2$   is the maximum arity. Poggio et al. [19] leveraged the idea of compositional sparsity and proved that given function class    $W_{m}$   (function whose derivatives are continuous up to    $m$  -th order), one needs    $N=O(\epsilon^{-\frac{2}{m}})$   number of parameters to achieve error  $\epsilon$  , which is equivalent to  $\begin{array}{r}{\alpha=\frac{m}{2}}\end{array}$    . Our approach, which assumes the existence of smooth KolmogorovArnold representations, decomposes the high-dimensional function into several 1D functions, giving  $\alpha=k\!+\!1$   (where  $k$   is the piecewise polynomial order of the splines). We choose  $k=3$   cubic splines so  $\alpha=4$   which is the largest and best scaling exponent compared to other works. We will show in Section 3.1 that this bound    $\alpha=4$   can in fact be achieved empirically with KANs, while previous work [25] reported that MLPs have problems even saturating slower bounds (e.g.,    $\alpha\:=\:1)$  ) and plateau quickly. Of course, we can increase    $k$   to match the smoothness of functions, but too high  $k$  might be too oscillatory, leading to optimization issues.  
+
+Comparison between KAT and UAT.  The power of fully-connected neural networks is justified by the universal approximation theorem (UAT), which states that given a function and error tolerance  $\epsilon>0$  , a two-layer network with    $k\,>\,N(\epsilon)$   neurons can approximate the function within error    $\epsilon$  . However, the UAT guarantees no bound for how  $N(\epsilon)$   scales with  $\epsilon$  . Indeed, it suffers from the COD, and    $N$   has been shown to grow exponentially with    $d$   in some cases [21]. The difference between  
+
+# Fitting  $f(x,y)=\exp(\sin(\pi x)+y^{2})$  
+
+![](images/655817fbb9dfe97afb15d264171ebd05c1ed2ef4633bbc1cae10690cfafc3be5.jpg)  
+Figure 2.3: We can make KANs more accurate by grid extension (fine-graining spline grids). Top left (right): training dynamics of a  [2 ,  5 ,  1]  ( [2 ,  1 ,  1] ) KAN. Both models display staircases in their loss curves, i.e., loss suddently drops then plateaus after grid extension. Bottom left: test RMSE follows scaling laws against grid size  $G$  . Bottom right: training time scales favorably with grid size    $G$  .  
+
+KAT and UAT is a consequence that KANs take advantage of the intrinsically low-dimensional representation of the function while MLPs do not. In KAT, we highlight quantifying the approximation error in the compositional space. In the literature, generalization error bounds, taking into account finite samples of training data, for a similar space have been studied for regression problems; see [26, 27], and also specifically for MLPs with ReLU activations [28]. On the other hand, for general function spaces like Sobolev or Besov spaces, the nonlinear  $n$  -widths theory [29, 30, 31] indicates that we can never beat the curse of dimensionality, while MLPs with ReLU activations can achieve the tight rate [32, 33, 34]. This fact again motivates us to consider functions of compositional structure, the much "nicer" functions that we encounter in practice and in science, to overcome the COD. Compared with MLPs, we may use a smaller architecture in practice, since we learn general nonlinear activation functions; see also [28] where the depth of the ReLU MLPs needs to reach at least  $\log n$   to have the desired rate, where  $n$   is the number of samples. Indeed, we will show that KANs are nicely aligned with symbolic functions while MLPs are not.  
+
+# 2.4 For accuracy: Grid Extension  
+
+In principle, a spline can be made arbitrarily accurate to a target function as the grid can be made arbitrarily fine-grained. This good feature is inherited by KANs. By contrast, MLPs do not have the notion of “fine-graining”. Admittedly, increasing the width and depth of MLPs can lead to improvement in performance (“neural scaling laws”). However, these neural scaling laws are slow (discussed in the last section). They are also expensive to obtain, because models of varying sizes are trained independently. By contrast, for KANs, one can first train a KAN with fewer parameters and then extend it to a KAN with more parameters by simply making its spline grids finer, without the need to retraining the larger model from scratch.  
+
+We next describe how to perform grid extension (illustrated in Figure 2.2 right), which is basically fitting a new fine-grained spline to an old coarse-grained spline. Suppose we want to approximate a 1D function    $f$   in a bounded region    $[a,b]$   with B-splines of order    $k$  . A coarse-grained grid with    $G_{1}$   intervals has grid points at    $\{t_{0}\;=\;a,t_{1},t_{2},\cdot\cdot\cdot\;,t_{G_{1}}\;=\;b\}$  , which is augmented to  $\left\{t_{-k},\cdot\cdot\cdot,t_{-1},t_{0},\cdot\cdot\cdot\cdot,t_{G_{1}},t_{G_{1}+1},\cdot\cdot\cdot,t_{G_{1}+k}\right\}$  . There are    $G_{1}+k$   B-spline basis functions, with the    $i^{\mathrm{th}}$    B-spline    ${\cal{B}}_{i}(x)$   being non-zero only on    $\mathbf\Lambda_{\varepsilon-k+i}^{\varepsilon},t_{i+1}\right]\,(i\,=\,0,\cdots\,,G_{1}+k\,-\,1)$  . Then    $f$  on the coarse grid is expressed in terms of linear combination of these B-splines basis functions  $\begin{array}{r}{f_{\mathrm{coarse}}(x)\,=\,\sum_{i=0}^{G_{1}+k-1}c_{i}B_{i}(x),}\end{array}$  . Given a finer grid with    $G_{2}$   intervals,    $f$   on the fine grid is corspondingly  f  $\begin{array}{r}{f_{\mathrm{fine}}(\boldsymbol{x})\,=\,\sum_{j=0}^{G_{2}+k-1}c_{j}^{\prime}B_{j}^{\prime}(\boldsymbol{x})}\end{array}$    P . The parameters    $c_{j}^{\prime}\mathbf{s}$  s can be initialized from the parameters  $c_{i}$   by minimizing the distance between    $f_{\mathrm{fine}}(x)$   to    $f_{\mathrm{coarse}}(x)$   (over some distribution of x ):  
+
+$$
+\{c_{j}^{\prime}\}=\underset{\{c_{j}^{\prime}\}}{\operatorname{argmin}}\ \underset{x\sim p(x)}{\mathbb{E}}\left(\sum_{j=0}^{G_{2}+k-1}c_{j}^{\prime}B_{j}^{\prime}(x)-\sum_{i=0}^{G_{1}+k-1}c_{i}B_{i}(x)\right)^{2},
+$$  
+
+which can be implemented by the least squares algorithm. We perform grid extension for all splines in a KAN independently.  
+
+Toy example: staricase-like loss curves.  We use a toy example    $f(x,y)=\exp(\sin(\pi x)+y^{2})$   to demonstrate the effect of grid extension. In Figure 2.3 (top left), we show the train and test RMSE for a  [2 ,  5 ,  1]  KAN. The number of grid points starts as 3, increases to a higher value every 200 LBFGS steps, ending up with 1000 grid points. It is clear that every time fine graining happens, the training loss drops faster than before (except for the finest grid with 1000 points, where optimization ceases to work probably due to bad loss landscapes). However, the test losses first go down then go up, displaying a U-shape, due to the bias-variance tradeoff (underfitting vs. overfitting). We conjecture that the optimal test loss is achieved at the interpolation threshold when the number of parameters match the number of data points. Since our training samples are 1000 and the total parameters of a [2 ,  5 ,  1]  KAN is    $15G$   (  $G$   is the number of grid intervals), we expect the interpolation threshold to be  $G=1000/15\approx67$  , which roughly agrees with our experimentally observed value  $G\sim50$  .  
+
+Small KANs generalize better.  Is this the best test performance we can achieve? Notice that the synthetic task can be represented exactly by a  [2 ,  1 ,  1]  KAN, so we train a  [2 ,  1 ,  1]  KAN and present the training dynamics in Figure 2.3 top right. Interestingly, it can achieve even lower test losses than the  [2 ,  5 ,  1]  KAN, with clearer staircase structures and the interpolation threshold is delayed to a larger grid size as a result of fewer parameters. This highlights a subtlety of choosing KAN architectures. If we do not know the problem structure, how can we determine the minimal KAN shape? In Section 2.5, we will propose a method to auto-discover such minimal KAN architecture via regularization and pruning.  
+
+Scaling laws: comparison with theory.  We are also interested in how the test loss decreases as the number of grid parameters increases. In Figure 2.3 (bottom left), a [2,1,1] KAN scales roughly as test  $\mathrm{RMSE}\propto G^{-3}$  . However, according to the Theorem 2.1, we would expect  test RMSE  $\propto G^{-4}$  . We found that the errors across samples are not uniform. This is probably attributed to boundary effects [25]. In fact, there are a few samples that have significantly larger errors than others, making the overall scaling slow down. If we plot the square root of the  median  (not  mean ) of the squared losses, we get a scaling closer to    $G^{-4}$  . Despite this suboptimality (probably due to optimization), KANs still have much better scaling laws than MLPs, for data fitting (Figure 3.1) and PDE solving (Figure 3.3). In addition, the training time scales favorably with the number of grid points  $G$  , shown in Figure 2.3 bottom right   4 .  
