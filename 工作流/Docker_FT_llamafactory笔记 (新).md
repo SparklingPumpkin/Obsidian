@@ -120,6 +120,7 @@ llamafactory-cli train Testfjn/yamls/llama3_lora_sft_fjn.yaml
 - **在ubuntu中执行以下命令来保存为一个新镜像**：
 	- `docker commit <容器ID或容器名称> <新镜像名称>`
 	- `docker commit FTLlama_lico2 ftllama3c7b_fjn:v1`
+	- `docker commit FTLlama_lico3 fjn1`
 - **打包镜像**：
 	- `docker save -o FTLlama_lico2.tar ftllama3c7b_fjn:v1`
 	- 文件位置在以下目录 (win11子系统ubuntu)
