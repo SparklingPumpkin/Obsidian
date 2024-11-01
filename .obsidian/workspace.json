@@ -35,7 +35,8 @@
               "title": "Docker_FT_llamafactory笔记 (新)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,10 +199,10 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "bf7462101b5ff24a",
+  "active": "1550df41e983fabe",
   "lastOpenFiles": [
-    "工作流/Docker_FT_llamafactory笔记 (新).md",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903.md",
+    "工作流/Docker_FT_llamafactory笔记 (新).md",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_origin.pdf",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_layout.pdf",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_spans.pdf",
