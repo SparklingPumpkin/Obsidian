@@ -11,14 +11,12 @@
             "id": "bf7462101b5ff24a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903.md",
-                "mode": "source",
-                "source": false
+                "file": "DL/Newest/KAN/images/694099f0663abbab037ff09d9713d1bc11fbd1fa63406ed3d02ba0c85626777a.jpg"
               },
-              "icon": "lucide-file",
-              "title": "Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903"
+              "icon": "lucide-image",
+              "title": "694099f0663abbab037ff09d9713d1bc11fbd1fa63406ed3d02ba0c85626777a"
             }
           },
           {
@@ -35,8 +33,7 @@
               "title": "Docker_FT_llamafactory笔记 (新)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,15 +196,15 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "1550df41e983fabe",
+  "active": "bf7462101b5ff24a",
   "lastOpenFiles": [
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903.md",
+    "DL/Newest/KAN/images/93de9e59ddd257adb36728b32d665fa998bb267bfda86d2081a93b3d747f744c.jpg",
     "工作流/Docker_FT_llamafactory笔记 (新).md",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_origin.pdf",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_layout.pdf",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_spans.pdf",
     "LLM/Newest/ARN.md",
-    "DL/Newest/KAN/images/93de9e59ddd257adb36728b32d665fa998bb267bfda86d2081a93b3d747f744c.jpg",
     "DL/Newest/KAN/images/694099f0663abbab037ff09d9713d1bc11fbd1fa63406ed3d02ba0c85626777a.jpg",
     "DL/Newest/KAN/images/655817fbb9dfe97afb15d264171ebd05c1ed2ef4633bbc1cae10690cfafc3be5.jpg",
     "DL/Newest/KAN/images/5cc8ac9584366a5702b0aef4ab22bd4406643f33583f065c2769bf8426c4117e.jpg",
