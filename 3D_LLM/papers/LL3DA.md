@@ -40,6 +40,7 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 
 ## 4. 模型介绍
 
+![[Pasted image 20241116200443.png]]
 1. LL3DA的总体流程包括两个主要步骤：场景嵌入与指令输入
 	1. **提取交互感知的3D场景嵌入**
 		- 通过视觉模型（如基于3D点云的模型）
