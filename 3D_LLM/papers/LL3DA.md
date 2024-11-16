@@ -55,3 +55,4 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 	2. **文本指令** 用户通过自然语言提供的任务描述，如“标记桌子上的杯子”
 	3. 3D场景嵌入之前有提到
 	4. 固定长度的查询tokens
+3. **编码模块**：
