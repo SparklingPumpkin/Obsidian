@@ -38,7 +38,7 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 - 纯文本
 	- 常常会导致歧义，尤其是在杂乱且复杂的 3D 环境中。
 
-## 4. 模型介绍
+## 4. 模型简介
 
 ![[Pasted image 20241116200443.png]]
 1. **总体流程**包括两个主要步骤：**场景嵌入**与**指令输入**
@@ -57,3 +57,6 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 	4. 固定长度的查询tokens
 3. **编码模块**：prompt编码器分别使用位置嵌入和 ROI 特征对用户点击和框坐标进行编码。
 	1. 用户框选的目标区域被表示为感兴趣区域（Region of Interest, ROI）的特征向量。
+
+## 5. 模型建立
+
