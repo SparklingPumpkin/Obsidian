@@ -41,7 +41,7 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 ## 4. 模型介绍
 
 ![[Pasted image 20241116200443.png]]
-1. LL3DA的总体流程包括两个主要步骤：场景嵌入与指令输入
+1. LL3DA的总体流程包括两个主要步骤：**场景嵌入**与**指令输入**
 	1. **提取交互感知的3D场景嵌入**
 		- 通过视觉模型（如基于3D点云的模型）
 		- **交互感知**指的是场景嵌入信息不仅描述了场景的空间结构，还捕捉了场景中可交互的对象及其关系。
@@ -50,4 +50,5 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 		- **注释：
 			- 对齐：跨模态的对齐过程，用于将3D场景嵌入的信息转化为与语言模型（LLM）兼容的输入格式。
 			- 冻结的LLM表示LLM的参数在整个过程中不更新，只利用其现有的知识进行推理。冻结策略简化了训练，同时保持模型的泛化能力。
-1. Interactor3D模块：多模态信息融合
+2. Interactor3D模块：多模态信息融合
+	1. 
