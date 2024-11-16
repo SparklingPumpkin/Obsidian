@@ -50,5 +50,5 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 		- **注释：
 			- 对齐：跨模态的对齐过程，用于将3D场景嵌入的信息转化为与语言模型（LLM）兼容的输入格式。
 			- 冻结的LLM表示LLM的参数在整个过程中不更新，只利用其现有的知识进行推理。冻结策略简化了训练，同时保持模型的泛化能力。
-2. Interactor3D模块：多模态信息融合
+2. Interactor3D模块：多模态信息融合（视觉提示、文本指令和3D场景嵌入）
 	1. 
