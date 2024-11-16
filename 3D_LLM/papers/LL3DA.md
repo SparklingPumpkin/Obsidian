@@ -14,6 +14,9 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 - LL3DA：
 	- 一种大型语言 3D 助手
 	- 采用点云作为直接输入，并对文本指令和视觉提示做出响应
+	- 功能：
+		- 响应人类的文本和视觉交互
+		- 在复杂的 3D 环境中理解、推理和规划
 
 ## 3. 先前工作
 
