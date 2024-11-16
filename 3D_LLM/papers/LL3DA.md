@@ -17,6 +17,8 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 	- 功能：
 		- 响应人类的文本和视觉交互
 		- 在复杂的 3D 环境中理解、推理和规划
+	- 技术：
+		- 多模态转换器：通过注意力机制将来自文本指令、视觉提示和 3D 场景的信息聚合成固定长度的可学习查询标记。
 
 ## 3. 先前工作
 
