@@ -79,7 +79,7 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 	2. **文本指令** 用户通过自然语言提供的任务描述，如“标记桌子上的杯子”
 	3. **3D场景嵌入**之前有提到
 	4. 固定长度的查询tokens
-- 模块
+- **三个模块**
 	- **冻结的3D场景编码器**
 		- 在 ScanNet 目标检测上预训练的 masked transformer encoder
 		- 输入: PC点云
@@ -96,7 +96,8 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 		- 网络：独立且相同
 			- $f_{\mathrm{click}}=FFN_{\mathrm{click}}\left(\mathrm{pos}\left(p_{\mathrm{click}}\right)\right)$
 			- $f_{\mathrm{box}}=FFN_{\mathrm{box}}\left(f_{\mathrm{box}}\right)$
-	- 多模态转换器
+	- **多模态Transformer**
+		- 
 
 ### 5.3 编码模块
 - prompt编码器分别使用位置嵌入和 ROI 特征对用户点击和框坐标进行编码。
