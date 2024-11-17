@@ -80,12 +80,13 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 	3. **3D场景嵌入**之前有提到
 	4. 固定长度的查询tokens
 - 模块
-	- 冻结的3D场景编码器
+	- **冻结的3D场景编码器**
 		- 在 ScanNet 目标检测上预训练的 masked transformer encoder
 		- 输入: PC点云
 		- 输出: 3D场景嵌入
 		- $f_{enc}=\mathcal{E}^{3D}\left(PC\right)=\mathcal{E}^{3D}\left(p_{in};f_{in}\right)\in\mathbb{R}^{M\times d}$
-	- 视觉prompt编码器
+	- **视觉prompt编码器**
+		- 
 	- 多模态转换器
 
 ### 5.3 编码模块
