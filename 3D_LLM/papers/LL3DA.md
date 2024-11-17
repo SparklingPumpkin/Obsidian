@@ -60,4 +60,9 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 
 ## 5. 模型建立
 
-- 输入: 
+### 模型输入（Model Input）
+
+1. **3D 场景表示**：
+    
+    - 输入形式为一组点云 PCPC​，其数学表示为 PC=[pin,fin]∈RN×(3+F)PC​=[pin​,fin​]∈RN×(3+F)。
+    - 其中，pin∈RN×3pin​∈RN×3 表示点的坐标，而 fin∈RN×Ffin​∈RN×F 表示附加的点特征，包括颜色、法线方向和高度等。
