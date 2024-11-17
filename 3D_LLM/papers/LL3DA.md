@@ -88,8 +88,11 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 	- **视觉prompt编码器**
 		- 用户点击
 			- 归一化
-			- 编码 (3D傅里叶位置嵌入)
+			- 编码 (3D傅里叶位置编码)
+			- $\mathrm{pos}\left(p_{\mathrm{click}}\right)=\left[\sin\left(2\pi p_{\mathrm{click}}\cdot B\right);\cos\left(2\pi p_{\mathrm{click}}\cdot B\right)\right]$
+			- 其中 $B\in\mathbb{R}^{3\times(d/2)}$ 是一个可学习矩阵
 		- 3D框选
+			- 
 	- 多模态转换器
 
 ### 5.3 编码模块
