@@ -96,8 +96,16 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 		- 网络：独立且相同
 			- $f_{\mathrm{click}}=FFN_{\mathrm{click}}\left(\mathrm{pos}\left(p_{\mathrm{click}}\right)\right)$
 			- $f_{\mathrm{box}}=FFN_{\mathrm{box}}\left(f_{\mathrm{box}}\right)$
-	- **多模态Transformer**
-		- 
+	- **多模态Transformer （MMT）**
+		- 作用：
+			- <mark style="background: #FFB86CA6;">MMT解决了3D场景嵌入（排列不变）与位置敏感的因果语言模型（LLMs）之间的矛盾。</mark>
+			- 弥合了冻结的单一模态专家之间的差距。
+			- 满足了交互感知特征提取的需求。
+		- 工作原理
+			- 交叉自注意力机制
+			- 从BERT中初始化预训练的词嵌入和位置嵌入。
+		- 输出：
+			- 32个Query，通过一个简单的线性投影器投影到语言模型的词嵌入空间中。
 
 ### 5.3 编码模块
 - prompt编码器分别使用位置嵌入和 ROI 特征对用户点击和框坐标进行编码。
