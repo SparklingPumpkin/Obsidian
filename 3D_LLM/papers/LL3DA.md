@@ -117,3 +117,14 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 
 ## 6 多模态指令微调
 
+先设计对应任务的instruction
+
+- **3D Dense Captioning**
+	- 需求：为3D场景中的每个对象生成详细的自然语言描述
+	- 特色：结合了3D对象检测、3D场景理解以及自然语言生成等多个领域的技术，旨在提供对3D场景的全面和细粒度的文字描述。
+- **3D Question Answering**
+	- 要求模型根据 3D 场景的全局知识生成对问题的响应
+- **Scene Description**
+	- 将 3D 场景的全局知识转化为自然语言描述
+- **Embodied Conversation and Planning**
+	- 多轮对话
