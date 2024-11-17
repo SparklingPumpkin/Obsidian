@@ -86,7 +86,8 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 		- 输出: 3D场景嵌入
 		- $f_{enc}=\mathcal{E}^{3D}\left(PC\right)=\mathcal{E}^{3D}\left(p_{in};f_{in}\right)\in\mathbb{R}^{M\times d}$
 	- **视觉prompt编码器**
-		- 
+		- 用户点击
+		- 3D框选
 	- 多模态转换器
 
 ### 5.3 编码模块
