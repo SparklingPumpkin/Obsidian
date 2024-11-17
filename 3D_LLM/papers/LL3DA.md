@@ -60,8 +60,11 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 
 ## 5. 模型建立
 
-### 模型输入（Model Input）
-
-1. **3D 场景表示**：
-    - 输入形式为一组点云 PC​，其数学表示为 $PC=[p_{in},f_{in}]\in\mathbb{R}^{N\times(3+F)}$]∈RN×(3+F)。
-    - 其中，$p_{in}\in\mathbb{R}^{N\times3}$ 表示点的坐标，而 $f_{in}\in\mathbb{R}^{N\times F}$ 表示附加的点特征，包括颜色、法线方向和高度等。
+- 模型输入
+	- **3D 场景表示**：
+	    - 输入形式为一组点云 PC​，其数学表示为 $PC=[p_{in},f_{in}]\in\mathbb{R}^{N\times(3+F)}$]∈RN×(3+F)。
+	    - 其中，$p_{in}\in\mathbb{R}^{N\times3}$ 表示点的坐标，而 $f_{in}\in\mathbb{R}^{N\times F}$ 表示附加的点特征，包括颜色、法线方向和高度等。
+	- **文本指令**：
+	    - 文本指令 $I_t$​ 是模型接收的一部分输入，用于指导模型执行特定任务或操作。这些指令以“### human:”作为标识符开始，表明这是来自用户的输入。
+	- **潜在视觉交互**：
+		- 视觉交互 $I_v$ 可能作为补充的空间标识符提供给模型，帮助模型更好地理解3D场景中的空间关系和结构。

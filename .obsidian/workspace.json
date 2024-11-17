@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4e288ee870be5b85",
@@ -184,7 +185,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "89784befaf0567ea",
+  "active": "bf7462101b5ff24a",
   "lastOpenFiles": [
     "LLM/Newest/ARN.md",
     "Pasted image 20241116200443.png",
