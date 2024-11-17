@@ -92,7 +92,10 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 			- $\mathrm{pos}\left(p_{\mathrm{click}}\right)=\left[\sin\left(2\pi p_{\mathrm{click}}\cdot B\right);\cos\left(2\pi p_{\mathrm{click}}\cdot B\right)\right]$
 			- 其中 $B\in\mathbb{R}^{3\times(d/2)}$ 是一个可学习矩阵
 		- 3D框选
-			- 用预训练的3D对象检测器提取ROI特征
+			- 用预训练的3D对象检测器提取ROI特征$f_{\mathrm{box}}\in\mathbb{R}^d$
+		- 网络：独立且相同
+			- $f_{\mathrm{click}}=FFN_{\mathrm{click}}\left(\mathrm{pos}\left(p_{\mathrm{click}}\right)\right)$
+			- $f_{\mathrm{box}}=FFN_{\mathrm{box}}\left(f_{\mathrm{box}}\right)$
 	- 多模态转换器
 
 ### 5.3 编码模块
