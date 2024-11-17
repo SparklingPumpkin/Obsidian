@@ -73,4 +73,7 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 		- 主要为自然语言
 		- 部分可以被解析为坐标
 		- 采用“### assistant:”标识符来引导模型生成响应
-		- 
+- 坐标表示
+	- 将3D坐标信息转换成文本格式，以便现有的大型语言模型（LLMs）能够理解和处理这些信息。
+	- 一个**3D点**使用特殊的标签 `<loc>` 包裹起来，格式为 `<loc>x, y, z</loc>`。这里的 `x`, `y`, `z` 分别代表该点在三维空间中的坐标值
+	- 一个**3D边界框**则通过它的中心点和大小来表示，格式为 `<obj>c_x, c_y, c_z, w, h, l</obj>`。其中，`c_x`, `c_y`, `c_z` 是边界框中心点的坐标，而 `w`, `h`, `l` 分别表示边界框的宽度、高度和长度。
