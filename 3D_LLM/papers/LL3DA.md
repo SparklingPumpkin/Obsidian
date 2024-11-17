@@ -107,7 +107,7 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 		- 输出：
 			- 32个Query，通过一个简单的线性投影器投影到语言模型的词嵌入空间中。
 	- LLM
-		- 在推理过程中，我们生成的响应是通过搜索最优序列 s∗ 来实现的，该序列满足以下条件：
+		- 在推理过程中，生成的响应是通过搜索最优序列 s 来实现的，该序列满足以下条件：
 			- $s^*=\arg\max_sP\left(s|PC,\mathcal{I}_t,\mathcal{I}_v\right).$
 
 ### 5.3 编码模块
