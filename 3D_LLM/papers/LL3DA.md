@@ -113,3 +113,7 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 ### 5.3 编码模块
 - prompt编码器分别使用位置嵌入和 ROI 特征对用户点击和框坐标进行编码。
 	1. 用户框选的目标区域被表示为感兴趣区域（Region of Interest, ROI）的特征向量。
+
+
+## 6 多模态指令微调
+
