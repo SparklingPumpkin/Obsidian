@@ -60,3 +60,4 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 
 ## 5. 模型建立
 
+- 输入: 
