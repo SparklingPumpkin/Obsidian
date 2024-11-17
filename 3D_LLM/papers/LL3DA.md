@@ -64,4 +64,4 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 
 1. **3D 场景表示**：
     - 输入形式为一组点云 PC​，其数学表示为 $PC=[p_{in},f_{in}]\in\mathbb{R}^{N\times(3+F)}$]∈RN×(3+F)。
-    - 其中，pin∈RN×3pin​∈RN×3 表示点的坐标，而 fin∈RN×Ffin​∈RN×F 表示附加的点特征，包括颜色、法线方向和高度等。
+    - 其中，$p_{in}\in\mathbb{R}^{N\times3}$ 表示点的坐标，而 $f_{in}\in\mathbb{R}^{N\times F}$ 表示附加的点特征，包括颜色、法线方向和高度等。
