@@ -13,10 +13,10 @@ LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoni
 
 - LL3DA：
 	- 一种大型语言 3D 助手
-	- 采用点云作为直接输入，并对文本指令和视觉提示做出响应
+	- 采用点云作为直接<mark style="background: #FFB86CA6;">输入</mark>，并对文本指令和视觉提示做出响应
 	- 功能：
-		- 响应人类的文本和视觉交互
-		- 在复杂的 3D 环境中理解、推理和规划
+		- <mark style="background: #FFB86CA6;">响应人类的文本和视觉交互</mark>
+		- <mark style="background: #FFB86CA6;">在复杂的 3D 环境中理解、推理和规划</mark>
 	- 技术：
 		- **多模态转换器**：通过注意力机制将来自文本指令、视觉提示和 3D 场景的信息聚合成固定长度的可学习查询标记。
 		- **查询标记** 被投影并用作文本指令的前缀，作为预训练和冻结的 LLM 的输入。
