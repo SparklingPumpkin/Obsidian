@@ -3,6 +3,7 @@
 - vscode ssh远程文件夹连接
 	- `ssh usv012@58.199.168.55`
 	- 输入密码
+	- 数据集文件储存在`cd /media/usv012/fjn/data`
 	- `cd /home/usv012/fjn/Projects/3D-LLM`
 
 ```
