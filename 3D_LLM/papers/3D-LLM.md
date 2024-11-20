@@ -1,3 +1,5 @@
+# 3D-LLM: Injecting the 3D World into Large Language Models
+
 - 输入：3D 点云及其特征
 - 输出：语言序列（与指令相关）
 - 任务：（主要是3D场景理解规划）执行一系列与 3D 相关的任务，包括caption、dense caption、3D 问答、任务分解、3D 基础、3D 辅助对话、导航等。
