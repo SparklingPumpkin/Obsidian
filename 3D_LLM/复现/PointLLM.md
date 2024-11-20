@@ -25,6 +25,8 @@
 - vscode ssh远程文件夹连接
 	- `ssh usv012@58.199.168.55`
 	- 输入密码
+	- `cd /home/zqq/fjn`
+	- 
 
 
 
