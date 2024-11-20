@@ -4,7 +4,7 @@
 	- `ssh usv012@58.199.168.55`
 	- 输入密码
 	- 数据集文件储存在`cd /media/usv012/fjn/data`
-	- `cd /media/usv012/fjn/Projects/3D-LLM`
+	- `cd /media/usv012/fjn/projects/3D-LLM`
 
 ```
 $ conda create -n lavis python=3.8
