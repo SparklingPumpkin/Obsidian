@@ -34,7 +34,10 @@ autoProxy=true
 		- cuda12.6; 自带pytorch
 	- `docker pull nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04`
 		- cuda11.3; 无pytorch
-- - 如何查看cuda版本? 进入容器后`nvidia-smi`或者`nvcc -V`
+	- 如何拉取指定cuda和pytorch版本镜像?
+		-  `docker pull nvcr.io/nvidia/pytorch:23.09-py3`
+		- 主要看标签: `pytorch:<YY.MM>-py<python_version>`
+- 如何查看cuda版本? 进入容器后`nvidia-smi`或者`nvcc -V`
 
 ## 3. 启动容器并挂载代码
 

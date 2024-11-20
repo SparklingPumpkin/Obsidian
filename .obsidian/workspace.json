@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -213,10 +213,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "36e2782dfd5cf2d2",
+  "active": "587ed7c3e1c714cc",
   "lastOpenFiles": [
-    "工作流/Docker_FT_llamafactory笔记 (新).md",
     "PointLLM.md",
+    "工作流/Docker_FT_llamafactory笔记 (新).md",
     "3D_LLM/复现",
     "3D_LLM/papers/PointLLM.md",
     "3D_LLM/papers/LL3DA.md",
