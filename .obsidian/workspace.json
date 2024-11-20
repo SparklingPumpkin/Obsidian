@@ -49,8 +49,7 @@
               "title": "Paper总结"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,10 +212,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "36e2782dfd5cf2d2",
+  "active": "b679a872a8f35bd0",
   "lastOpenFiles": [
-    "3D_LLM/papers/LL3DA.md",
     "3D_LLM/papers/Paper总结.md",
+    "3D_LLM/papers/LL3DA.md",
     "工作流/Docker_FT_llamafactory笔记 (新).md",
     "3D_LLM/papers/PointLLM.md",
     "3D_LLM/papers/3D-LLM.md",
