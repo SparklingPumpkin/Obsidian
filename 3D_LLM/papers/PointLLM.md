@@ -15,7 +15,9 @@
 - 提出了一种在GPT-4的帮助下利用大规模点云caption数据集Cap3D的**自动数据生成技术**，生成的数据集遵循统一的指令遵循模板，由Brief-description instrutions和complex instrutions 组成，分别有助于潜在空间对齐和指令调整。
 
 ## 模型结构
+
 ![[Pasted image 20241120134934.png]]
+
 - 如图所示，PointLLM是一个生成模型，旨在完成包含点云和文本的多模态句子。该模型有三个模块组成：预训练的point cloud encoder、 projector和LLM，
 
 	- point cloud encoder：包括了多层的transformer block
