@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3D_LLM/papers/LL3DA.md",
+                "file": "3D_LLM/papers/Paper总结.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LL3DA"
+              "title": "Paper总结"
             }
           }
         ],
@@ -215,13 +215,13 @@
   },
   "active": "36e2782dfd5cf2d2",
   "lastOpenFiles": [
-    "3D_LLM/papers/3D-LLM.md",
     "3D_LLM/papers/LL3DA.md",
-    "3D_LLM/papers/PointLLM.md",
-    "3D_LLM/papers/images/Pasted image 20241120134934.png",
     "3D_LLM/papers/Paper总结.md",
-    "PointLLM.md",
     "工作流/Docker_FT_llamafactory笔记 (新).md",
+    "3D_LLM/papers/PointLLM.md",
+    "3D_LLM/papers/3D-LLM.md",
+    "3D_LLM/papers/images/Pasted image 20241120134934.png",
+    "PointLLM.md",
     "3D_LLM/复现",
     "3D_LLM/papers/pointLLM",
     "3D_LLM/papers/images/Pasted image 20241116200443.png",
