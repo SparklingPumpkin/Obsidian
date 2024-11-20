@@ -37,6 +37,7 @@ autoProxy=true
 	- 如何拉取指定cuda和pytorch版本镜像?
 		-  `docker pull nvcr.io/nvidia/pytorch:23.09-py3`
 		- 主要看标签: `pytorch:<YY.MM>-py<python_version>`
+		- 这个网站可以看pytorch版本[PyTorch Release Notes - NVIDIA Docs](https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/index.html)
 - 如何查看cuda版本? 进入容器后`nvidia-smi`或者`nvcc -V`
 
 ## 3. 启动容器并挂载代码
