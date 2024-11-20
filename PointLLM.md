@@ -13,6 +13,10 @@
 	- 创建容器: `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/3DLLM/pointLLM:/workspace --name pointLLM nvcr.io/nvidia/pytorch:22.08-py3`
 	- 初始化conda: `conda init`
 	- 重启容器: `docker start -ai pointLLM`
+	- `conda activate`
+	- `pip show torch`
+	- `conda install torch=2.0.1`
+	- 
 
 
 
