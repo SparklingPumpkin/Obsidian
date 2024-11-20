@@ -1,7 +1,7 @@
 # LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoning, and Planning
 
-- 输入: 
-- 输出: 
+- 输入: 点云/ 点云 & 文本指令/prompts
+- 输出: 对指令做出响应, 如对3D场景做出理解/ 推理/ 规划的语言序列
 
 ## 1. 研究目标
 
