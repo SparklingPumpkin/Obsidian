@@ -16,6 +16,7 @@
 	- `conda activate`
 	- `pip show torch`
 	- `pip install torch==2.0.1`
+	- `pip install --upgrade torchvision torchtext torch-tensorrt --index-url https://download.pytorch.org/whl/cu117`
 	- 
 
 
