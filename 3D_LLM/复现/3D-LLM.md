@@ -3,8 +3,7 @@
 - vscode ssh远程文件夹连接
 	- `ssh usv012@58.199.168.55`
 	- 输入密码
-	- `cd /home/zqq/fjn`
-
+	- `cd /home/zqq/fjn/Projects/3D-LLM`
 
 ```
 $ conda create -n lavis python=3.8
