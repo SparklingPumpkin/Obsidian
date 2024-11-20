@@ -15,7 +15,7 @@
 	- 重启容器: `docker start -ai pointLLM`
 	- `conda activate`
 	- `pip show torch`
-	- `conda install torch=2.0.1`
+	- `pip install torch==2.0.1`
 	- 
 
 
