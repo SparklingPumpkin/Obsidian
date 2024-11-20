@@ -1,4 +1,8 @@
-LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoning, and Planning
+# LL3DA: Visual Interactive Instruction Tuning for  Omni-3D Understanding, Reasoning, and Planning
+
+- 输入: 
+- 输出: 
+
 ## 1. 研究目标
 
 - 开发能够在复杂多样的 3D 环境中理解、推理和规划的 LMM

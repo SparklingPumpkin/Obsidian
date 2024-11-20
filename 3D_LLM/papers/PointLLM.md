@@ -1,5 +1,11 @@
 # PointLLM: Empowering Large Language Models to Understand Point Clouds
 
+- 输入: 物体点云信息/ encoded点云信息 & prompts
+- 输出: 对物体的描述
+- 重点: 
+	- 点云信息encoder
+	- 数据集
+
 ## 背景
 
 几个3D领域LLM的应用
