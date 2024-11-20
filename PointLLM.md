@@ -9,8 +9,8 @@
 	- Transformers 4.28.0.dev(transformers.git@cae78c46)
 
 - docker：
-	- 拉取镜像： `docker pull nvidia/cuda:11.7.1-devel-ubuntu20.04`
-	- 
+	- 拉取镜像: `docker pull nvcr.io/nvidia/pytorch:22.08-py3`
+	- 创建容器: `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/FT_llama-factory:/workspace --name FTLlama_lico2 nvcr.io/nvidia/pytorch:23.09-py3`
 
 
 
