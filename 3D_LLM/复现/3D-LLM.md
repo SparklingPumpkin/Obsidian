@@ -18,7 +18,7 @@ $ pip install positional_encodings
 
 ```
 
-- 手动下载了两个模型参数文件（具体文件：推理程序报错的时候会显示要下载的路径）
+- 手动从huggingface下载了两个模型参数文件（具体文件：推理程序报错的时候会显示要下载的路径）
 - 运行推理模式
 ```
 git clone https://github.com/UMass-Foundation-Model/3D-LLM.git
