@@ -58,9 +58,11 @@ python inference.py --mode scene --visualize
 	- 核心：精确理解 3D 场景结构。
 
 - 预训练模型
+	- BLIP2
 - 微调数据集（原始）
 - 微调数据集（修改）
 - 微调模型
+- 
 
 
 
