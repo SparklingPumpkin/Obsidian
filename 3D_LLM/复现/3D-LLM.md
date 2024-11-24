@@ -18,4 +18,16 @@ $ pip install positional_encodings
 
 ```
 
+- 手动下载了两个模型参数文件
+- 运行推理模式
+```
+git clone https://github.com/UMass-Foundation-Model/3D-LLM.git
+cd /media/usv012/fjn/projects/3D-LLM/3D-LLM/3DLLM_BLIP2-base
 
+# 物体模式
+python inference.py --mode object --visualize
+# 场景模式
+python inference.py --mode scene --visualize
+
+
+```
