@@ -1,7 +1,7 @@
 # 3D-LLM: Injecting the 3D World into Large Language Models
 
-- 输入：3D场景点云及其特征
-- 输出：语言序列（与指令相关）
+- 输入: 3D场景点云及其特征
+- 输出: 语言序列（与指令相关）
 - 问题: **三维数据稀缺** & **三维特征与语言特征对齐**
 - 贡献: 
 	- 3D-LLM模型
