@@ -19,6 +19,9 @@ $ pip install positional_encodings
 ```
 
 - 手动从huggingface下载了两个模型参数文件（具体文件：推理程序报错的时候会显示要下载的路径）
+
+## 2. 推理
+
 - 运行推理模式
 ```
 git clone https://github.com/UMass-Foundation-Model/3D-LLM.git
@@ -31,3 +34,23 @@ python inference.py --mode scene --visualize
 
 
 ```
+
+## 3. 训练
+
+任务类型（数据集类型）
+- 3dmv_vqa
+- ScanQA_v1.0
+	- 简单介绍：ScanQA 是一个基于 3D 场景的问答任务，要求在 3D 点云中找到与自然语言问题相关的答案。
+	- 输入：
+		- 3D场景（通常点云）
+		- 自然语言指令（如“Where is the sofa located?”）
+	- 输出：
+		- 自然语言答案
+- SQA3D
+
+
+
+
+
+
+
