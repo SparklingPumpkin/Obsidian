@@ -37,7 +37,8 @@ python inference.py --mode scene --visualize
 
 ## 3. 训练
 
-任务类型（数据集类型）
+### 3.1 任务类型（数据集类型）
+
 - 3dmv_vqa (3D **Multi-View** VQA)
 	- 简单介绍：3DMV-VQA 是一个基于 3D 场景和多视角的视觉问答任务，结合了图像和 3D 数据来回答问题。
 	- 输入：
@@ -56,6 +57,10 @@ python inference.py --mode scene --visualize
 		- 可能的输出：与答案相关的 3D 坐标或区域（用于可视化回答）
 	- 核心：精确理解 3D 场景结构。
 
+- 预训练模型
+- 微调数据集（原始）
+- 微调数据集（修改）
+- 微调模型
 
 
 
