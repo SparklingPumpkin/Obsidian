@@ -14,6 +14,11 @@
 		- 词汇表大小为49,152（使用Byte Pair Encoding）
 		- 序列长度限制为76
 	- ![[Pasted image 20241125164833.png]]
+- 特征映射
+	- 为了将图像和文本特征映射到共同的特征空间，CLIP引入了两个可学习的投影矩阵
+		- `I_e = l2_normalize(np.dot(I_f, W_i), axis=1)`
+		- `T_e = l2_normalize(np.dot(T_f, W_t), axis=1)`
+	- 这样处理后的图像和文本嵌入向量就处于同一个d_e维空间中，可以通过计算余弦相似度来评估它们的相关性。
 
 
 
