@@ -78,7 +78,8 @@
 - 3D **定位机制**
 	- 如何将物体的**位置信息**引入到LLM中是另一个问题，一个<mark style="background: #FFF3A3A6;">简单的思路是</mark>，通过已与语言对齐的2D预训练特征提取器（如CLIP和EVA-CLIP）**重建3D特征**后，可以通过直接计算3D特征与语言特征之间的相似性来进行定位。但是作者更希望**模型本身能够捕获3D空间信息**。作者提出了一种3D定位机制，增强了3D-LLMs吸收空间信息的能力。该机制包括两个部分：
 		- 用 **position embeddings** 增强3D特征；**position embeddings** 部分是将位置信息添加到从2D多视图特征聚合的3D特征中。
-		- 用 **location tokens** 增强LLM **vocabularies**。位置标记部分则是将3D位置嵌入到词汇表中，使得3D空间位置与LLMs对齐。
+		- 用 **location tokens** 增强 **LLM vocabularies**。位置标记部分则是将3D位置嵌入到词汇表中，使得3D空间位置与LLMs对齐。
+			- 
 
 
 
