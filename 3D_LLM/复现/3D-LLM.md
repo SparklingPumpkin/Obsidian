@@ -57,8 +57,8 @@ python inference.py --mode scene --visualize
 		- 可能的输出：与答案相关的 3D 坐标或区域（用于可视化回答）
 	- 核心：精确理解 3D 场景结构。
 
-- 预训练模型
-	- BLIP2
+- 预训练大模型
+	- BLIP-2 or Flamingo
 - 微调数据集（原始）
 - 微调数据集（修改）
 - 微调模型
