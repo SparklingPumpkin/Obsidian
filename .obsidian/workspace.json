@@ -49,8 +49,7 @@
               "title": "gpttemp"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,10 +212,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e9023a636857b7d8",
+  "active": "587ed7c3e1c714cc",
   "lastOpenFiles": [
-    "3D_LLM/复现/3D-LLM.md",
     "3D_LLM/复现/gpttemp.md",
+    "3D_LLM/复现/3D-LLM.md",
     "3D_LLM/papers/3D-LLM.md",
     "3D_LLM/papers/Paper总结.md",
     "3D_LLM/复现/PointLLM.md",
