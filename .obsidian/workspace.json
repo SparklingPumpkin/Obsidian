@@ -35,8 +35,7 @@
               "title": "3D-LLM"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,8 +198,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7bf23afccb501e55",
+  "active": "587ed7c3e1c714cc",
   "lastOpenFiles": [
+    "3D_LLM/复现/3D-LLM.md",
     "3D_LLM/papers/3D-LLM.md",
     "3D_LLM/基础理论/CLIP.md",
     "3D_LLM/复现/gpttemp.md",
@@ -209,7 +209,6 @@
     "3D_LLM/基础理论/images/Pasted image 20241125164833.png",
     "3D_LLM/基础理论/ResNet.md",
     "3D_LLM/基础理论",
-    "3D_LLM/复现/3D-LLM.md",
     "3D_LLM/复现/PointLLM.md",
     "3D_LLM/papers/PointLLM.md",
     "3D_LLM/papers/images/Pasted image 20241120151447.png",
