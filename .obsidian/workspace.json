@@ -212,8 +212,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "587ed7c3e1c714cc",
+  "active": "89784befaf0567ea",
   "lastOpenFiles": [
+    "3D_LLM/基础理论/images",
+    "3D_LLM/基础理论/images/Pasted image 20241125164833.png",
     "3D_LLM/基础理论/ResNet.md",
     "3D_LLM/基础理论/CLIP.md",
     "3D_LLM/papers/3D-LLM.md",
@@ -256,9 +258,7 @@
     "AIBot/AIBot.md",
     "工作流/docker本地无微调llama.md",
     "工作流/docker工作流笔记.md",
-    "工作流/local FT no docker.md",
     "LLM/Compression/images/Pasted image 20241015153946.png",
-    "LLM/Compression/images/Pasted image 20241015153716.png",
-    "LLM/Compression/images/Pasted image 20241015142809.png"
+    "LLM/Compression/images/Pasted image 20241015153716.png"
   ]
 }
