@@ -5,3 +5,6 @@ BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Unde
 
 - Model perception: 
 	- Both encoder-based model & encoder-decoder model cannot 直接地完成识别类和生成类任务
+	- 希望一个模型把所有任务都解决--unified-framework
+- Data perception：
+	- 当有过多noisy数据集
