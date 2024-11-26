@@ -13,7 +13,8 @@ BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Unde
 
 ## 2. 贡献
 
-
+- 模型结构
+- Cap filter model
 ## 3. 模型介绍
 
 ![[Pasted image 20241126214507.png]]
