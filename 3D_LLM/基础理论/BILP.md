@@ -11,5 +11,14 @@ BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Unde
 	- 当有过多noisy数据集
 
 
-## 2. 
+## 2. 贡献
+
+
+## 3. 模型介绍
+
+![[Pasted image 20241126212121.png]]
+
+- 图像：
+	- 一个N层ViT
+
 
