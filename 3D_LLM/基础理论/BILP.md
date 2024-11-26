@@ -18,6 +18,8 @@ BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Unde
 
 ![[Pasted image 20241126214507.png]]
 
+>图中相同颜色共享参数
+
 - 图像：
 	- 一个N层ViT
 
