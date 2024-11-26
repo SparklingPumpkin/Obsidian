@@ -1,3 +1,4 @@
 - pointnet
 - pointcept
+	- Pointcept 是一个用于点云感知研究的强大且灵活的代码库。它不仅提供了多种先进的点云处理算法，还集成了多个最新的研究成果，如 PTv3、PPT、OA-CNNs 等。Pointcept 旨在为研究人员和开发者提供一个统一的框架，以便于进行点云数据的处理、分析和可视化。
 - pointTransformer
