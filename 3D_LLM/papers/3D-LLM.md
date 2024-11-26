@@ -86,6 +86,8 @@
 				- **离散化坐标** ：AABB的连续角坐标`(xmin, ymin, zmin, xmax, ymax, zmax)`被均匀离散化为体素整数（voxel integers），这些整数作为位置标记（location tokens）。例如某个位置标记为 ⟨2, 3, 4, 6, 7, 8⟩
 
 
+## 5. 实验
+
 
 
 
