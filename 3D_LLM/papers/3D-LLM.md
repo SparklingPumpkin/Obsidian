@@ -88,6 +88,10 @@
 
 ## 5. 实验
 
+3个 2D VLM 作为预训练大模型
+- Flamingo 9B
+- BLIP-2 Vit-g Opt2.7B
+- BLIP-2 Vit-g FlanT5-XL
 
 
 
