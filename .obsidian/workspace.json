@@ -199,8 +199,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da47b9a3b1dceb3f",
+  "active": "89784befaf0567ea",
   "lastOpenFiles": [
+    "CoT/images",
+    "CoT/images/Pasted image 20241127155412.png",
     "3D_LLM/基础理论/总结.md",
     "CoT/ARN.md",
     "CoT",
@@ -233,7 +235,6 @@
     "3D_LLM/papers/images",
     "LLM/Newest/ARN.md",
     "DL/Newest/KAN/images/93de9e59ddd257adb36728b32d665fa998bb267bfda86d2081a93b3d747f744c.jpg",
-    "DL/Newest/KAN/images/694099f0663abbab037ff09d9713d1bc11fbd1fa63406ed3d02ba0c85626777a.jpg",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_model.json",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_middle.json",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_content_list.json",
@@ -245,7 +246,6 @@
     "LLM/Others/Diffusion Model.md",
     "Temp/适合类比推理的数据集.md",
     "Untitled.md",
-    "工作流/不常用/本地无微调llamafile_docker.md",
-    "工作流/不常用/llama工具盒.md"
+    "工作流/不常用/本地无微调llamafile_docker.md"
   ]
 }
