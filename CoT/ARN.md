@@ -69,7 +69,11 @@
     - characters, plot, theme, setting, point of view, and style.
         
 
-### ⚙️ Q&A
+### ⚙️ 动机
+
+- 类比认知理论习惯于研究叙事性的类比关系
+- NLP/LM等停留在词对比的层面
+- 因此作者想把NLP的类比研究推进到叙事层面上
 
 ### ⚙️ Structure
 
