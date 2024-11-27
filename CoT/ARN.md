@@ -144,48 +144,32 @@
         1. No System Mapping
             
 
-### 💡 Innovations (Main Contributions)
+### 💡 Contributions
 
 - 本研究扩展了NLP (LLM) 领域的类比推理研究, 通过引入叙述元素, 将NLP类比研究从简单的基于单词的映射 (proportional word analogies) 扩展到了认知领域的关系系统映射.
     
 - 具体来说, 本研究
     
     - 设计了一个全面的计算框架，该框架可操作主流类比理论，使用叙述元素创建表面和系统映射。
-        
         - 第一步, 提取叙事元素
-            
         - 第二步, 建立表面和系统映射
-            
         - 第三步, 推断（反）类比
-            
         - resulting in a binary question-answering (QA) task
             
     - 用叙述元素建立了一种新的用于类比推理的基准数据集 (ARN) , 包含
-        
         - 1,100 个三元组
-            
             - 每个三元组由**查询叙述**（query narrative）、**类比叙述**（analogy narrative）和**干扰项**（distractor）组成
-                
         - 在此基础上, 数据集被划分为四个平衡的数据分区. 分区根据查询叙述和对应（类比或非类比）叙述之间的**语义距离**（semantic distance）来划分
-            
             - 远（跨域）类比
-                
             - 近（域内）类比
-                
             - 远（跨域）反类比
-                
             - 近（域内）反类比
                 
     - 对 ARN 的四个分区上的 SOTA LLM 在零样本和少样本情况下的综合实验。
-        
         - 实验揭示了LLM在有或没有人类指导的情况下区分表面和系统相似性的能力
-            
             - LLM可以很大程度上识别出 近类比
-                
             - 评分 Zero-shot LLM < 随机模型 < 人类
-                
             - 评分 随机模型 < Few-shot LLM < 人类
-                
         - 总的来说, SOTA LLM与人类之间存在明显差距，尤其是在检测远距离类比方面
             
 
