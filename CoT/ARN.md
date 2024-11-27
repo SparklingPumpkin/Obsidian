@@ -172,24 +172,6 @@
         - 总的来说, SOTA LLM与人类之间存在明显差距，尤其是在检测远距离类比方面
             
 
-### 🧩 Shortcomings & 📌 To be resolved
-
-## 🔁 Research Content
-
----
-
-### 💧 Data
-
-### 👩🏻‍💻 Model
-
-### 👩🏻‍💻 Method
-
 ### 🔬 Experiment
 
-### 📜 Conclusion
 
-## 🤔 Personal Summary
-
----
-
-> Tips: What aspects did you question, how do you think it can be improved?
