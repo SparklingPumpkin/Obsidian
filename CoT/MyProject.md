@@ -23,3 +23,8 @@ Question = {
 ### 1. 提取叙事元素
 
 Return a list of {element} in the given narrative.
+
+附有3个随机解答的演示文稿，并附有作者手工提取的叙述性及其提取的元素。
+
+### 2. 
+
