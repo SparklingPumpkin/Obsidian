@@ -1,5 +1,4 @@
-
-Prompt1 = 
+json格式Prompt
 {  
     "Example1": {  
         "instruction": "To judge whether there is an analogy between the following two paragraphs, only answer yes or no.",  
@@ -18,7 +17,7 @@ Prompt1 =
     }  
 }
 
-
+下面的是格式没调整的版本
 Prompt = f"{
 Example1 = {
 	instruction: 'To judge whether there is an analogy between the following two paragraphs, only answer yes or no.', 
