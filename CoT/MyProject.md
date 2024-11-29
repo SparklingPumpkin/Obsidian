@@ -18,5 +18,8 @@ Question = {
 }"
 
 
+----
+原始prompts
+### 1. 提取叙事元素
 
 Return a list of {element} in the given narrative.
