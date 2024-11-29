@@ -13,7 +13,7 @@ Prompt1 =
     },  
     "Question": {  
         "instruction": "To judge whether there is an analogy between the following two paragraphs, only answer yes or no.",  
-        "input": "First: {row['query_narrative']}, Second: {row['first_choice']}",  
+        "input": "First section: {query_narrative}, Second section: {first_choice}",  
         "output": ""  
     }  
 }
