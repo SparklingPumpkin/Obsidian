@@ -26,7 +26,7 @@ Return a list of {element} in the given narrative.
 
 附有3个随机解答的演示文稿，并附有作者手工提取的叙述性及其提取的元素。
 
-### 2. 
+### 2. 对Llama 2、GPT3.5和GPT4.0模型给出的主要零样本和少样本实验
 
 narratives can be mapped to each other in terms of the high-level message they strive to convey. These high-level messages can be related to traditions, common knowledge, or moral principles. We call this mapping analogical mapping. Which one of the two narratives (1, 2) can create a better analogical mapping with the query narrative? Answer in the template: {{narrative x, because narrative x and query narrative are ...}}
 --------query narrative: {query narrative demonstration} 
@@ -39,3 +39,8 @@ narratives can be mapped to each other in terms of the high-level message they s
 --------narrative 2: {second candidate} 
 ########## 
 narrative
+
+### 3. 零样本实验中使用的Macaw、Unified QA和Flan T5模型给出的提示
+
+narratives can be mapped to each other in terms of the high-level message they strive to convey. This high-level message can be related to traditions, common knowledge, or moral principles. We call this mapping analogical mapping. Which one of the two narratives (a, b) can create a better analogical mapping with the query narrative? query narrative: {query narrative}. \\n (a) {first candidate} (b) {second candidate}
+
