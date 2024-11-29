@@ -1,4 +1,24 @@
 
+Prompt1 = 
+{  
+    "Example1": {  
+        "instruction": "To judge whether there is an analogy between the following two paragraphs, only answer yes or no.",  
+        "input": "First section: {He really hated school. The bullying was relentless, but he had a strong fortitude and a promise to make his single mother proud. So he bravely marched on to school. In a matter of years, he found himself graduating at the top of his class with an M.B.A. His former classmates went to their jobs cleaning up after school children.}, Second section: When I remember the challenges I went through when I was starting my business, I break into tears. But I do not regret a thing. I think that the most precious gold goes through the hottest furnace. There are great and unforgettable lessons that I learned during that period that I will always cherish. It made me better.",  
+        "output": "Let's think step by step.1. Extract the important elements in the narration and ignore the secondary elements. Return a list of {necessary narrative element} in each given narration. First section: {Characters = A student and his former classmates; Relationships = The student and his single mother; Locations = School; Actions = The student endures bullying, studies hard, graduates with honors, and surpasses his classmates; Goals = To make his mother proud and succeed academically}.  Second section: {Characters = A businessperson; Relationships = Unspecified; Locations = The early stages of a business; Actions = The businessperson faces challenges, perseveres, learns valuable lessons, and grows stronger; Goals = To overcome difficulties and achieve personal growth}. 2. Summarize high-level information.  First section: {Perseverance and hard work lead to success and triumph over adversity.}  Second section: {Challenges and hardships shape resilience and personal growth.} 3. Comparing the high-level information of the two narratives, do they have a correspondence?  Yes, both emphasize enduring difficulties and emerging stronger or more successful as a result. 4. According to the previous inference, can we conclude whether there is an analogy between the two narratives?  The answer is {YES}."  
+    },  
+    "Example2": {  
+        "instruction": "To judge whether there is an analogy between the following two paragraphs, only answer yes or no.",  
+        "input": "First section: {Johnny was having a very hard time at work. He had too many projects and too many short deadlines, and he was stressed. He kept working as hard as he could to finish everything, and it paid off. His boss noticed how hard he was working and offered him a raise, as well as his choice in future projects.}, Second section: {The man had been in the job for ten years and had never had a payrise, despite his diligent hard work. One day he plucked up the courage to ask his boss for a rage and was curtly refused. That was it! He decided. No more working his hardest. He was going to slack as much as he could and not take any further pride in his work.}",  
+        "output": "Let's think step by step. 1.  Extract the important elements in the narration and ignore the secondary elements. Return a list of {necessary narrative element} in each given narration. First section: {Characters = A worker and a boss; Relationships =The relationship between boss and worker; Locations = workplace; actions = The worker works hard, and the boss promotes the worker; Goals = The worker completes the work},  Second section: {Characters = A worker and a boss; Relationships = The relationship between boss and worker; Locations = workplace; Actions = The worker works hard, is refused a raise, and decides to stop working diligently; Goals = The worker stops working hard} 2. Summarize high-level information. First section: {No pain, no gain.}, Second section:{Hard work does not always pay off.} 3. Comparing the high-level information of the two narratives, do they have a correspondence? They have no corresponding relationship. 4. According to the previous inference, can we conclude whether there is an analogy between the two narratives ? The answer is {NO}"  
+    },  
+    "Question": {  
+        "instruction": "To judge whether there is an analogy between the following two paragraphs, only answer yes or no.",  
+        "input": "First: {row['query_narrative']}, Second: {row['first_choice']}",  
+        "output": ""  
+    }  
+}
+
+
 Prompt = f"{
 Example1 = {
 	instruction: 'To judge whether there is an analogy between the following two paragraphs, only answer yes or no.', 
