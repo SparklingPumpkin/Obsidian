@@ -28,3 +28,14 @@ Return a list of {element} in the given narrative.
 
 ### 2. 
 
+narratives can be mapped to each other in terms of the high-level message they strive to convey. These high-level messages can be related to traditions, common knowledge, or moral principles. We call this mapping analogical mapping. Which one of the two narratives (1, 2) can create a better analogical mapping with the query narrative? Answer in the template: {{narrative x, because narrative x and query narrative are ...}}
+--------query narrative: {query narrative demonstration} 
+--------narrative 1: {first candidate demonstration} 
+--------narrative 2: {second candidate demonstration} 
+########## 
+{Answer provided with its corresponding explanation} 
+--------query narrative: {query narrative} 
+--------narrative 1: {first candidate} 
+--------narrative 2: {second candidate} 
+########## 
+narrative
