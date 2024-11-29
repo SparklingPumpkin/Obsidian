@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CoT/ARN.md",
+                "file": "CoT/MyProject.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ARN"
+              "title": "MyProject"
             }
           }
         ],
@@ -199,12 +199,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89784befaf0567ea",
+  "active": "da47b9a3b1dceb3f",
   "lastOpenFiles": [
+    "CoT/ARN.md",
+    "CoT/MyProject.md",
     "CoT/images",
     "CoT/images/Pasted image 20241127155412.png",
     "3D_LLM/基础理论/总结.md",
-    "CoT/ARN.md",
     "CoT",
     "3D_LLM/基础理论/images/Pasted image 20241126222133.png",
     "Pasted image 20241126222132.png",
@@ -237,7 +238,6 @@
     "DL/Newest/KAN/images/93de9e59ddd257adb36728b32d665fa998bb267bfda86d2081a93b3d747f744c.jpg",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_model.json",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_middle.json",
-    "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_content_list.json",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903.md",
     "Temp/Temp.md",
     "LLM/Newest/KAN & KAT.md",
