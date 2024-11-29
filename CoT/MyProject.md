@@ -49,6 +49,6 @@ narratives can be mapped to each other in terms of the high-level message they s
 shortly paraphrase or give a short synonym for {element content} without any explanations.
 
 Generate a random narrative with 4-8 sentences that uses {elements type and their content}. THE NARRATIVE MUST HAVE THE SAME CONCLUSION AS THE PROVERB: {given proverb}. Only return the narrative without any explanation, and also DO NOT mention the proverb.
-### 5. 
+
 
 
