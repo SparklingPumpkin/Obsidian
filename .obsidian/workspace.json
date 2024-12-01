@@ -201,6 +201,7 @@
   },
   "active": "da47b9a3b1dceb3f",
   "lastOpenFiles": [
+    "3D_LLM/基础理论/images/Pasted image 20241201133657.png",
     "3D_LLM/papers/3D-LLM.md",
     "3D_LLM/基础理论/CLIP.md",
     "3D_LLM/基础理论/BILP.md",
@@ -245,7 +246,6 @@
     "conflict-files-obsidian-git.md",
     "LLM/Others/Diffusion Model.md",
     "Temp/适合类比推理的数据集.md",
-    "Untitled.md",
-    "工作流/不常用/本地无微调llamafile_docker.md"
+    "Untitled.md"
   ]
 }
