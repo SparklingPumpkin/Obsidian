@@ -1,5 +1,6 @@
 ## 流程
 
+[CLIP](https://blog.csdn.net/weixin_49787382/article/details/143176470)
 - 图片通过image encoder 得到图像特征嵌入
 - 文本通过text encoder 得到文本特征嵌入
 - 对于每一对图像-文本，模型计算图像特征嵌入(image feature embedding)和文本特征嵌入(text feature embedding)之间的**相似性**(这里是余弦相似度矩阵)
