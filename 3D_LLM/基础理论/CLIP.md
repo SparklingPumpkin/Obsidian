@@ -16,7 +16,7 @@
 	- **基于CNN的ResNet系列** ：包括ResNet50、ResNet101等变体。
 	- **基于Transformer的Vision Transformer (ViT)** ：包括ViT-B/32、ViT-B/16和ViT-L/14等版本。
 - 文本编码器
-	- 注意输出与图像编码器输出同一维度
+	- 注意输出与图像编码器输出**同一维度**
 	- 基于Transformer的架构
 		- 12层Transformer模块
 		- 隐藏层尺寸为512
