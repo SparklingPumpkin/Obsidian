@@ -1,8 +1,8 @@
 ## 流程
 
-- 图片通过image encoder(ViT)得到图像特征嵌入(image feature embedding)
-- 文本通过text encoder(Transformer) 得到文本特征嵌入(text feature embedding)
-- 对于每一对图像-文本，模型计算图像特征嵌入(image feature embedding)和文本特征嵌入(text feature embedding)之间的相似性(这里是余弦相似度矩阵)
+- 图片通过image encoder 得到图像特征嵌入
+- 文本通过text encoder 得到文本特征嵌入
+- 对于每一对图像-文本，模型计算图像特征嵌入(image feature embedding)和文本特征嵌入(text feature embedding)之间的**相似性**(这里是余弦相似度矩阵)
 - 使用对比学习(Contrastive Learning)的损失函数来优化，使得正确配对的图像和文本为正样本(接近1)，而错误配对为负样本(接近0)
 
 ## 细节
