@@ -196,13 +196,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89784befaf0567ea",
+  "active": "66841f223d3168c2",
   "lastOpenFiles": [
+    "3D_LLM/基础理论/images/Pasted image 20241201133657.png",
+    "3D_LLM/基础理论/LLM工作机理.md",
     "3D_LLM/基础理论/images/Pasted image 20241202182340.jpg",
     "3D_LLM/papers/3D-LLM.md",
-    "3D_LLM/基础理论/LLM工作机理.md",
     "3D_LLM/基础理论/CLIP.md",
-    "3D_LLM/基础理论/images/Pasted image 20241201133657.png",
     "3D_LLM/基础理论/BILP.md",
     "3D_LLM/基础理论/总结.md",
     "3D_LLM/papers/PointLLM.md",
@@ -232,7 +232,6 @@
     "3D_LLM/papers/images/Pasted image 20241120134934.png",
     "3D_LLM/复现",
     "3D_LLM/papers/pointLLM",
-    "3D_LLM/papers/images/Pasted image 20241116200443.png",
     "3D_LLM/papers/images",
     "LLM/Newest/ARN.md",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_model.json",
