@@ -25,12 +25,14 @@
             "id": "9db4f68c15eb88f9",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "3D_LLM/基础理论/images/Pasted image 20241201133657.png"
+                "file": "3D_LLM/基础理论/BeiT.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241201133657"
+              "icon": "lucide-file",
+              "title": "BeiT"
             }
           }
         ]
@@ -198,13 +200,14 @@
   },
   "active": "66841f223d3168c2",
   "lastOpenFiles": [
+    "3D_LLM/基础理论/BeiT.md",
+    "3D_LLM/基础理论/总结.md",
+    "3D_LLM/基础理论/BILP.md",
     "3D_LLM/基础理论/images/Pasted image 20241201133657.png",
     "3D_LLM/基础理论/LLM工作机理.md",
     "3D_LLM/基础理论/images/Pasted image 20241202182340.jpg",
     "3D_LLM/papers/3D-LLM.md",
     "3D_LLM/基础理论/CLIP.md",
-    "3D_LLM/基础理论/BILP.md",
-    "3D_LLM/基础理论/总结.md",
     "3D_LLM/papers/PointLLM.md",
     "3D_LLM/papers/LL3DA.md",
     "3D_LLM/pointcloud/Point Cloud Process.md",
