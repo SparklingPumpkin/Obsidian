@@ -292,9 +292,9 @@ $参数量=202,383,360⋅32=6,476,267,520 （约64.76亿参数）$
 llama3-7B：
 	- **total # 6992157696**
 	- **_embed_tokens_** # 32000 * 4096 = **_131072000_**
-	- **_layers_** # 201330688 * 32 = **_6442581376_**_**  # <mark style="background: #FFF3A3A6;">32层transformer</mark>
+	- **_layers_** # 201330688 * 32 = **_6442581376_**  # <mark style="background: #FFF3A3A6;">32层transformer</mark>
 	    - **DecoderLayer** # 201330688
-	        - **input_layernorm** # 4096
+	        - **input_layernorm** # 4096  # <mark style="background: #FFF3A3A6;">4096维度每层</mark>
 	        - **self_attn** # 50331648 + 16777216 = **_67108864_**
 	            - **W_pack（QKV）** # 4096 * 4096 * 3 = **_50331648_**
 	            - **o_proj** # 4096 * 4096 = **_16777216_**
@@ -308,7 +308,7 @@ llama3-70B：
     - **_embed_tokens_** # 32000 * 8192 = **_262,144,000_**
     - **_layers_** # 805,568,768 * 80 = **_64,445,501,440_**  # <mark style="background: #FFF3A3A6;">80层transformer</mark>
         - **DecoderLayer** # 805,568,768
-            - **input_layernorm** # 8192
+            - **input_layernorm** # 8192  # <mark style="background: #FFF3A3A6;">8192维度每层</mark>
             - **self_attn** # 268,435,456
                 - **W_pack（QKV）** # 201,326,592
                 - **o_proj** # 67,108,864
