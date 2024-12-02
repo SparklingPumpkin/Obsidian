@@ -158,7 +158,7 @@
 ![[Pasted image 20241202182340.jpg]]
 
 
-以baichuan-7B为例，分解各模块参数
+以baichuan-7B（Decoder-only）为例，分解各模块参数
 
 - total # 7000559616
 	- _embed_tokens_ # 64000 * 4096 = _**262144000**_
