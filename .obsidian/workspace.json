@@ -196,8 +196,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "66841f223d3168c2",
+  "active": "89784befaf0567ea",
   "lastOpenFiles": [
+    "3D_LLM/基础理论/images/Pasted image 20241202182340.jpg",
     "3D_LLM/papers/3D-LLM.md",
     "3D_LLM/基础理论/LLM工作机理.md",
     "3D_LLM/基础理论/CLIP.md",
@@ -242,7 +243,6 @@
     "Temp/人类思维.md",
     "conflict-files-obsidian-git.md",
     "LLM/Others/Diffusion Model.md",
-    "Temp/适合类比推理的数据集.md",
-    "Untitled.md"
+    "Temp/适合类比推理的数据集.md"
   ]
 }
