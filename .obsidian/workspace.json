@@ -11,14 +11,12 @@
             "id": "66841f223d3168c2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "3D_LLM/基础理论/LLM工作机理.md",
-                "mode": "source",
-                "source": false
+                "file": "3D_LLM/基础理论/images/Pasted image 20241201133657.png"
               },
-              "icon": "lucide-file",
-              "title": "LLM工作机理"
+              "icon": "lucide-image",
+              "title": "Pasted image 20241201133657"
             }
           },
           {
@@ -41,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CoT/MyProject.md",
+                "file": "CoT/MyProject/MyProject.md",
                 "mode": "source",
                 "source": false
               },
@@ -215,19 +213,22 @@
   },
   "active": "d313029d7c2c2c86",
   "lastOpenFiles": [
+    "CoT/MyProject/MyProject_Prompts.md",
+    "CoT/MyProject/MyProject.md",
+    "CoT/MyProject",
     "CoT/ARN.md",
+    "CoT/MyProject/GPT有价值的回答一些.md",
+    "3D_LLM/基础理论/images/Pasted image 20241201133657.png",
+    "3D_LLM/基础理论/images/Pasted image 20241202182340.jpg",
     "3D_LLM/基础理论/LLM工作机理.md",
     "3D_LLM/基础理论/BeiT.md",
     "3D_LLM/基础理论/总结.md",
     "3D_LLM/基础理论/BILP.md",
-    "3D_LLM/基础理论/images/Pasted image 20241201133657.png",
-    "3D_LLM/基础理论/images/Pasted image 20241202182340.jpg",
     "3D_LLM/papers/3D-LLM.md",
     "3D_LLM/基础理论/CLIP.md",
     "3D_LLM/papers/PointLLM.md",
     "3D_LLM/papers/LL3DA.md",
     "3D_LLM/pointcloud/Point Cloud Process.md",
-    "CoT/MyProject.md",
     "CoT/images",
     "CoT/images/Pasted image 20241127155412.png",
     "CoT",
@@ -253,13 +254,10 @@
     "3D_LLM/papers/images",
     "LLM/Newest/ARN.md",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_model.json",
-    "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903_middle.json",
     "DL/Newest/KAN/Liu et al. - 2024 - KAN Kolmogorov-Arnold Networks_1-33_1730443952.8832903.md",
     "Temp/Temp.md",
     "LLM/Newest/KAN & KAT.md",
     "Temp/人类思维.md",
-    "conflict-files-obsidian-git.md",
-    "LLM/Others/Diffusion Model.md",
-    "Temp/适合类比推理的数据集.md"
+    "conflict-files-obsidian-git.md"
   ]
 }
