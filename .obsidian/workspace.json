@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIAO/健身姿态检测矫正.md",
+                "file": "TIAO/Idea.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "健身姿态检测矫正"
+              "title": "Idea"
             }
           }
         ]
@@ -186,8 +186,8 @@
   },
   "active": "4379cd7d29378bde",
   "lastOpenFiles": [
-    "TIAO/Idea.md",
     "TIAO/健身姿态检测矫正.md",
+    "TIAO/Idea.md",
     "SciCLIP/figgen.md",
     "SciCLIP/scicap.md",
     "AIBot/AIBot.md",
