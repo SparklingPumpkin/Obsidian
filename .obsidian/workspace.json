@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIAO/Idea.md",
+                "file": "TIAO/不带三维重建.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Idea"
+              "title": "不带三维重建"
             }
           }
         ]
@@ -187,6 +187,7 @@
   "active": "4379cd7d29378bde",
   "lastOpenFiles": [
     "TIAO/健身姿态检测矫正.md",
+    "TIAO/不带三维重建.md",
     "TIAO/Idea.md",
     "SciCLIP/figgen.md",
     "SciCLIP/scicap.md",
@@ -218,7 +219,6 @@
     "3D_LLM/基础理论/CLIP.md",
     "3D_LLM/papers/PointLLM.md",
     "3D_LLM/papers/LL3DA.md",
-    "3D_LLM/pointcloud/Point Cloud Process.md",
     "CoT/images",
     "CoT/images/Pasted image 20241127155412.png",
     "CoT",
