@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIAO/不带三维重建.md",
+                "file": "CoT/MyProject/论文/FLawN-T5 An Empirical Examination of Effective Instruction-Tuning Data Mixtures for Legal Reasoning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "不带三维重建"
+              "title": "FLawN-T5 An Empirical Examination of Effective Instruction-Tuning Data Mixtures for Legal Reasoning"
             }
           }
         ]
@@ -186,8 +186,9 @@
   },
   "active": "4379cd7d29378bde",
   "lastOpenFiles": [
-    "TIAO/健身姿态检测矫正.md",
     "TIAO/不带三维重建.md",
+    "CoT/MyProject/论文/FLawN-T5 An Empirical Examination of Effective Instruction-Tuning Data Mixtures for Legal Reasoning.md",
+    "TIAO/健身姿态检测矫正.md",
     "TIAO/Idea.md",
     "SciCLIP/figgen.md",
     "SciCLIP/scicap.md",
@@ -218,7 +219,6 @@
     "3D_LLM/papers/3D-LLM.md",
     "3D_LLM/基础理论/CLIP.md",
     "3D_LLM/papers/PointLLM.md",
-    "3D_LLM/papers/LL3DA.md",
     "CoT/images",
     "CoT/images/Pasted image 20241127155412.png",
     "CoT",
