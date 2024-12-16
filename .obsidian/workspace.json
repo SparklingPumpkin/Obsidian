@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIAO/时间线.md",
+                "file": "TIAO/智能化妆镜.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "时间线"
+              "title": "智能化妆镜"
             }
           }
         ]
@@ -186,9 +186,9 @@
   },
   "active": "4379cd7d29378bde",
   "lastOpenFiles": [
+    "TIAO/时间线.md",
     "a2b8695a03c90de1584b8ba54ea7580.png",
     "TIAO/智能化妆镜.md",
-    "TIAO/时间线.md",
     "TIAO/健身姿态检测矫正.md",
     "TIAO/Idea.md",
     "工作流/不常用/(qinyu)制作OpenPCDet--BEVfusion镜像操作.md",
@@ -230,7 +230,6 @@
     "3D_LLM/基础理论/images",
     "3D_LLM/基础理论/images/Pasted image 20241125164833.png",
     "3D_LLM/基础理论",
-    "3D_LLM/papers/images/Pasted image 20241120151447.png",
-    "3D_LLM/papers/images/Pasted image 20241120134934.png"
+    "3D_LLM/papers/images/Pasted image 20241120151447.png"
   ]
 }
