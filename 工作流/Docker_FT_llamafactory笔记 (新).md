@@ -43,7 +43,7 @@ autoProxy=true
 
 ## 3. 启动容器并挂载代码
 
-- `docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/FT_llama-factory:/workspace --name FTLlama_lico2 nvcr.io/nvidia/pytorch:23.09-py3`
+- `docker run --gpus all --ipc=host -p 8888:8888 --ulimit memlock=-1 --ulimit stack=67108864 -it -v /mnt/f/Projects_Mobile/LLM/Finetuning/FT_llama-factory:/workspace --name FTLlama_lico2 nvcr.io/nvidia/pytorch:23.09-py3`
 	- `--gpus all`：启用所有可用的 GPU。
 	- `-it`：以交互模式运行容器。
 	- `--rm`：容器退出后自动删除。(不选)
