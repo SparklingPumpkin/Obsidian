@@ -4,37 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "77203ae14e5fd33f",
+        "id": "93fd67b678b18881",
         "type": "tabs",
         "children": [
           {
-            "id": "4379cd7d29378bde",
+            "id": "31e3b9af87c745e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作流/Docker_FT_llamafactory笔记 (新).md",
+                "file": "CoT/MyProject/论文/CoT-Driven Framework for Short Text Classification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker_FT_llamafactory笔记 (新)"
-            }
-          },
-          {
-            "id": "3380c9d49c2ca800",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.7"
+              "title": "CoT-Driven Framework for Short Text Classification"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,10 +185,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3380c9d49c2ca800",
+  "active": "31e3b9af87c745e9",
   "lastOpenFiles": [
-    "工作流/AAAA整体工作框架.md",
+    "CoT/MyProject/论文/CoT-Driven Framework for Short Text Classification.md",
     "工作流/Docker_FT_llamafactory笔记 (新).md",
+    "工作流/AAAA整体工作框架.md",
     "CoT/MyProject/论文/Reasoning with Legal Cases Analogy or Rule Application.md",
     "CoT/MyProject/论文/FLawN-T5 An Empirical Examination of Effective Instruction-Tuning Data Mixtures for Legal Reasoning.md",
     "CoT/MyProject/论文/LegalGPT Legal Chain of Thought for the Legal  Large Language Model Multi-agent Framework.md",
@@ -230,7 +218,6 @@
     "CoT/MyProject/GPT回答/ARN落地领域.md",
     "CoT/MyProject/GPT回答",
     "3D_LLM/基础理论/images/Pasted image 20241201133657.png",
-    "3D_LLM/基础理论/BeiT.md",
     "TIAO",
     "CoT/MyProject",
     "3D_LLM/基础理论/images/Pasted image 20241202182340.jpg",
