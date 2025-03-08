@@ -9,3 +9,7 @@
 - 解决的问题：简短的文本分类（Short Text Classification）
 - 使用的技术：CoT
 - 实验设计
+
+- 概括：
+	- STC对于数字平台内容理解很重要。
+	- 
