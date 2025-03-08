@@ -24,5 +24,19 @@
 
 ## 3. CDMT框架
 
+在 CoT-Driven Multi-Task Learning（CDMT）框架中，训练较小模型时使用了 **三种监督信号**（three distinct supervision signals），即：
 
+1. **SSE-CoT 提供的推理过程（rationales from SSE-CoT）**：
+    
+    - SSE-CoT 通过 **核心概念识别、常识知识检索、文本重写** 等步骤，生成了一系列用于分类的推理过程。
+    - 这些推理过程可以被视为一种“中间监督信号”，指导小模型学习更合理的推理逻辑。
+2. **DA-CoT 提供的推理过程（rationales from DA-CoT）**：
+    
+    - DA-CoT（Domain Augmentation CoT）是一种利用领域知识增强 CoT 推理的策略。
+    - 该方法结合了领域相关的外部知识，使得推理更贴合具体任务。
+    - 训练小模型时，DA-CoT 产生的推理过程也是一种监督信号，帮助小模型学习更丰富的领域知识。
+3. **真实标签（ground truth）**：
+    
+    - 真实标签是传统监督学习中的主要监督信号，表示数据集提供的正确分类标签。
+    - 训练过程中，小模型不仅要拟合真实标签，还要学习 SSE-CoT 和 DA-CoT 的推理逻辑，以提高分类性能。
 
