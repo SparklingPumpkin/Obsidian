@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Docker_FT_llamafactory笔记 (新)"
             }
+          },
+          {
+            "id": "3380c9d49c2ca800",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +53,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -184,7 +198,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4379cd7d29378bde",
+  "active": "3380c9d49c2ca800",
   "lastOpenFiles": [
     "工作流/AAAA整体工作框架.md",
     "工作流/Docker_FT_llamafactory笔记 (新).md",
