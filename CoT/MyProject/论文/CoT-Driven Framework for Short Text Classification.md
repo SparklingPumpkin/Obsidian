@@ -72,7 +72,59 @@
         `Given the refined text "<文本>", classify it into one of the categories: [health, sport, entertainment, business, sci_tech, U.S., world].`
         
     - 形式化表示： $y_i = \arg\max p(y | R, I_4)$
-## 3. CDMT框架
+
+
+
+**Domain Augmentation CoT（DA-CoT）** 旨在增强小型模型对特定领域的理解，例如医疗、金融等领域。其核心思想是：
+
+1. 识别短文本中的 **关键实体、动作、事件**（domain-specific entities, actions, events）。
+2. 检索领域知识，提供更深入的上下文理解。
+
+## 3. DA-CoT（领域增强CoT）
+
+1. **关键概念识别**
+    
+    - 过程：
+        - 与SSE-CoT类似，但DA-CoT在识别概念时，强调 **领域特定术语**（如医学、金融术语）。
+    - 输入模板：
+
+        `Given the short text "<文本>", identify the key components, considering the main entities, actions, and events described.`
+        
+    - 形式化表示：$K_2 = f_{\text{identify}}(C_1, I_1)$
+    
+2. **领域知识检索**
+    
+    - 过程：
+        - 让LLMs基于识别出的关键概念，**补充领域背景知识**。
+        - 例如，在医学领域，"Ohsumed" 数据集中的 "17 strokes occur during sleep" 可能需要补充 "Strokes can happen at night due to reduced blood circulation and undiagnosed hypertension."
+    - 输入模板：
+
+        `Provide a summary of the identified components, including their interrelations and the overall significance within the context of the text.`
+        
+    - 形式化表示： $O = f_{\text{enrich}}(C_2, I_2)$
+
+## 3. 多任务学习框架（Multi-Task Learning Framework）
+
+CDMT利用 **多任务学习（Multi-Task Learning, MTL）** 将SSE-CoT和DA-CoT的推理能力迁移到小型模型。具体包括以下三项任务：
+
+1. **短文本分类任务（Primary Task）**
+    
+    - 目标：让小型模型学习基于增强文本的正确分类。
+    - 损失函数：$L_{\text{label}} = \frac{1}{N} \sum_{i=1}^{N} \ell(f_s(x'_i), y_i)$
+2. **SSE-CoT推理任务（Secondary Task）**
+    
+    - 目标：让小型模型学习如何生成SSE-CoT的推理过程。
+    - 损失函数： $L_{\text{SSE}} = \frac{1}{N} \sum_{i=1}^{N} \ell(f_s(x_i), r_i)$
+3. **DA-CoT推理任务（Tertiary Task）**
+    
+    - 目标：让小型模型学习如何生成DA-CoT的领域推理过程。
+    - 损失函数：$L_{\text{DA}} = \frac{1}{N} \sum_{i=1}^{N} \ell(f_s(x_i), o_i)$
+
+最终的损失函数：
+
+$L = L_{\text{label}} + \lambda_1 L_{\text{SSE}} + \lambda_2 L_{\text{DA}}$
+
+## 4. CDMT框架
 
 在 CoT-Driven Multi-Task Learning（CDMT）框架中，训练较小模型时使用了 **三种监督信号**（three distinct supervision signals），即：
 
@@ -80,10 +132,8 @@
     - 同上
 
 2. **DA-CoT 提供的推理过程（rationales from DA-CoT）**：
-    
-    - DA-CoT（Domain Augmentation CoT）是一种利用领域知识增强 CoT 推理的策略。
-    - 该方法结合了领域相关的外部知识，使得推理更贴合具体任务。
-    - 训练小模型时，DA-CoT 产生的推理过程也是一种监督信号，帮助小模型学习更丰富的领域知识。
+    - 同上
+ 
 3. **真实标签（ground truth）**：
     
     - 真实标签是传统监督学习中的主要监督信号，表示数据集提供的正确分类标签。
