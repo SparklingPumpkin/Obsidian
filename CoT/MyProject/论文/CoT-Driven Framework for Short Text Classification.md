@@ -59,7 +59,7 @@
         
         `Refine and enhance the language of "<文本>", ensuring accuracy, fluency, and clarity.`
         
-    - 形式化表示： R=g(C3,I3)R = g(C_3, I_3)R=g(C3​,I3​)
+    - 形式化表示： $R = g(C_3, I_3)$
 
 4. **短文本分类（Short Text Classification）**
     
@@ -69,13 +69,9 @@
         - 例如，"Del Potro says make French Open" 经过SSE-CoT后，被正确分类为 **"sport"** 而非误分类为 "world"。
     - 输入模板：
         
-        text
-        
-        CopyEdit
-        
         `Given the refined text "<文本>", classify it into one of the categories: [health, sport, entertainment, business, sci_tech, U.S., world].`
         
-    - 形式化表示： yi=arg⁡max⁡p(y∣R,I4)y_i = \arg\max p(y | R, I_4)yi​=argmaxp(y∣R,I4​)
+    - 形式化表示： $y_i = \arg\max p(y | R, I_4)$
 ## 3. CDMT框架
 
 在 CoT-Driven Multi-Task Learning（CDMT）框架中，训练较小模型时使用了 **三种监督信号**（three distinct supervision signals），即：
