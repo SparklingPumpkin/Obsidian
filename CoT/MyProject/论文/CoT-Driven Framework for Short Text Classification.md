@@ -21,15 +21,74 @@
 
 ## 2. SSE-COT
 
+**Syntactic and Semantic Enrichment CoT（SSE-CoT）** 主要用于提高LLMs在短文本分类任务中的表现。短文本的主要挑战在于**语义稀疏**（semantic sparsity）和**句法模糊**（syntactic ambiguity）。SSE-CoT通过四步推理过程，逐步增强LLMs对短文本的理解，使其分类更精准。
 
+1. **关键概念识别（Key Concept Identification）**
+    
+    - 目的：识别短文本中的核心概念，为后续步骤提供基础。
+    - 过程：
+        - 通过CoT推理，让LLMs识别文本中最重要的实体、动词和关键词。
+        - 例如，给定文本："Del Potro says make French Open"，模型应识别出 **"Del Potro"（网球运动员）** 和 **"French Open"（网球赛事）**。
+    - 输入模板：
+        
+        text
+        
+        CopyEdit
+        
+        `Given the short text "<文本>", identify key concepts.`
+        
+    - 形式化表示： K1=fidentify(C1,I1)K_1 = f_{\text{identify}}(C_1, I_1)K1​=fidentify​(C1​,I1​) 其中，K1K_1K1​ 是识别出的关键概念，C1C_1C1​ 是上下文，I1I_1I1​ 是指令。
+2. **常识知识检索（Common-Sense Knowledge Retrieval）**
+    
+    - 目的：从LLMs的内在知识库中提取相关常识，以填补短文本的语义缺失。
+    - 过程：
+        - 让LLMs基于关键概念，检索相关背景知识。
+        - 例如，"French Open" 的背景知识包括 "one of the four Grand Slam tournaments held annually in Paris on clay courts"。
+    - 输入模板：
+        
+        text
+        
+        CopyEdit
+        
+        `Given the key concepts "<概念>", retrieve related common-sense knowledge.`
+        
+    - 形式化表示： S=fretrieve(C2,I2)S = f_{\text{retrieve}}(C_2, I_2)S=fretrieve​(C2​,I2​)
+3. **文本重写（Text Rewriting）**
+    
+    - 目的：基于提取的常识知识，对短文本进行改写，以提升可读性和分类准确性。
+    - 过程：
+        - 让LLMs利用关键概念和检索的知识，重写短文本，使其语法清晰、信息完整。
+        - 例如，"Del Potro says make French Open" 可以被改写为 **"Del Potro, the esteemed professional tennis player, has made statements regarding the French Open, one of the four major Grand Slam tournaments held annually in Paris on its iconic clay courts."**
+    - 输入模板：
+        
+        text
+        
+        CopyEdit
+        
+        `Refine and enhance the language of "<文本>", ensuring accuracy, fluency, and clarity.`
+        
+    - 形式化表示： R=g(C3,I3)R = g(C_3, I_3)R=g(C3​,I3​)
+4. **短文本分类（Short Text Classification）**
+    
+    - 目的：基于重写后的文本进行分类。
+    - 过程：
+        - 让LLMs根据改写后的文本进行分类，并输出类别。
+        - 例如，"Del Potro says make French Open" 经过SSE-CoT后，被正确分类为 **"sport"** 而非误分类为 "world"。
+    - 输入模板：
+        
+        text
+        
+        CopyEdit
+        
+        `Given the refined text "<文本>", classify it into one of the categories: [health, sport, entertainment, business, sci_tech, U.S., world].`
+        
+    - 形式化表示： yi=arg⁡max⁡p(y∣R,I4)y_i = \arg\max p(y | R, I_4)yi​=argmaxp(y∣R,I4​)
 ## 3. CDMT框架
 
 在 CoT-Driven Multi-Task Learning（CDMT）框架中，训练较小模型时使用了 **三种监督信号**（three distinct supervision signals），即：
 
 1. **SSE-CoT 提供的推理过程（rationales from SSE-CoT）**：
-    
-    - SSE-CoT 通过 **核心概念识别、常识知识检索、文本重写** 等步骤，生成了一系列用于分类的推理过程。
-    - 这些推理过程可以被视为一种“中间监督信号”，指导小模型学习更合理的推理逻辑。
+    - 同上
 
 2. **DA-CoT 提供的推理过程（rationales from DA-CoT）**：
     
