@@ -30,14 +30,12 @@
         - 通过CoT推理，让LLMs识别文本中最重要的实体、动词和关键词。
         - 例如，给定文本："Del Potro says make French Open"，模型应识别出 **"Del Potro"（网球运动员）** 和 **"French Open"（网球赛事）**。
     - 输入模板：
-        
-        text
-        
-        CopyEdit
-        
+
         `Given the short text "<文本>", identify key concepts.`
         
-    - 形式化表示： K1=fidentify(C1,I1)K_1 = f_{\text{identify}}(C_1, I_1)K1​=fidentify​(C1​,I1​) 其中，K1K_1K1​ 是识别出的关键概念，C1C_1C1​ 是上下文，I1I_1I1​ 是指令。
+    - 形式化表示： $K_1 = f_{\text{identify}}(C_1, I_1)$
+    - 其中，$K_1​$ 是识别出的关键概念，$C_1$​ 是上下文，$I_1$​ 是指令。
+    
 2. **常识知识检索（Common-Sense Knowledge Retrieval）**
     
     - 目的：从LLMs的内在知识库中提取相关常识，以填补短文本的语义缺失。
@@ -46,13 +44,10 @@
         - 例如，"French Open" 的背景知识包括 "one of the four Grand Slam tournaments held annually in Paris on clay courts"。
     - 输入模板：
         
-        text
-        
-        CopyEdit
-        
         `Given the key concepts "<概念>", retrieve related common-sense knowledge.`
         
-    - 形式化表示： S=fretrieve(C2,I2)S = f_{\text{retrieve}}(C_2, I_2)S=fretrieve​(C2​,I2​)
+    - 形式化表示： $S = f_{\text{retrieve}}(C_2, I_2)$
+
 3. **文本重写（Text Rewriting）**
     
     - 目的：基于提取的常识知识，对短文本进行改写，以提升可读性和分类准确性。
