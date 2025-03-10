@@ -54,15 +54,13 @@
     - 过程：
         - 让LLMs利用关键概念和检索的知识，重写短文本，使其语法清晰、信息完整。
         - 例如，"Del Potro says make French Open" 可以被改写为 **"Del Potro, the esteemed professional tennis player, has made statements regarding the French Open, one of the four major Grand Slam tournaments held annually in Paris on its iconic clay courts."**
+        
     - 输入模板：
-        
-        text
-        
-        CopyEdit
         
         `Refine and enhance the language of "<文本>", ensuring accuracy, fluency, and clarity.`
         
     - 形式化表示： R=g(C3,I3)R = g(C_3, I_3)R=g(C3​,I3​)
+
 4. **短文本分类（Short Text Classification）**
     
     - 目的：基于重写后的文本进行分类。
