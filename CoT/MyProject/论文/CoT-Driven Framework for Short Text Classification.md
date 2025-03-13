@@ -24,6 +24,7 @@
 ## 2. SSE-COT (Semantic and Syntactic Enrichment CoT)
 
 SSE-CoT 主要用于提高LLMs在短文本分类任务中的表现。短文本的主要挑战在于**语义稀疏**（semantic sparsity）和**句法模糊**（syntactic ambiguity）。SSE-CoT通过四步推理过程，逐步增强LLMs对短文本的理解，使其分类更精准。
+![[Pasted image 20250313104337.png]]
 
 1. **关键概念识别（Key Concept Identification）**
     
@@ -82,7 +83,7 @@ SSE-CoT 主要用于提高LLMs在短文本分类任务中的表现。短文本�
 1. 识别短文本中的 **关键实体、动作、事件**（domain-specific entities, actions, events）。
 2. 检索领域知识，提供更深入的上下文理解。
 
-## 3. DA-CoT（Domain AugmentationCoT）
+## 3. DA-CoT (Domain AugmentationCoT)
 
 1. **关键概念识别**
     
