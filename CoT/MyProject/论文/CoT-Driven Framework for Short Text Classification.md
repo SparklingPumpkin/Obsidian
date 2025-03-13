@@ -105,11 +105,11 @@ SSE-CoT 主要用于提高LLMs在短文本分类任务中的表现。短文本�
         
     - 形式化表示： $O = f_{\text{enrich}}(C_2, I_2)$
 
-## 3. 多任务学习框架（Multi-Task Learning Framework）
+## 3. CoT-Driven Multi-Task Learning (CDMT)
 
 CDMT利用 **多任务学习（Multi-Task Learning, MTL）** 将SSE-CoT和DA-CoT的推理能力迁移到小型模型。具体包括以下三项任务：
 
-1. **短文本分类任务（Primary Task）**
+1. **真实标签 -- 短文本分类任务（Primary Task）**
     
     - 目标：让小型模型学习基于增强文本的正确分类。
     - 损失函数：$L_{\text{label}} = \frac{1}{N} \sum_{i=1}^{N} \ell(f_s(x'_i), y_i)$
@@ -126,18 +126,4 @@ CDMT利用 **多任务学习（Multi-Task Learning, MTL）** 将SSE-CoT和DA-CoT
 
 $L = L_{\text{label}} + \lambda_1 L_{\text{SSE}} + \lambda_2 L_{\text{DA}}$
 
-## 4. CDMT框架
-
-在 CoT-Driven Multi-Task Learning（CDMT）框架中，训练较小模型时使用了 **三种监督信号**（three distinct supervision signals），即：
-
-1. **SSE-CoT 提供的推理过程（rationales from SSE-CoT）**：
-    - 同上
-
-2. **DA-CoT 提供的推理过程（rationales from DA-CoT）**：
-    - 同上
- 
-3. **真实标签（ground truth）**：
-    
-    - 真实标签是传统监督学习中的主要监督信号，表示数据集提供的正确分类标签。
-    - 训练过程中，小模型不仅要拟合真实标签，还要学习 SSE-CoT 和 DA-CoT 的推理逻辑，以提高分类性能。
 
