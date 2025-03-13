@@ -19,9 +19,9 @@
 	- 实验设计：在六个短文本基准数据集上进行了广泛的实验，验证了所提出方法的有效性。实验结果表明，SSE-CoT 在所有数据集上均取得了最先进（State-of-the-Art, SOTA）的性能，尤其是在 **Ohsumed** 和 **TagMyNews** 数据集上表现突出，实现了显著的性能提升。
 
 
-## 2. SSE-COT
+## 2. SSE-COT (Semantic and Syntactic Enrichment CoT)
 
-**Syntactic and Semantic Enrichment CoT（SSE-CoT）** 主要用于提高LLMs在短文本分类任务中的表现。短文本的主要挑战在于**语义稀疏**（semantic sparsity）和**句法模糊**（syntactic ambiguity）。SSE-CoT通过四步推理过程，逐步增强LLMs对短文本的理解，使其分类更精准。
+SSE-CoT 主要用于提高LLMs在短文本分类任务中的表现。短文本的主要挑战在于**语义稀疏**（semantic sparsity）和**句法模糊**（syntactic ambiguity）。SSE-CoT通过四步推理过程，逐步增强LLMs对短文本的理解，使其分类更精准。
 
 1. **关键概念识别（Key Concept Identification）**
     
@@ -80,7 +80,7 @@
 1. 识别短文本中的 **关键实体、动作、事件**（domain-specific entities, actions, events）。
 2. 检索领域知识，提供更深入的上下文理解。
 
-## 3. DA-CoT（领域增强CoT）
+## 3. DA-CoT（Domain AugmentationCoT）
 
 1. **关键概念识别**
     
