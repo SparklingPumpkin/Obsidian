@@ -8,7 +8,9 @@
 - 关键词：Short Text Classification, Chain-of-thought, Large Language Models
 - 概括：
 	- 背景：STC对于数字平台内容理解很重要。LLM和CoT增强了复杂任务推理能力，但对于STC等NLP任务仍然有局限性
-	- 解决的问题：简短的文本分类（Short Text Classification）
+	- 解决的问题：简短的文本分类（Short Text Classification），**主要挑战**如下
+		- **语义稀疏**（semantic sparsity）
+		- **句法模糊**（syntactic ambiguity）
 	- 使用的技术：CoT。具体而言，本研究使用CoT增强LLM的STC推理能力，提出了句法和语义富集COT（SSE-COT）方法，有效地将STC任务分解为四个不同的步骤：
 		- **核心概念识别**（Essential Concept Identification）：提取文本中的关键信息和核心概念。
 		- **常识知识检索**（Common-Sense Knowledge Retrieval）：从外部知识库获取相关背景信息，以增强模型理解。
