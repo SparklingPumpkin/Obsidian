@@ -7,7 +7,10 @@
 
 - 关键词：Short Text Classification, Chain-of-thought, Large Language Models
 - 贡献
-	- 
+	- 第一个研究CoT再STC上的应用
+	- SSE-CoT解决STC的语义稀疏和句法模糊问题
+	- CDMT压缩能力
+	- 6个短文本分类任务实验
 - 概括：
 	- 背景：STC对于数字平台内容理解很重要。LLM和CoT增强了复杂任务推理能力，但对于STC等NLP任务仍然有局限性
 	- 解决的问题：简短的文本分类（Short Text Classification），**主要挑战**如下
