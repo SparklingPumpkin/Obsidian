@@ -135,5 +135,8 @@ $L = L_{\text{label}} + \lambda_1 L_{\text{SSE}} + \lambda_2 L_{\text{DA}}$
 
 ## 4. 相关工作
 
-
+- 文本分类（Text Classification）
+- STC
+- LLM CoT
+- 知识蒸馏（Knowledge Distillation, KD）
 
