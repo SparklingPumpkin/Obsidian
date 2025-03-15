@@ -24,12 +24,12 @@
 	- 考虑到金融、医疗等领域的**资源受限**问题，我们进一步提出 **CoT 驱动的多任务学习框架**（CoT-Driven Multi-Task Learning, CDMT），以将这些能力扩展到较小的模型中。该框架首先从 LLMs 中提取推理过程（Rationales），然后对较小的模型进行微调，以提升其在 STC 任务中的表现。
 
 	- 实验设计：在六个短文本基准数据集上进行了广泛的实验，验证了所提出方法的有效性。实验结果表明，SSE-CoT 在所有数据集上均取得了最先进（State-of-the-Art, SOTA）的性能，尤其是在 **Ohsumed** 和 **TagMyNews** 数据集上表现突出，实现了显著的性能提升。
-
+![[Pasted image 20250313104337.png]]
 
 ## 2. SSE-COT (Semantic and Syntactic Enrichment CoT)
 
 SSE-CoT 主要用于提高LLMs在短文本分类任务中的表现。短文本的主要挑战在于**语义稀疏**（semantic sparsity）和**句法歧义**（syntactic ambiguity）。SSE-CoT通过四步推理过程，逐步增强LLMs对短文本的理解，使其分类更精准。
-![[Pasted image 20250313104337.png]]
+![[Pasted image 20250315141615.png]]
 
 1. **关键概念识别（Key Concept Identification）**
     
@@ -88,8 +88,9 @@ SSE-CoT 主要用于提高LLMs在短文本分类任务中的表现。短文本�
 1. 识别短文本中的 **关键实体、动作、事件**（domain-specific entities, actions, events）。
 2. 检索领域知识，提供更深入的上下文理解。
 
-## 3. DA-CoT (Domain AugmentationCoT)
+## 3. DA-CoT (Domain Augmentation CoT)
 
+![[Pasted image 20250315141643.png]]
 1. **关键概念识别**
     
     - 过程：
