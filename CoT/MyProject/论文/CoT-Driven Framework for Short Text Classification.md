@@ -144,7 +144,7 @@ $L = L_{\text{label}} + \lambda_1 L_{\text{SSE}} + \lambda_2 L_{\text{DA}}$
 		- CoT 主要用于 **复杂推理任务**，但在短文本分类（STC）中的应用仍然是一个空白领域。
 		- 直接使用 LLMs 进行短文本分类成本高，且可能无法有效处理语义稀疏问题。
 - 知识蒸馏（Knowledge Distillation, KD）
-	- 传统知识蒸馏方法：**GKD** 和 **MINILLM** 主要关注于将教师模型（Teacher Model）的分类输出迁移到学生模型（Student Model）。
+	- 传统知识蒸馏方法：**GKD** 和 **MINILLM** 主要从教师模型中提取特定的输出，例如分类标签，将直接知识从教师转移到学生模型，简化了复杂的概念，以促使较小模型更容易地学习。
 	- CoT 结合知识蒸馏：
 		- **MT-CoT** 通过蒸馏 LLMs 的推理过程，使小型模型能够具备 **多任务学习（Multi-Task Learning）** 能力。
 		- **Socratic CoT** 进一步优化了蒸馏过程，使小模型更好地理解推理过程，提高在复杂任务中的表现。
