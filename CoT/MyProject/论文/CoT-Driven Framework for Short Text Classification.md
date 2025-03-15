@@ -140,3 +140,7 @@ $L = L_{\text{label}} + \lambda_1 L_{\text{SSE}} + \lambda_2 L_{\text{DA}}$
 - LLM CoT
 - 知识蒸馏（Knowledge Distillation, KD）
 
+### 4.1 CoT
+
+
+
