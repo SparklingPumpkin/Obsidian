@@ -138,9 +138,13 @@ $L = L_{\text{label}} + \lambda_1 L_{\text{SSE}} + \lambda_2 L_{\text{DA}}$
 - 文本分类（Text Classification）
 - STC
 - LLM CoT
+	- 发现 LLMs 可作为 **隐式知识库（Implicit Knowledge Base）**，在部分 NLP 任务上超越传统方法。
+	- 但在 **命名实体识别（NER）**、**关系抽取（Relation Extraction）** 等基本 NLP 任务上，LLMs 仍然无法达到 SOTA（State-of-the-Art）水平。
+	- **局限性**
+		- CoT 主要用于 **复杂推理任务**，但在短文本分类（STC）中的应用仍然是一个空白领域。
+		- 直接使用 LLMs 进行短文本分类成本高，且可能无法有效处理语义稀疏问题。
 - 知识蒸馏（Knowledge Distillation, KD）
 
-### 4.1 CoT
 
 
 
