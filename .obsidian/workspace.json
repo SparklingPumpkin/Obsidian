@@ -35,7 +35,8 @@
               "title": "LawARN_Prompts"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -199,12 +200,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "31e3b9af87c745e9",
+  "active": "ec5760616935c3d3",
   "lastOpenFiles": [
+    "CoT/MyProject/新思路-将moe作为ai agent.md",
     "未命名.md",
     "CoT/MyProject/领域扩展-文本理解.md",
     "CoT/MyProject/LawARN_Prompts.md",
-    "CoT/MyProject/新思路-将moe作为ai agent.md",
     "CoT/MyProject/LawARN.md",
     "CoT/MyProject/ARN.md",
     "CoT/MyProject/LawARN_Prompts new.md",
