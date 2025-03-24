@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CoT/MyProject/将moe作为ai agent.md",
+                "file": "CoT/MyProject/NLP其他功能.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "将moe作为ai agent"
+              "title": "NLP其他功能"
             }
           }
         ]
@@ -187,10 +187,10 @@
   },
   "active": "31e3b9af87c745e9",
   "lastOpenFiles": [
-    "CoT/MyProject/LawARN_Prompts.md",
     "CoT/MyProject/将moe作为ai agent.md",
+    "CoT/MyProject/LawARN_Prompts.md",
     "未命名.md",
-    "CoT/MyProject/领域扩展-文本理解.md",
+    "CoT/MyProject/NLP其他功能.md",
     "CoT/MyProject/LawARN.md",
     "CoT/MyProject/ARN.md",
     "CoT/MyProject/LawARN_Prompts new.md",
