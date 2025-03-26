@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文本情感分析.md",
+                "file": "CoT/MyProject/情感分析/综述论文Recent Advancement of Emotion Cognition in Large Language Models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文本情感分析"
+              "title": "综述论文Recent Advancement of Emotion Cognition in Large Language Models"
             }
           }
         ],
@@ -202,8 +202,10 @@
   },
   "active": "6ff76807440e15b3",
   "lastOpenFiles": [
+    "CoT/MyProject/情感分析/csdn文本情感分析.md",
+    "CoT/MyProject/情感分析/综述论文Recent Advancement of Emotion Cognition in Large Language Models.md",
+    "CoT/MyProject/情感分析",
     "CoT/MyProject/NLP其他功能.md",
-    "文本情感分析.md",
     "CoT/MyProject/将moe作为ai agent.md",
     "CoT/MyProject/LawARN_Prompts.md",
     "CoT/MyProject/LawARN.md",
@@ -232,7 +234,6 @@
     "AIBot/AIBot.md",
     "SciCLIP",
     "CoT/MyProject/数据集.md",
-    "CoT/MyProject/论文/GPTprompts.md",
     "CoT/MyProject/论文",
     "CoT/MyProject/GPT回答",
     "3D_LLM/基础理论/images/Pasted image 20241201133657.png",
@@ -246,7 +247,6 @@
     "Pasted image 20241126222132.png",
     "3D_LLM/基础理论/images/Pasted image 20241126214507.png",
     "3D_LLM/pointcloud",
-    "3D_LLM/基础理论/images",
-    "3D_LLM/基础理论"
+    "3D_LLM/基础理论/images"
   ]
 }
