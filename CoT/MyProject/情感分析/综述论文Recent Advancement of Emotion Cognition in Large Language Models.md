@@ -6,7 +6,7 @@
 2. 情感丰富的反应产生
 3. 心理评估理论
 
-在本文中，我们详细介绍了<mark style="background: #FFB86CA6;">LLM在情绪认知中的最新进展的详细调查</mark>。探究了领域中研究的潜在研究方向，包括无监督的学习方法以及更复杂和<mark style="background: #FFB86CA6;">可解释的情感认知LLM的发展</mark>。我们还讨论了高级方法，例如用于<mark style="background: #FFB86CA6;">提高LLM的情绪认知能力的对比学习</mark>。
+在本文中，我们详细介绍了<mark style="background: #FFB86CA6;">LLM在情绪认知中的最新进展的详细调查</mark>。探究了领域中研究的潜在研究方向，包括无监督的学习方法以及更复杂和<mark style="background: #FFB86CA6;">可解释的情感认知LLM的发展</mark>。我们还讨论了高级方法，例如用于提高LLM的情绪认知能力的对比学习
 
 具有情感认知能力使LLM可以更加与人类价值观保持一致，从而增强其在情绪相关的下游任务中的表现。
 
