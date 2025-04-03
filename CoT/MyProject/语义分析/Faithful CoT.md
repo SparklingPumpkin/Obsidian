@@ -6,3 +6,6 @@
 - 再由验证器检查翻译和推理链。
 
 通过使用一阶逻辑和约束优化两种符号表达式在5个标准数据集上的全面评估，Symb Co T在性能上始终优于Co T方法，同时也刷新了当前的性能。
+
+---
+Logical reasoning (Cummins et al., 1991) stands out as a quintessential form of reasoning that, unlike other types, is crucial and challenging.

@@ -11,10 +11,14 @@
             "id": "e270f2f7f89cb8bc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "CoT/MyProject/语义分析/Faithful CoT.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Faithful CoT"
             }
           }
         ]
@@ -181,9 +185,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e270f2f7f89cb8bc",
+  "active": "89784befaf0567ea",
   "lastOpenFiles": [
-    "CoT/MyProject/论文/Faithful CoT.md",
+    "CoT/MyProject/语义分析/Faithful CoT.md",
     "CoT/MyProject/语义分析/并非语义分析",
     "CoT/MyProject/语义分析/并非语义分析/Automated Annotation of Evolving Corpora for  Augmenting Longitudinal Network Data A Framework  Integrating Large Language Models and Expert Knowledge.md",
     "CoT/MyProject/情感分析/A Structured Narrative Prompt for Prompting Narratives from Large Language Models Sentiment Assessment of ChatGPT-Generated Narratives and Real Tweets.md",
