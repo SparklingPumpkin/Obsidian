@@ -8,4 +8,4 @@
 通过使用一阶逻辑和约束优化两种符号表达式在5个标准数据集上的全面评估，Symb Co T在性能上始终优于Co T方法，同时也刷新了当前的性能。
 
 ---
-Logical reasoning (Cummins et al., 1991) stands out as a quintessential form of reasoning that, unlike other types, is crucial and challenging.
+Logical reasoning (Cummins et al., 1991) stands out as a quintessential form of reasoning that, unlike other types, is crucial and challenging. 逻辑推理( Cummins et al , 1991)作为一种典型的推理形式脱颖而出，与其他类型的推理不同，它是关键的和具有挑战性的。
