@@ -12,3 +12,15 @@ Logical reasoning (Cummins et al., 1991) stands out as a quintessential form of 
 
 逻辑推理需要严格的逻辑运算，**严重依赖符号表达式和严格的推理规则来**表示问题的内部结构。普通文本往往不足以支持这种精确的逻辑，特别是在需要严格逻辑表达的场景中。例如，如图1所示，在处理逻辑推理问题时，使用一阶逻辑( First-Order Logic，FOL )等符号表示比CoT中的完全自然语言理据更具有代表性和精确性，通过明确的推理规则实现严格的逻辑推理。
 
+## 3 SymbCoT for Symbolic Reasoning
+### 3.1 问题定义
+
+▶ Example:  
+<Premises> (P ) 
+A hawk never lands. Some birds are hawks. 
+<Statement> (S) 
+All birds land. 
+<Answer> 
+False. / True. / Unknow.
+
+
