@@ -15,12 +15,14 @@ Logical reasoning (Cummins et al., 1991) stands out as a quintessential form of 
 ## 3 SymbCoT for Symbolic Reasoning
 ### 3.1 问题定义
 
-▶ Example:  
-<Premises> (P ) 
-A hawk never lands. Some birds are hawks. 
-<Statement> (S) 
-All birds land. 
-<Answer> 
-False. / True. / Unknow.
+	▶ Example:  
+	<Premises> (P ) 
+	A hawk never lands. Some birds are hawks. 
+	<Statement> (S) 
+	All birds land. 
+	<Answer> 
+	False. / True. / Unknow.
+
+### 3.2 模型
 
 
