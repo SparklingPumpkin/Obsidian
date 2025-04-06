@@ -9,3 +9,6 @@
 
 ---
 Logical reasoning (Cummins et al., 1991) stands out as a quintessential form of reasoning that, unlike other types, is crucial and challenging. 逻辑推理( Cummins et al , 1991)作为一种典型的推理形式脱颖而出，与其他类型的推理不同，它是关键的和具有挑战性的。
+
+逻辑推理需要严格的逻辑运算，**严重依赖符号表达式和严格的推理规则来**表示问题的内部结构。普通文本往往不足以支持这种精确的逻辑，特别是在需要严格逻辑表达的场景中。例如，如图1所示，在处理逻辑推理问题时，使用一阶逻辑( First-Order Logic，FOL )等符号表示比CoT中的完全自然语言理据更具有代表性和精确性，通过明确的推理规则实现严格的逻辑推理。
+
