@@ -25,4 +25,9 @@ Logical reasoning (Cummins et al., 1991) stands out as a quintessential form of 
 
 ### 3.2 模型
 
+#### 3.2.1 Translator 模块
 
+将自然语言的上下文（包括前提和问题陈述）转化为符号格式（如一阶逻辑 FOL 或约束优化 CO）
+
+- **输入**：自然语言的前提集合 $P = \{p_1, p_2, \ldots, p_n\}$ 和问题陈述 $S$。
+- **输出**：符号化的前提集合  $P' = \{p_1', p_2', \ldots, p_n'\}$ 和符号化的问题陈述 $S'$。
