@@ -31,3 +31,4 @@ Logical reasoning (Cummins et al., 1991) stands out as a quintessential form of 
 
 - **输入**：自然语言的前提集合 $P = \{p_1, p_2, \ldots, p_n\}$ 和问题陈述 $S$。
 - **输出**：符号化的前提集合  $P' = \{p_1', p_2', \ldots, p_n'\}$ 和符号化的问题陈述 $S'$。
+- few-shot prompting
