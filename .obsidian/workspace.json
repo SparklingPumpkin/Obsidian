@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CoT/MyProject/文本摘要/文本摘要调研.md",
+                "file": "CoT/MyProject/文本摘要/论文合集.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文本摘要调研"
+              "title": "论文合集"
             }
           }
         ]
@@ -187,8 +187,9 @@
   },
   "active": "e270f2f7f89cb8bc",
   "lastOpenFiles": [
-    "CoT/MyProject/语义分析/SRL 研究较少的原因分析.md",
     "CoT/MyProject/文本摘要/文本摘要调研.md",
+    "CoT/MyProject/文本摘要/论文合集.md",
+    "CoT/MyProject/语义分析/SRL 研究较少的原因分析.md",
     "CoT/MyProject/文本摘要",
     "CoT/MyProject/语义分析/Faithful CoT.md",
     "CoT/MyProject/语义分析/并非语义分析",
@@ -220,7 +221,6 @@
     "TIAO/Idea.md",
     "TIAO/时间线.md",
     "TIAO/健身姿态检测矫正.md",
-    "TIAO/智能化妆镜.md",
     "SciCLIP",
     "CoT/MyProject/论文",
     "CoT/MyProject/GPT回答",
