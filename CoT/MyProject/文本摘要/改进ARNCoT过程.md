@@ -93,7 +93,7 @@
     - 改进后：
         - 第一段：{An individual overcomes difficulties, surpasses competitors, and achieves growth.}
         - 第二段：{An individual overcomes difficulties and achieves growth.}
-4. **量化类比强度**：
+4. <mark style="background: #FF5582A6;">量化类比强度</mark>：
     - 在步骤5中引入类比相似度评分（如基于关键元素的匹配度），区分强类比（完全匹配）与弱类比（部分匹配）。
     - 示例：两段共享“困难→成长”，但第一段多“竞争”要素，相似度约75%，结论为“弱类比”。
 5. **结合LLM增强分析**：
