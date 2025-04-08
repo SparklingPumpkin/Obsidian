@@ -81,7 +81,7 @@
 ### 改进建议
 
 1. **优化抽象一致性**：
-    - 确保ABSTRACT LIST中元素在两段间对齐，如将第二段的“Relationships”抽象为“self-competition”而非“None”，与第一段的“competitive relation”对应。
+    - <mark style="background: #FFB86CA6;">确保ABSTRACT LIST中元素在两段间对齐</mark>，如将第二段的“Relationships”抽象为“self-competition”而非“None”，与第一段的“competitive relation”对应。
     - 示例改进：
         - 第一段：ABSTRACT LIST = {Characters = An individual; Relationships = competitive relation; ...}
         - 第二段：ABSTRACT LIST = {Characters = An individual; Relationships = self-competition; ...}
