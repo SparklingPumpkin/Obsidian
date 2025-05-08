@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CoT/MyProject/文本摘要/文本摘要调研.md",
+                "file": "CoT/MyProject/CoT/近期论文.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文本摘要调研"
+              "title": "近期论文"
             }
           }
         ]
@@ -187,6 +187,9 @@
   },
   "active": "e270f2f7f89cb8bc",
   "lastOpenFiles": [
+    "CoT/MyProject/文本摘要/文本摘要调研.md",
+    "CoT/MyProject/CoT/近期论文.md",
+    "CoT/MyProject/CoT",
     "CoT/MyProject/情感分析/综述论文Recent Advancement of Emotion Cognition in Large Language Models.md",
     "CoT/MyProject/语义分析/Faithful CoT.md",
     "CoT/MyProject/LawARN.md",
@@ -196,7 +199,6 @@
     "CoT/MyProject/将moe作为ai agent.md",
     "CoT/MyProject/语义分析/SRL 研究较少的原因分析.md",
     "CoT/MyProject/语义分析/并非语义分析/Automated Annotation of Evolving Corpora for  Augmenting Longitudinal Network Data A Framework  Integrating Large Language Models and Expert Knowledge.md",
-    "CoT/MyProject/文本摘要/文本摘要调研.md",
     "CoT/MyProject/ARNCoT结构/2改进ARNCoT过程.md",
     "CoT/MyProject/ARNCoT结构/类比强度的讨论与可引用文章.md",
     "CoT/MyProject/ARNCoT结构/改进ARNCoT过程.md",
@@ -221,13 +223,11 @@
     "工作流/Docker_FT_llamafactory笔记 (新).md",
     "工作流/AAAA整体工作框架.md",
     "CoT/MyProject/论文/Reasoning with Legal Cases Analogy or Rule Application.md",
-    "CoT/MyProject/论文/FLawN-T5 An Empirical Examination of Effective Instruction-Tuning Data Mixtures for Legal Reasoning.md",
     "SciCLIP",
     "CoT/MyProject/论文",
     "CoT/MyProject/GPT回答",
     "3D_LLM/基础理论/images/Pasted image 20241201133657.png",
     "TIAO",
-    "CoT/MyProject",
     "3D_LLM/基础理论/images/Pasted image 20241202182340.jpg",
     "CoT/images/Pasted image 20241127155412.png",
     "3D_LLM/基础理论/images/Pasted image 20241126222133.png",
