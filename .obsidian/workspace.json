@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "CoT/MyProject/类比研究进化进程/论文Evaluating the Trade-off Between Analogical Reasoning Ability and Efficiency in Large Language Models.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "论文Evaluating the Trade-off Between Analogical Reasoning Ability and Efficiency in Large Language Models"
+            }
+          },
+          {
+            "id": "61746789cc199c12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "CoT/MyProject/类比研究进化进程/ARN研究现状.md",
                 "mode": "source",
                 "source": false
@@ -187,9 +201,14 @@
   },
   "active": "93c5959194ca3c0c",
   "lastOpenFiles": [
-    "CoT/MyProject/类比研究进化进程/类比研究进化.md",
-    "CoT/MyProject/类比研究进化进程/ARN研究现状.md",
+    "075功能（玩家补强）在教学区域梯子边添加一个起始物品箱子.pak",
+    "046功能 幸运爆率 更加幸运的掉落机制，更多BOSS掉落物，商人4倍金币，10倍负重.pak",
+    "035功能 新获得装备大机率三符文孔.pak",
+    "源力点上限可学习到6（游戏内名字：Zorg 6 MaxSP）.pak",
     "CoT/MyProject/PPT结构/20250605PPT.md",
+    "CoT/MyProject/类比研究进化进程/论文Evaluating the Trade-off Between Analogical Reasoning Ability and Efficiency in Large Language Models.md",
+    "CoT/MyProject/类比研究进化进程/ARN研究现状.md",
+    "CoT/MyProject/类比研究进化进程/类比研究进化.md",
     "CoT/MyProject/ARNCoT结构/2改进ARNCoT过程.md",
     "CoT/MyProject/PPT结构",
     "CoT/MyProject/ARNCoT结构/改进ARNCoT过程.md",
@@ -216,17 +235,12 @@
     "CoT/MyProject/文本摘要/论文合集.md",
     "CoT/MyProject/文本摘要",
     "CoT/MyProject/语义分析/并非语义分析",
-    "CoT/MyProject/语义分析",
     "SciCLIP/scicap.md",
     "SciCLIP/figgen.md",
     "a2b8695a03c90de1584b8ba54ea7580.png",
     "Pasted image 20250315141643.png",
     "Pasted image 20250315141615.png",
     "Pasted image 20250313104337.png",
-    "CoT/MyProject/情感分析",
-    "CoT/MyProject/ARN.md",
-    "CoT/MyProject/论文/CoT-Driven Framework for Short Text Classification.md",
-    "SciCLIP",
     "3D_LLM/基础理论/images/Pasted image 20241201133657.png",
     "3D_LLM/基础理论/images/Pasted image 20241202182340.jpg",
     "CoT/images/Pasted image 20241127155412.png",
