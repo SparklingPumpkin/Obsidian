@@ -1,3 +1,6 @@
+- 20240629
+- 
+
 这篇论文（TCDS-2024-0629）题为《Evaluating the Trade-off Between Analogical Reasoning Ability and Efficiency in Large Language Models》，由Kara L. Combs等人撰写，研究了大型语言模型（LLMs）在类比推理能力与计算效率之间的权衡。以下是对文章内容的详细介绍，涵盖其背景、方法、结果、讨论和结论。
 
 ---

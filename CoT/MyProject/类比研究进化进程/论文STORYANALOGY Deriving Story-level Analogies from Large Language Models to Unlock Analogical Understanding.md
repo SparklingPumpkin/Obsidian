@@ -1,3 +1,5 @@
+- 2023
+- EMNLP会议(NLP顶会)
 这篇论文（标题为《STORYANALOGY: Deriving Story-level Analogies from Large Language Models to Unlock Analogical Understanding》）由程佳阳等人撰写，发表于2023年EMNLP会议，研究了大型语言模型（LLMs）在故事层面类比推理（story-level analogy）上的能力，并首次构建了一个大规模的故事类比数据集STORYANALOGY。以下是对论文内容的详细介绍，涵盖其背景、方法、数据集、实验、结果、讨论和结论。
 
 ---
